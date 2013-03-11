@@ -400,3 +400,6 @@ c:\DATA\Warsztat\Seller\bin\Debug\warsztat_pomoc.pdf
 c:\DATA\Warsztat\Seller\bin\Debug\XML\Shym\shym.xml
 c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Usterki.UsterkaAddView.resources
 c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Usterki.Usterki.resources
+D:\iProjects\Warsztat\Seller\bin\Debug\warsztat.exe.config
+D:\iProjects\Warsztat\Seller\obj\Debug\warsztat.exe
+D:\iProjects\Warsztat\Seller\obj\Debug\warsztat.pdb

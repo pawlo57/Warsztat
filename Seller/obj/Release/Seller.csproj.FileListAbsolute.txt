@@ -268,3 +268,6 @@ c:\DATA\Warsztat\Seller\bin\Release\warsztat_pomoc.pdf
 c:\DATA\Warsztat\Seller\bin\Release\XML\Shym\shym.xml
 c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Usterki.UsterkaAddView.resources
 c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Usterki.Usterki.resources
+D:\iProjects\Warsztat\Seller\bin\Release\warsztat.exe.config
+D:\iProjects\Warsztat\Seller\obj\Release\warsztat.exe
+D:\iProjects\Warsztat\Seller\obj\Release\warsztat.pdb

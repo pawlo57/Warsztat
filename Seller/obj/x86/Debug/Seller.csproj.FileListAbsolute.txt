@@ -36,3 +36,4 @@ C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\x86\Debu
 C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\x86\Debug\trumna.exe
 C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\x86\Debug\trumna.pdb
 C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\x86\Debug\Database.sdf
+D:\iProjects\Warsztat\Seller\bin\x86\Debug\warsztat.exe.config
