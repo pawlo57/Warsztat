@@ -1,0 +1,270 @@
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\l2invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\linvoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\Stampa.dll
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Customers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Faktury.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Magaz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Programs.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Transactions.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Workers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Customer.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.FindInvoice.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.FindWorker.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Form1.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.fPz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Login.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Magazyny.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.newCategory.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.FINDKind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Produkty.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Properties.Resources.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Pz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Selectt.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Towar.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Transakcje.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Uzytkownicy.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Uzytkownik.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\telemarketer.exe.config
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\telemarketer.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Release\telemarketer.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\telemarketer.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\telemarketer.pdb
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\telemarketer.exe.config
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\telemarketer.exe
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\telemarketer.pdb
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\invoice.xml
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\l2invoice.xml
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\linvoice.xml
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\telemarketer.exe
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\telemarketer.pdb
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Release\Stampa.dll
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Customers.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Faktury.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Magaz.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Programs.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Transactions.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Workers.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Customer.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.FindInvoice.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.FindWorker.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Form1.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.fPz.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Login.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Magazyny.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.newCategory.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.FINDKind.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Produkty.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Properties.Resources.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Pz.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Selectt.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Towar.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Transakcje.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Uzytkownicy.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Uzytkownik.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Activate.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.CONTROLS.Welcome.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Release\Seller.Ustawiania.resources
+C:\DATA\Seller\Seller\bin\Release\invoice.xml
+C:\DATA\Seller\Seller\bin\Release\l2invoice.xml
+C:\DATA\Seller\Seller\bin\Release\linvoice.xml
+C:\DATA\Seller\Seller\bin\Release\telemarketer.exe.config
+C:\DATA\Seller\Seller\bin\Release\telemarketer.exe
+C:\DATA\Seller\Seller\bin\Release\telemarketer.pdb
+C:\DATA\Seller\Seller\bin\Release\Stampa.dll
+C:\DATA\Seller\Seller\obj\Release\ResolveAssemblyReference.cache
+C:\DATA\Seller\Seller\obj\Release\Seller.Activate.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Customers.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Faktury.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Magaz.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Programs.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Transactions.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Welcome.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.CONTROLS.Workers.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Customer.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.FindInvoice.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.FindWorker.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Form1.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.fPz.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Login.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Magazyny.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.newCategory.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.FINDKind.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Produkty.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Properties.Resources.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Pz.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Selectt.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Towar.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Transakcje.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Ustawiania.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Uzytkownicy.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.Uzytkownik.resources
+C:\DATA\Seller\Seller\obj\Release\Seller.csproj.GenerateResource.Cache
+C:\DATA\Seller\Seller\obj\Release\telemarketer.exe
+C:\DATA\Seller\Seller\obj\Release\telemarketer.pdb
+C:\DATA\Trumna\Seller\bin\Release\invoice.xml
+C:\DATA\Trumna\Seller\bin\Release\l2invoice.xml
+C:\DATA\Trumna\Seller\bin\Release\linvoice.xml
+C:\DATA\Trumna\Seller\bin\Release\Customers.mdb
+C:\DATA\Trumna\Seller\bin\Release\trumna.exe.config
+C:\DATA\Trumna\Seller\bin\Release\trumna.exe
+C:\DATA\Trumna\Seller\bin\Release\trumna.pdb
+C:\DATA\Trumna\Seller\bin\Release\Stampa.dll
+C:\DATA\Trumna\Seller\obj\Release\ResolveAssemblyReference.cache
+C:\DATA\Trumna\Seller\obj\Release\Seller.Activate.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Customers.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Faktury.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Magaz.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Programs.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Transactions.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Welcome.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.CONTROLS.Workers.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Customer.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.FindInvoice.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.FindWorker.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Form1.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.fPz.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Login.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Magazyny.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.newCategory.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.FINDKind.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Produkty.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Properties.Resources.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Pz.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Selectt.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Towar.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Transakcje.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Ustawiania.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Uzytkownicy.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.Uzytkownik.resources
+C:\DATA\Trumna\Seller\obj\Release\Seller.csproj.GenerateResource.Cache
+C:\DATA\Trumna\Seller\obj\Release\trumna.exe
+C:\DATA\Trumna\Seller\obj\Release\trumna.pdb
+c:\DATA\Warsztat\Seller\bin\Release\warsztat.exe.config
+c:\DATA\Warsztat\Seller\bin\Release\Database.sdf
+c:\DATA\Warsztat\Seller\bin\Release\invoice.xml
+c:\DATA\Warsztat\Seller\bin\Release\Ksiazka.xml
+c:\DATA\Warsztat\Seller\bin\Release\l2invoice.xml
+c:\DATA\Warsztat\Seller\bin\Release\linvoice.xml
+c:\DATA\Warsztat\Seller\bin\Release\Ul.xml
+c:\DATA\Warsztat\Seller\bin\Release\Um.xml
+c:\DATA\Warsztat\Seller\bin\Release\Workers.xml
+c:\DATA\Warsztat\Seller\bin\Release\warsztat.exe
+c:\DATA\Warsztat\Seller\bin\Release\warsztat.pdb
+c:\DATA\Warsztat\Seller\bin\Release\Stampa.dll
+c:\DATA\Warsztat\Seller\obj\Release\ResolveAssemblyReference.cache
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Activate.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Customers.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Faktury.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Magaz.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Pracownicy.WorkerRep.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Programs.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.BadaniaFrm.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.CarsFrm.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.KsiazkaSerwisowa.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.ListaUslug.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Transactions.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.UslugiCtrl.UslugaPrc.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Lista.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Uslugi.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Welcome.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Workers.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Customer.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.FindInvoice.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.FindWorker.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Form1.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.fPz.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Login.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Magazyny.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.newCategory.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.FINDKind.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Produkty.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Properties.Resources.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Pz.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Transakcje.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.UslugaDEF.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Ustawiania.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Uzytkownicy.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.Uzytkownik.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.csproj.GenerateResource.Cache
+c:\DATA\Warsztat\Seller\obj\Release\warsztat.exe
+c:\DATA\Warsztat\Seller\obj\Release\warsztat.pdb
+c:\DATA\Warsztat\Seller\bin\Release\Logo\logo.png
+c:\DATA\Warsztat\Seller\bin\Release\XML\Orders\l2order.xml
+c:\DATA\Warsztat\Seller\bin\Release\XML\Orders\lorder.xml
+c:\DATA\Warsztat\Seller\bin\Release\XML\Orders\order.xml
+c:\DATA\Warsztat\Seller\bin\Release\XML\PrintRecipt\recipt.xml
+c:\DATA\Warsztat\Seller\bin\Release\XML\PrintRecipt\l2recipt.xml
+c:\DATA\Warsztat\Seller\bin\Release\XML\PrintRecipt\lrecipt.xml
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.FakturyTrue.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.SaveCopy.SaveCopyFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\warsztat.exe.config
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\warsztat.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\warsztat.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Database.sdf
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\warsztat_pomoc.pdf
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Ksiazka.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\l2invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\linvoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Logo\logo.png
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Ul.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Um.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Workers.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\Orders\l2order.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\Orders\lorder.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\Orders\order.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\PrintRecipt\recipt.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\PrintRecipt\l2recipt.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\PrintRecipt\lrecipt.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\warsztat.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\warsztat.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\Stampa.dll
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Activate.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Customers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Faktury.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.FakturyTrue.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Magaz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Pracownicy.WorkerRep.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Programs.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.BadaniaFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.CarsFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.KsiazkaSerwisowa.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Samochody.ListaUslug.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.SaveCopy.SaveCopyFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Transactions.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.UslugiCtrl.UslugaPrc.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Lista.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Uslugi.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Welcome.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Workers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Customer.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.FindInvoice.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.FindWorker.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Form1.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.fPz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Login.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Magazyny.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.newCategory.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.FINDKind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Produkty.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Properties.Resources.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Pz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Transakcje.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.UslugaDEF.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Ustawiania.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Uzytkownicy.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.Uzytkownik.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Release\XML\Shym\shym.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Usterki.UsterkaAddView.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Release\Seller.CONTROLS.Usterki.Usterki.resources
+c:\DATA\Warsztat\Seller\bin\Release\warsztat_pomoc.pdf
+c:\DATA\Warsztat\Seller\bin\Release\XML\Shym\shym.xml
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Usterki.UsterkaAddView.resources
+c:\DATA\Warsztat\Seller\obj\Release\Seller.CONTROLS.Usterki.Usterki.resources

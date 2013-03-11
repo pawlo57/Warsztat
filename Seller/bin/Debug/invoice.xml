@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD official validation 
+  <!DOCTYPE stampa SYSTEM "http://www.e-dynamica.com/stampa.dtd">
+-->
+
+<stampa name="table" papersize="A4" layout="Portrait" customUnit="Millimeters" customWidth="210" customHeight="297">
+<margins left="50" top="50" right="50" bottom="50" />
+
+<startInfo>
+   <preloadData value="False" />
+   <ignorePreloadExceptions value="False" />
+</startInfo>
+
+<connection>
+   <name value="dbConnection" />
+   <assembly value="System.Data" />
+   <type value="System.Data.Odbc.OdbcConnection" />
+   <connectionString value="" />
+</connection>
+     <sections>
+       <section name="detail" >
+         <flow value="" />
+         <content>
+           <textField name="Tytul" x="50" y="50" width="200" height="30" horAlignment="Center" verAlignment="None"
+           Layout="EveryPage" Selectable="True">
+             <text horAlignment="Center" verAlignment="Top" value="Tytul" />
+             <font family="Arial" size="14" style="Bold" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="rodzaj" x="50" y="80" width="200" height="30" horAlignment="Center" verAlignment="None"
+           Layout="EveryPage" Selectable="True">
+             <text horAlignment="Center" verAlignment="Top" value="Tytul" />
+             <font family="Arial" size="10" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="nrfaktury" x="70" y="120" width="200" height="22" horAlignment="None" verAlignment="None"
+                   Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Nr Faktury:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="dataw" x="70" y="142" width="200" height="22" horAlignment="None" verAlignment="None"
+                   Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Data wystawienia:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="datas" x="70" y="164" width="200" height="22" horAlignment="None" verAlignment="None"
+                  Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Data sprzedaży:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="miasto" x="70" y="186" width="200" height="22" horAlignment="None" verAlignment="None"
+                  Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Miejsce wystawienia:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <!--<textField name="rej" x="70" y="208" width="200" height="22" horAlignment="None" verAlignment="None"
+                 Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Miejsce wystawienia:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>-->
+
+           <pictureBox name="pbxLogo" x="430" y="110" width="320" height="120" Layout="EveryPage" Selectable="True">
+             <file value="" />
+             <border width="0" color="Black"/>
+             <pdfExportQuality value="80" />
+           </pictureBox>
+           
+           <textField name="sprzedawca" x="66" y="260" width="88" height="22" horAlignment="None" verAlignment="None"
+                  Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Sprzedawca:" />
+             <font family="Arial" size="10" Style="Bold"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="firma" x="160" y="260" width="590" height="22" horAlignment="None" verAlignment="None"
+               Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="FIRMA" />
+             <font family="Arial" size="10" Style="Normal"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="ADRES" x="103" y="282" width="50" height="22" horAlignment="None" verAlignment="None"
+               Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Adres:" />
+             <font family="Arial" size="10" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="adres" x="160" y="282" width="590" height="22" horAlignment="None" verAlignment="None"
+                 Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="ADRES" />
+             <font family="Arial" size="10" underline="False"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="NIPg" x="114" y="304" width="40" height="22" horAlignment="None" verAlignment="None"
+               Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="NIP:" />
+             <font family="Arial" size="10" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="nip" x="160" y="304" width="590" height="22" horAlignment="None" verAlignment="None"
+                Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="NIP" />
+             <font family="Arial" size="10" underline="False"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+          
+
+           <textField name="klient" x="84" y="330" width="70" height="22" horAlignment="None" verAlignment="None"
+                 Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Nabywca:" />
+             <font family="Arial" size="10" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+         
+           <textField name="klientfirma" x="160" y="330" width="590" height="22" horAlignment="None" verAlignment="None"
+                 Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="FIRMA" />
+             <font family="Arial" size="10" underline="False"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="ADRES" x="103" y="352" width="50" height="22" horAlignment="None" verAlignment="None"
+              Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Adres:" />
+             <font family="Arial" size="10" Style="Bold"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           
+           <textField name="klientadres" x="160" y="352" width="590" height="22" horAlignment="None" verAlignment="None"
+                 Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="ADRES" />
+             <font family="Arial" size="10" underline="False"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+
+           <textField name="NIPg2" x="114" y="374" width="40" height="22" horAlignment="None" verAlignment="None"
+              Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="NIP:" />
+             <font family="Arial" size="10" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           
+           <textField name="klientnip" x="160" y="374" width="590" height="22" horAlignment="None" verAlignment="None"
+                 Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="NIP" />
+             <font family="Arial" size="10" underline="False"/>
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+          
+           
+          
+           <table x="70" y="430" width="500" height="450"  dataSource="tabela" drawEmptyRows="False" showHeader="True" cellHeight="18"
+            horAlignment="None" verAlignment="None" Layout="EveryPage" Selectable="True">
+             <header headerColor="LightGray" headerFontColor="Black">
+               <font family="Arial" size="8" style="Bold" underline="False" />
+             </header>
+             <dataRows height="600" dataFontColor="Black" backgroundColor="White" alterDataCondition="" alterDataColor="Red" alterDataBackColor="Orange" subtotalsColor="Black">
+               <font family="Arial" size="8" underline="False" />
+               <alternateBackColor value="False" />
+               <alternatingBackColor color="Gainsboro" />
+             </dataRows>
+             <columns>
+               <column name="0" label="Lp." FormatMask="" subtotalType="None" prefix="" width="30" align="Center" />
+               <column name="1" label="Kod towaru/usługi" FormatMask="" subtotalType="None" prefix="" width="90" align="Center" />
+               <column name="2" label="Nazwa towaru/usługi" FormatMask="" subtotalType="None" prefix="" width="170" align="Center" />
+               <column name="3" label="Ilość" FormatMask="" subtotalType="None" prefix="" width="40" align="Center" />
+               <column name="4" label="Cena/szt" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="5" label="Kwota Netto" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="6" label="Stawka VAT" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="7" label="Kwota VAT" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="8" label="Kwota Brutto" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+             </columns>
+             <border color="Black" />
+           </table>
+           <!--<table x="470" y="700" width="280" height="500"  dataSource="tabelaSuma" drawEmptyRows="False" showHeader="True" cellHeight="18"
+      horAlignment="None" verAlignment="None" Layout="EveryPage" Selectable="True">
+             <header headerColor="LightGray" headerFontColor="Black">
+               <font family="Arial" size="8" style="Bold" underline="False" />
+             </header>
+             <dataRows height="600" dataFontColor="Black" backgroundColor="White" alterDataCondition="" alterDataColor="Red" alterDataBackColor="Orange" subtotalsColor="Black">
+               <font family="Arial" size="8" underline="False" />
+               <alternateBackColor value="False" />
+               <alternatingBackColor color="Gainsboro" />
+             </dataRows>
+             <columns>
+               <column name="0" label="Kwota Netto" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="1" label="Stawka VAT" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="2" label="Kwota VAT" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+               <column name="3" label="Kwota Brutto" FormatMask="" subtotalType="None" prefix="" width="70" align="Center" />
+             </columns>
+             <border color="Black" />
+           </table>-->
+           <!--<textField name="razem" x="410" y="698" width="250" height="30" horAlignment="None" verAlignment="None"
+      Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="RAZEM:" />
+             <font family="Arial" size="10" underline="False" style="Bold" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="Transparent" />
+           </textField>-->
+           <textField name="dozaplaty" x="160" y="900" width="590" height="22" horAlignment="None" verAlignment="None"
+          Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Do zapłaty:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="Transparent" />
+           </textField>
+           <textField name="sposob" x="160" y="920" width="590" height="22" horAlignment="None" verAlignment="None"
+          Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Sposób Zapłaty:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="Transparent" />
+           </textField>
+           <textField name="bank" x="160" y="940" width="590" height="22" horAlignment="None" verAlignment="None"
+         Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Sposób Zapłaty:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="Transparent" />
+           </textField>
+           <textField name="termin" x="160" y="960" width="590" height="22" horAlignment="None" verAlignment="None"
+          Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Termin Zapłaty:" />
+             <font family="Arial" size="10" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="Transparent" />
+           </textField>
+           <textField name="num2" x="570" y="1035" width="250" height="20" horAlignment="None" verAlignment="None"
+                   Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="...................................................." />
+             <font family="Arial" size="8" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="numst2r" x="570" y="1050" width="250" height="20" horAlignment="None" verAlignment="None"
+                   Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Osoba upoważniona do wystawienia" />
+             <font family="Arial" size="8" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="numst2r" x="70" y="1035" width="250" height="20" horAlignment="None" verAlignment="None"
+                    Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="............................................." />
+             <font family="Arial" size="8" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+           <textField name="numstr" x="70" y="1050" width="250" height="20" horAlignment="None" verAlignment="None"
+                    Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Osoba upoważniona do odbioru" />
+             <font family="Arial" size="8" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>         
+           <textField name="numstr" x="50" y="1100" width="100" height="20" horAlignment="None" verAlignment="None"
+         Layout="EveryPage" Selectable="True">
+             <text horAlignment="Left" verAlignment="Top" value="Strona $P{pageNumber} z $P{totalPages}" />
+             <font family="Arial" size="8" underline="False" />
+             <textPadding value="2" />
+             <textSpacing value="3" />
+             <overflowTextDisplay value="False" />
+             <textOrientation value="Horizontal" />
+             <foregroundColor color="Black" />
+             <backgroundColor color="White" />
+           </textField>
+         </content>
+
+</section>
+
+</sections>
+</stampa>

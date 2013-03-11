@@ -1,0 +1,402 @@
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Form1.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Login.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Customer.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.newCategory.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.FindWorker.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Selectt.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Produkty.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.FINDKind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Pz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Magazyny.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.fPz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Towar.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Transakcje.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\linvoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\Stampa.dll
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\l2invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\telemarketer.exe.config
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\telemarketer.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\telemarketer.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\telemarketer.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\telemarketer.pdb
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\telemarketer.exe.config
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\telemarketer.exe
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\telemarketer.pdb
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\invoice.xml
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\l2invoice.xml
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\linvoice.xml
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\telemarketer.exe
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\telemarketer.pdb
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\bin\Debug\Stampa.dll
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Customer.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.FindWorker.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Form1.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.fPz.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Login.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Magazyny.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.newCategory.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.FINDKind.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Produkty.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Pz.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Selectt.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Towar.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Transakcje.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\Documents and Settings\Właściciel\Moje dokumenty\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.Activate.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Seller\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\DATA\Seller\Seller\bin\Debug\telemarketer.exe.config
+C:\DATA\Seller\Seller\obj\Debug\telemarketer.exe
+C:\DATA\Seller\Seller\obj\Debug\telemarketer.pdb
+C:\DATA\Seller\Seller\bin\Debug\invoice.xml
+C:\DATA\Seller\Seller\bin\Debug\l2invoice.xml
+C:\DATA\Seller\Seller\bin\Debug\linvoice.xml
+C:\DATA\Seller\Seller\bin\Debug\telemarketer.exe
+C:\DATA\Seller\Seller\bin\Debug\telemarketer.pdb
+C:\DATA\Seller\Seller\bin\Debug\Stampa.dll
+C:\DATA\Seller\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\DATA\Seller\Seller\obj\Debug\Seller.Activate.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Customer.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.FindWorker.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Form1.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.fPz.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Login.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Magazyny.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.newCategory.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.FINDKind.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Produkty.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Pz.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Selectt.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Towar.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Transakcje.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\DATA\Seller\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\trumna.exe.config
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Activate.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Customer.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.FindWorker.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Form1.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.fPz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Login.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Magazyny.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.newCategory.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.FINDKind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Produkty.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Pz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Selectt.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Towar.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Transakcje.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\l2invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\linvoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\trumna.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\trumna.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\Stampa.dll
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\trumna.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\obj\Debug\trumna.pdb
+C:\DATA\Trumna\Seller\bin\Debug\trumna.exe.config
+C:\DATA\Trumna\Seller\obj\Debug\trumna.exe
+C:\DATA\Trumna\Seller\obj\Debug\trumna.pdb
+C:\DATA\Trumna\Seller\bin\Debug\invoice.xml
+C:\DATA\Trumna\Seller\bin\Debug\l2invoice.xml
+C:\DATA\Trumna\Seller\bin\Debug\linvoice.xml
+C:\DATA\Trumna\Seller\bin\Debug\trumna.exe
+C:\DATA\Trumna\Seller\bin\Debug\trumna.pdb
+C:\DATA\Trumna\Seller\bin\Debug\Stampa.dll
+C:\DATA\Trumna\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Activate.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Customer.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.FindWorker.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Form1.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.fPz.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Login.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Magazyny.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.newCategory.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.FINDKind.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Produkty.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Pz.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Selectt.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Towar.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Transakcje.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\DATA\Trumna\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\DATA\Trumna\Seller\bin\Debug\Customers.mdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna\Seller\bin\Debug\Database.sdf
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\trumna.exe.config
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\trumna.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\trumna.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\Database.sdf
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\l2invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\linvoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\trumna.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\trumna.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\Stampa.dll
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Activate.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Customer.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.FindWorker.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Form1.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.fPz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Login.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Magazyny.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.newCategory.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.FINDKind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Produkty.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Pz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Selectt.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Towar.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Transakcje.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Usluga.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Uslugi.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.UslugaDEF.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.Lista.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Ksiega.Ksiega.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Cmentarze.Cmentarz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Ksiega.KsiegaFind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\Um.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Trumna 2\Seller\bin\Debug\Ul.xml
+C:\DATA\Trumna 2\Seller\bin\Debug\trumna.exe.config
+C:\DATA\Trumna 2\Seller\obj\Debug\trumna.exe
+C:\DATA\Trumna 2\Seller\obj\Debug\trumna.pdb
+C:\DATA\Trumna 2\Seller\bin\Debug\Database.sdf
+C:\DATA\Trumna 2\Seller\bin\Debug\invoice.xml
+C:\DATA\Trumna 2\Seller\bin\Debug\l2invoice.xml
+C:\DATA\Trumna 2\Seller\bin\Debug\linvoice.xml
+C:\DATA\Trumna 2\Seller\bin\Debug\Ul.xml
+C:\DATA\Trumna 2\Seller\bin\Debug\Um.xml
+C:\DATA\Trumna 2\Seller\bin\Debug\trumna.exe
+C:\DATA\Trumna 2\Seller\bin\Debug\trumna.pdb
+C:\DATA\Trumna 2\Seller\bin\Debug\Stampa.dll
+C:\DATA\Trumna 2\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Activate.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Cmentarze.Cmentarz.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Ksiega.Ksiega.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Ksiega.KsiegaFind.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Lista.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Usluga.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Uslugi.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Customer.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.FindWorker.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Form1.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.fPz.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Login.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Magazyny.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.newCategory.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.FINDKind.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Produkty.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Pz.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Selectt.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Towar.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Transakcje.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.UslugaDEF.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\DATA\Trumna 2\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\warsztat.exe.config
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Database.sdf
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\l2invoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\linvoice.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Ul.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Um.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\warsztat.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\warsztat.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Stampa.dll
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Activate.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Lista.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Uslugi.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Customer.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.FindInvoice.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.FindWorker.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Form1.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.fPz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Login.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Magazyny.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.newCategory.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.FINDKind.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Produkty.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Properties.Resources.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Pz.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Transakcje.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.UslugaDEF.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Ustawiania.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Uzytkownicy.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.Uzytkownik.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\warsztat.exe
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\warsztat.pdb
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.UslugiCtrl.UslugaPrc.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.CarsFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.KsiazkaSerwisowa.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.ListaUslug.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.BadaniaFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Ksiazka.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Pracownicy.WorkerRep.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Workers.xml
+c:\DATA\Warsztat\Seller\bin\Debug\warsztat.exe.config
+c:\DATA\Warsztat\Seller\obj\Debug\warsztat.exe
+c:\DATA\Warsztat\Seller\obj\Debug\warsztat.pdb
+c:\DATA\Warsztat\Seller\bin\Debug\Database.sdf
+c:\DATA\Warsztat\Seller\bin\Debug\invoice.xml
+c:\DATA\Warsztat\Seller\bin\Debug\Ksiazka.xml
+c:\DATA\Warsztat\Seller\bin\Debug\l2invoice.xml
+c:\DATA\Warsztat\Seller\bin\Debug\linvoice.xml
+c:\DATA\Warsztat\Seller\bin\Debug\Ul.xml
+c:\DATA\Warsztat\Seller\bin\Debug\Um.xml
+c:\DATA\Warsztat\Seller\bin\Debug\Workers.xml
+c:\DATA\Warsztat\Seller\bin\Debug\warsztat.exe
+c:\DATA\Warsztat\Seller\bin\Debug\warsztat.pdb
+c:\DATA\Warsztat\Seller\bin\Debug\Stampa.dll
+c:\DATA\Warsztat\Seller\obj\Debug\ResolveAssemblyReference.cache
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Activate.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Customers.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Faktury.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Magaz.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Pracownicy.WorkerRep.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Programs.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.BadaniaFrm.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.CarsFrm.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.KsiazkaSerwisowa.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Samochody.ListaUslug.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Transactions.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.UslugiCtrl.UslugaPrc.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Lista.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Uslugi.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Welcome.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Workers.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Customer.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.FindInvoice.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.FindWorker.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Form1.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.fPz.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Login.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Magazyny.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.newCategory.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.FINDKind.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Produkty.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Properties.Resources.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Pz.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Transakcje.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.UslugaDEF.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Ustawiania.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Uzytkownicy.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.Uzytkownik.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.csproj.GenerateResource.Cache
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.SaveCopy.SaveCopyFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\PrintRecipt\recipt.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\PrintRecipt\l2recipt.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\PrintRecipt\lrecipt.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\Orders\order.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\Orders\lorder.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\Orders\l2order.xml
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\Logo\logo.png
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.FakturyTrue.resources
+c:\DATA\Warsztat\Seller\bin\Debug\Logo\logo.png
+c:\DATA\Warsztat\Seller\bin\Debug\XML\Orders\l2order.xml
+c:\DATA\Warsztat\Seller\bin\Debug\XML\Orders\lorder.xml
+c:\DATA\Warsztat\Seller\bin\Debug\XML\Orders\order.xml
+c:\DATA\Warsztat\Seller\bin\Debug\XML\PrintRecipt\recipt.xml
+c:\DATA\Warsztat\Seller\bin\Debug\XML\PrintRecipt\l2recipt.xml
+c:\DATA\Warsztat\Seller\bin\Debug\XML\PrintRecipt\lrecipt.xml
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.FakturyTrue.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.SaveCopy.SaveCopyFrm.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\warsztat_pomoc.pdf
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Usterki.UsterkaAddView.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Usterki.Usterki.resources
+C:\Users\Paweł\Documents\Visual Studio 2008\Projects\Warsztat\Seller\bin\Debug\XML\Shym\shym.xml
+c:\DATA\Warsztat\Seller\bin\Debug\warsztat_pomoc.pdf
+c:\DATA\Warsztat\Seller\bin\Debug\XML\Shym\shym.xml
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Usterki.UsterkaAddView.resources
+c:\DATA\Warsztat\Seller\obj\Debug\Seller.CONTROLS.Usterki.Usterki.resources
