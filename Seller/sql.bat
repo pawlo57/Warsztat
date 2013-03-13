@@ -1,0 +1,1 @@
+sqlmetal.exe /dbml:Database.dbml Database.sdf
