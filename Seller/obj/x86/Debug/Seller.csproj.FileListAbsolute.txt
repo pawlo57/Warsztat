@@ -97,3 +97,4 @@ D:\iProjects\Warsztat\Seller\obj\x86\Debug\Seller.Uzytkownik.resources
 D:\iProjects\Warsztat\Seller\obj\x86\Debug\Seller.csproj.GenerateResource.Cache
 D:\iProjects\Warsztat\Seller\obj\x86\Debug\warsztat.exe
 D:\iProjects\Warsztat\Seller\obj\x86\Debug\warsztat.pdb
+d:\iProjects\Warsztat\Seller\obj\x86\Debug\Seller.csprojResolveAssemblyReference.cache

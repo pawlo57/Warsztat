@@ -35,6 +35,8 @@ namespace Seller
             InitializeComponent();
 
             SetUpControls();
+
+            //Connect.Upgrade();
             //RSA.Test();
         }
 

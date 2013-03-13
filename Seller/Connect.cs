@@ -52,6 +52,13 @@ namespace Seller
             return true;
         }
 
+        public static void Upgrade()
+        {
+            System.Data.SqlServerCe.SqlCeEngine engine = new SqlCeEngine("Data Source = 'Database.sdf'");
+
+            engine.Upgrade();
+        }
+
         public static DataTable FillCommand(string text)
         {
 
