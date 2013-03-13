@@ -98,3 +98,5 @@ d:\iProjects\Warsztat\Seller\obj\x86\Debug\Seller.csproj.GenerateResource.Cache
 d:\iProjects\Warsztat\Seller\obj\x86\Debug\warsztat.exe
 d:\iProjects\Warsztat\Seller\obj\x86\Debug\warsztat.pdb
 d:\iProjects\Warsztat\Seller\obj\x86\Debug\Seller.csprojResolveAssemblyReference.cache
+d:\iProjects\Warsztat\Seller\bin\x86\Debug\EntityFramework.dll
+d:\iProjects\Warsztat\Seller\bin\x86\Debug\EntityFramework.xml

@@ -36,9 +36,9 @@ namespace Seller
 
             SetUpControls();
 
-          
+            Seller.Services.Data_providers.DatabaseDataProvider.checkLinq();
 
-      
+        
 
             //Connect.Upgrade();
             //RSA.Test();

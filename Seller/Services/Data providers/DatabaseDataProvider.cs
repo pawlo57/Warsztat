@@ -6,7 +6,7 @@ using Seller.Database.Database_model;
 
 namespace Seller.Services.Data_providers
 {
-    public class DatabaseDataProvider
+    public static class DatabaseDataProvider
     {
         private static DatabaseEntities dbContext = new DatabaseEntities();
 
@@ -15,7 +15,7 @@ namespace Seller.Services.Data_providers
             var query = from car in dbContext.Cars
                         select car;
 
-            int count = query.ToList();
+            IEnumerable<Cars> count = query.ToList();
         }
         
     }
