@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Pawel.Workshop.Database.Database_model;
 
-namespace Seller.Services.Data_providers
+namespace Pawel.Workshop.Data_providers
 {
     public static class DatabaseDataProvider
     {
@@ -17,6 +17,20 @@ namespace Seller.Services.Data_providers
 
             IEnumerable<Cars> count = query.ToList();
         }
-        
+
+        #region Goods
+
+        public static IEnumerable<Programs> getGoodsByGood(Programs good)
+        {
+            var query = from programs in dbContext.Programs
+                        where (good.CATID > 0 && (programs.CATID == good.CATID))
+                        //where good.NUMERKAT == programs.NUMERKAT
+                        select programs;
+
+            return query;
+        }
+
+        #endregion
+
     }
 }

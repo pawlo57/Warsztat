@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Seller;
+using Pawel.Workshop.Database.Database_model;
 
-namespace Seller.CONTROLS
+namespace Pawel.Workshop.Custom_controls.Goods
 {
-    public partial class Programs : UserControl
+    public partial class Goods : UserControl
     {
-        //private List<SellServiceData.Category> categories = new List<Seller.SellServiceData.Category>();
-
-
-        public Programs()
+        public Goods()
         {
             InitializeComponent();
+
+            IEnumerable<Programs> goof = Pawel.Workshop.Data_providers.DatabaseDataProvider.getGoodsByGood(new Database.Database_model.Programs { CATID = 1 });
+
+            int cnt = goof.Count();
         }
 
         private void LoadCategories()
@@ -34,8 +36,8 @@ namespace Seller.CONTROLS
         {
 
             List<Produkt> product = CustomerDatabase.GetPrograms(-1, CATID, CID, name, numerKat, model, numerSer);
-            
-            if (product == null) { Message.InfoMessage("Nie znaleziono"); return; }
+
+            if (product == null) { Seller.Message.InfoMessage("Nie znaleziono"); return; }
 
             dgwProdukty.DataSource = product;
 
@@ -68,11 +70,11 @@ namespace Seller.CONTROLS
             if (newCat.CANCEL) return;
 
             if (CustomerDatabase.GetCategories(newCat.CATEGORY) != null)
-            { Message.ErrorMessage("Podana kategoria już istnieje"); return; }
+            { Seller.Message.ErrorMessage("Podana kategoria już istnieje"); return; }
 
             CustomerDatabase.NewCategory(newCat.CATEGORY);
-            
-            Message.InfoMessage("Nowa kategoria została dodana");
+
+            Seller.Message.InfoMessage("Nowa kategoria została dodana");
 
             Settings.LoadCategories();
 
@@ -84,7 +86,7 @@ namespace Seller.CONTROLS
             Category selected = null;
 
             try { selected = (Category)dgwProdukty.CurrentRow.DataBoundItem; }
-            catch { Message.Position(); return; }
+            catch { Seller.Message.Position(); return; }
 
             newCategory editCat = new newCategory("Edycja kategorii", "Zmień");
 
@@ -95,11 +97,11 @@ namespace Seller.CONTROLS
             if (editCat.CANCEL) return;
 
             if (CustomerDatabase.GetCategories(editCat.CATEGORY) != null)
-            { Message.ErrorMessage("Podana kategoria już istnieje"); return; }
+            { Seller.Message.ErrorMessage("Podana kategoria już istnieje"); return; }
 
             CustomerDatabase.UpdateCategory(selected.ID, editCat.CATEGORY);
             
-            Message.InfoMessage("Kategoria została zapisana");
+            Seller.Message.InfoMessage("Kategoria została zapisana");
 
             Settings.LoadCategories();
 
@@ -118,13 +120,13 @@ namespace Seller.CONTROLS
             if (CustomerDatabase.CheckProgram(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL,
                 newProgram.MODEL, newProgram.PRICE, newProgram.VATPRICE, newProgram.JEDNOSTKA,newProgram.PROWIZJA,
                 newProgram.PRICE2,newProgram.VATPRICE2))
-            { Message.ErrorMessage("Podany produkt już istnieje"); return; }
+            { Seller.Message.ErrorMessage("Podany produkt już istnieje"); return; }
 
             CustomerDatabase.NewProgram(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL,
                      newProgram.NUMER_SERYJNY, newProgram.OPIS, newProgram.PRICE, newProgram.VATPRICE, newProgram.JEDNOSTKA,
                      newProgram.PROWIZJA, newProgram.PRICE2, newProgram.VATPRICE2);
-           
-                Message.InfoMessage("Produkt został dodany");
+
+            Seller.Message.InfoMessage("Produkt został dodany");
 
             LoadProducts(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL, 
                 newProgram.NUMER_SERYJNY);
@@ -147,13 +149,13 @@ namespace Seller.CONTROLS
 
             if (CustomerDatabase.CheckProgram(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL,
                 newProgram.MODEL, newProgram.PRICE, newProgram.VATPRICE, newProgram.JEDNOSTKA, newProgram.PROWIZJA, newProgram.PRICE2,newProgram.VATPRICE2))
-            { Message.ErrorMessage("Podany produkt już istnieje"); return; }
+            { Seller.Message.ErrorMessage("Podany produkt już istnieje"); return; }
 
             CustomerDatabase.UpdateProgram(product.ID, newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU,
                  newProgram.NUMER_KATALOGOWY, newProgram.MODEL, newProgram.NUMER_SERYJNY, newProgram.OPIS, newProgram.PRICE,
                  newProgram.VATPRICE, newProgram.JEDNOSTKA, newProgram.PROWIZJA, newProgram.PRICE2, newProgram.VATPRICE2);
-           
-                Message.InfoMessage("Produkt został zmieniony");
+
+            Seller.Message.InfoMessage("Produkt został zmieniony");
 
             LoadProducts(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL,
                 newProgram.NUMER_SERYJNY);

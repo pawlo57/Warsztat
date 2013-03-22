@@ -1,6 +1,6 @@
-﻿namespace Seller.CONTROLS
+﻿namespace Pawel.Workshop.Custom_controls.Goods
 {
-    partial class Programs
+    partial class Goods
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Programs));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Goods));
             this.cmdNowy = new System.Windows.Forms.Button();
             this.cmdEdytuj = new System.Windows.Forms.Button();
             this.cmdSzukaj = new System.Windows.Forms.Button();
@@ -39,8 +39,8 @@
             this.cmdEdytujKat = new System.Windows.Forms.Button();
             this.cmdNowaKat = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cmdPodglad = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgwProdukty)).BeginInit();
             this.Kategorie.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -92,16 +92,16 @@
             // 
             this.dgwProdukty.AllowUserToAddRows = false;
             this.dgwProdukty.AllowUserToDeleteRows = false;
-            this.dgwProdukty.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgwProdukty.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgwProdukty.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dgwProdukty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgwProdukty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwProdukty.Location = new System.Drawing.Point(214, 14);
+            this.dgwProdukty.Location = new System.Drawing.Point(214, 62);
             this.dgwProdukty.Name = "dgwProdukty";
             this.dgwProdukty.ReadOnly = true;
-            this.dgwProdukty.Size = new System.Drawing.Size(778, 628);
+            this.dgwProdukty.Size = new System.Drawing.Size(778, 580);
             this.dgwProdukty.TabIndex = 3;
             // 
             // Kategorie
@@ -110,7 +110,7 @@
             this.Kategorie.Controls.Add(this.cmdEdytujKat);
             this.Kategorie.Controls.Add(this.cmdNowaKat);
             this.Kategorie.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Kategorie.Location = new System.Drawing.Point(13, 197);
+            this.Kategorie.Location = new System.Drawing.Point(34, 341);
             this.Kategorie.Name = "Kategorie";
             this.Kategorie.Size = new System.Drawing.Size(174, 150);
             this.Kategorie.TabIndex = 4;
@@ -165,16 +165,12 @@
             this.groupBox1.Controls.Add(this.cmdNowy);
             this.groupBox1.Controls.Add(this.cmdEdytuj);
             this.groupBox1.Controls.Add(this.cmdSzukaj);
-            this.groupBox1.Location = new System.Drawing.Point(13, 14);
+            this.groupBox1.Location = new System.Drawing.Point(22, 125);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(174, 177);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Baza części";
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // cmdPodglad
             // 
@@ -190,7 +186,11 @@
             this.cmdPodglad.UseVisualStyleBackColor = true;
             this.cmdPodglad.Click += new System.EventHandler(this.cmdPodglad_Click);
             // 
-            // Programs
+            // toolTip1
+            // 
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
+            // Goods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -198,7 +198,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Kategorie);
             this.Controls.Add(this.dgwProdukty);
-            this.Name = "Programs";
+            this.Name = "Goods";
             this.Size = new System.Drawing.Size(1008, 658);
             this.Load += new System.EventHandler(this.Programs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwProdukty)).EndInit();

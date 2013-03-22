@@ -10,12 +10,13 @@ using Seller.CONTROLS;
 using System.Diagnostics;
 using System.IO;
 using Seller.CONTROLS.SaveCopy;
+using Pawel.Workshop.Custom_controls.Goods;
 
 namespace Seller
 {
     public partial class MainForm : Form
     {
-        private Programs programs = new Programs();
+        private Goods programs = new Goods();
         private Workers workers = new Workers();
         private Customers Customers = new Customers();
         private Magaz magazyn = new Magaz();
@@ -36,7 +37,7 @@ namespace Seller
 
             SetUpControls();
 
-            Seller.Services.Data_providers.DatabaseDataProvider.checkLinq();
+            //Seller.Services.Data_providers.DatabaseDataProvider.checkLinq();
 
         
 
@@ -155,7 +156,7 @@ namespace Seller
         {
             informacjeOProgramieToolStripMenuItem_Click(this, e);
 
-            if (!Aktuwuj()) { Close(); return; }
+            //if (!Aktuwuj()) { Close(); return; }
 
 
             USER.LoadUsers();

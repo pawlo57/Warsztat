@@ -129,64 +129,64 @@
     <Compile Include="Class\WorkIdx.cs" />
     <Compile Include="Class\WorkIdxData.cs" />
     <Compile Include="Connect.cs" />
-    <Compile Include="CONTROLS\FakturyTrue.cs">
+    <Compile Include="Custom controls\FakturyTrue.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\FakturyTrue.Designer.cs">
+    <Compile Include="Custom controls\FakturyTrue.Designer.cs">
       <DependentUpon>FakturyTrue.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\WorkerRep.cs">
+    <Compile Include="Custom controls\Pracownicy\WorkerRep.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\WorkerRep.Designer.cs">
+    <Compile Include="Custom controls\Pracownicy\WorkerRep.Designer.cs">
       <DependentUpon>WorkerRep.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\BadaniaFrm.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\BadaniaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\BadaniaFrm.Designer.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\BadaniaFrm.Designer.cs">
       <DependentUpon>BadaniaFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\CarsFrm.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\CarsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\CarsFrm.Designer.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\CarsFrm.Designer.cs">
       <DependentUpon>CarsFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\KsiazkaSerwisowa.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\KsiazkaSerwisowa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\KsiazkaSerwisowa.Designer.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\KsiazkaSerwisowa.Designer.cs">
       <DependentUpon>KsiazkaSerwisowa.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\ListaUslug.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\ListaUslug.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Pracownicy\Samochody\ListaUslug.Designer.cs">
+    <Compile Include="Custom controls\Pracownicy\Samochody\ListaUslug.Designer.cs">
       <DependentUpon>ListaUslug.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\SaveCopy\SaveCopyFrm.cs">
+    <Compile Include="Custom controls\SaveCopy\SaveCopyFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\SaveCopy\SaveCopyFrm.Designer.cs">
+    <Compile Include="Custom controls\SaveCopy\SaveCopyFrm.Designer.cs">
       <DependentUpon>SaveCopyFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\UslugiCtrl\UslugaPrc.cs">
+    <Compile Include="Custom controls\UslugiCtrl\UslugaPrc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\UslugiCtrl\UslugaPrc.Designer.cs">
+    <Compile Include="Custom controls\UslugiCtrl\UslugaPrc.Designer.cs">
       <DependentUpon>UslugaPrc.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Usterki\UsterkaAddView.cs">
+    <Compile Include="Custom controls\Usterki\UsterkaAddView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Usterki\UsterkaAddView.Designer.cs">
+    <Compile Include="Custom controls\Usterki\UsterkaAddView.Designer.cs">
       <DependentUpon>UsterkaAddView.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Usterki\Usterki.cs">
+    <Compile Include="Custom controls\Usterki\Usterki.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Usterki\Usterki.Designer.cs">
+    <Compile Include="Custom controls\Usterki\Usterki.Designer.cs">
       <DependentUpon>Usterki.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Cars.cs">
@@ -252,10 +252,10 @@
     <Compile Include="Lista.Designer.cs">
       <DependentUpon>Lista.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Uslugi.cs">
+    <Compile Include="Custom controls\Uslugi.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Uslugi.Designer.cs">
+    <Compile Include="Custom controls\Uslugi.Designer.cs">
       <DependentUpon>Uslugi.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerDatabase.cs" />
@@ -268,46 +268,46 @@
     <Compile Include="Data providers\DatabaseDataProvider.cs" />
     <Compile Include="Statystyka.cs" />
     <Compile Include="Users.cs" />
-    <Compile Include="CONTROLS\Customers.cs">
+    <Compile Include="Custom controls\Customers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Customers.Designer.cs">
+    <Compile Include="Custom controls\Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Faktury.cs">
+    <Compile Include="Custom controls\Faktury.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Faktury.Designer.cs">
+    <Compile Include="Custom controls\Faktury.Designer.cs">
       <DependentUpon>Faktury.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Magaz.cs">
+    <Compile Include="Custom controls\Magaz.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Magaz.Designer.cs">
+    <Compile Include="Custom controls\Magaz.Designer.cs">
       <DependentUpon>Magaz.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Programs.cs">
+    <Compile Include="Custom controls\Goods\Goods.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Programs.Designer.cs">
-      <DependentUpon>Programs.cs</DependentUpon>
+    <Compile Include="Custom controls\Goods\Goods.Designer.cs">
+      <DependentUpon>Goods.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Transactions.cs">
+    <Compile Include="Custom controls\Transactions.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Transactions.Designer.cs">
+    <Compile Include="Custom controls\Transactions.Designer.cs">
       <DependentUpon>Transactions.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Welcome.cs">
+    <Compile Include="Custom controls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Welcome.Designer.cs">
+    <Compile Include="Custom controls\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="CONTROLS\Workers.cs">
+    <Compile Include="Custom controls\Workers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CONTROLS\Workers.Designer.cs">
+    <Compile Include="Custom controls\Workers.Designer.cs">
       <DependentUpon>Workers.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs">
@@ -378,61 +378,61 @@
     <EmbeddedResource Include="Activate.resx">
       <DependentUpon>Activate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Customers.resx">
+    <EmbeddedResource Include="Custom controls\Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Faktury.resx">
+    <EmbeddedResource Include="Custom controls\Faktury.resx">
       <DependentUpon>Faktury.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\FakturyTrue.resx">
+    <EmbeddedResource Include="Custom controls\FakturyTrue.resx">
       <DependentUpon>FakturyTrue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Magaz.resx">
+    <EmbeddedResource Include="Custom controls\Magaz.resx">
       <DependentUpon>Magaz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Pracownicy\WorkerRep.resx">
+    <EmbeddedResource Include="Custom controls\Pracownicy\WorkerRep.resx">
       <DependentUpon>WorkerRep.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Programs.resx">
-      <DependentUpon>Programs.cs</DependentUpon>
+    <EmbeddedResource Include="Custom controls\Goods\Goods.resx">
+      <DependentUpon>Goods.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Pracownicy\Samochody\BadaniaFrm.resx">
+    <EmbeddedResource Include="Custom controls\Pracownicy\Samochody\BadaniaFrm.resx">
       <DependentUpon>BadaniaFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Pracownicy\Samochody\CarsFrm.resx">
+    <EmbeddedResource Include="Custom controls\Pracownicy\Samochody\CarsFrm.resx">
       <DependentUpon>CarsFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Pracownicy\Samochody\KsiazkaSerwisowa.resx">
+    <EmbeddedResource Include="Custom controls\Pracownicy\Samochody\KsiazkaSerwisowa.resx">
       <DependentUpon>KsiazkaSerwisowa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Pracownicy\Samochody\ListaUslug.resx">
+    <EmbeddedResource Include="Custom controls\Pracownicy\Samochody\ListaUslug.resx">
       <DependentUpon>ListaUslug.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\SaveCopy\SaveCopyFrm.resx">
+    <EmbeddedResource Include="Custom controls\SaveCopy\SaveCopyFrm.resx">
       <DependentUpon>SaveCopyFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Transactions.resx">
+    <EmbeddedResource Include="Custom controls\Transactions.resx">
       <DependentUpon>Transactions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\UslugiCtrl\UslugaPrc.resx">
+    <EmbeddedResource Include="Custom controls\UslugiCtrl\UslugaPrc.resx">
       <DependentUpon>UslugaPrc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Usterki\UsterkaAddView.resx">
+    <EmbeddedResource Include="Custom controls\Usterki\UsterkaAddView.resx">
       <DependentUpon>UsterkaAddView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Usterki\Usterki.resx">
+    <EmbeddedResource Include="Custom controls\Usterki\Usterki.resx">
       <DependentUpon>Usterki.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lista.resx">
       <DependentUpon>Lista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Uslugi.resx">
+    <EmbeddedResource Include="Custom controls\Uslugi.resx">
       <DependentUpon>Uslugi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Welcome.resx">
+    <EmbeddedResource Include="Custom controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CONTROLS\Workers.resx">
+    <EmbeddedResource Include="Custom controls\Workers.resx">
       <DependentUpon>Workers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
