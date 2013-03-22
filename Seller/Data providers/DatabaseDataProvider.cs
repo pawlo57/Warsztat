@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Seller.Database.Database_model;
+using Pawel.Workshop.Database.Database_model;
 
 namespace Seller.Services.Data_providers
 {

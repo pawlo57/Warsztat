@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Seller.Database.Database_model
+namespace Pawel.Workshop.Database.Database_model
 {
     using System;
     using System.Collections.Generic;
