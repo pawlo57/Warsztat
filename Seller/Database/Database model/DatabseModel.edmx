@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DatabaseModelStoreContainer">
+          <EntitySet Name="Cars" EntityType="DatabaseModel.Store.Cars" store:Type="Tables" />
+          <EntitySet Name="Categories" EntityType="DatabaseModel.Store.Categories" store:Type="Tables" />
+          <EntitySet Name="Customers" EntityType="DatabaseModel.Store.Customers" store:Type="Tables" />
+          <EntitySet Name="ItemsPzWz" EntityType="DatabaseModel.Store.ItemsPzWz" store:Type="Tables" />
+          <EntitySet Name="Magazyn" EntityType="DatabaseModel.Store.Magazyn" store:Type="Tables" />
+          <EntitySet Name="MagType" EntityType="DatabaseModel.Store.MagType" store:Type="Tables" />
+          <EntitySet Name="Programs" EntityType="DatabaseModel.Store.Programs" store:Type="Tables" />
+          <EntitySet Name="PZWZ" EntityType="DatabaseModel.Store.PZWZ" store:Type="Tables" />
+          <EntitySet Name="Transakcje" EntityType="DatabaseModel.Store.Transakcje" store:Type="Tables" />
+          <EntitySet Name="TransItems" EntityType="DatabaseModel.Store.TransItems" store:Type="Tables" />
+          <EntitySet Name="Urs" EntityType="DatabaseModel.Store.Urs" store:Type="Tables" />
+          <EntitySet Name="Uslugi" EntityType="DatabaseModel.Store.Uslugi" store:Type="Tables" />
+          <EntitySet Name="Usterki" EntityType="DatabaseModel.Store.Usterki" store:Type="Tables" />
+          <EntitySet Name="Workers" EntityType="DatabaseModel.Store.Workers" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="Cars">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CID" Type="int" />
+          <Property Name="Marka" Type="nvarchar" MaxLength="100" />
+          <Property Name="Model" Type="nvarchar" MaxLength="100" />
+          <Property Name="Poj" Type="nvarchar" MaxLength="100" />
+          <Property Name="Typ" Type="nvarchar" MaxLength="100" />
+          <Property Name="Rok" Type="nchar" MaxLength="8" />
+          <Property Name="Rej" Type="nvarchar" MaxLength="100" />
+          <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+          <Property Name="Opis" Type="nvarchar" MaxLength="200" />
+          <Property Name="Silnik" Type="nvarchar" MaxLength="100" />
+          <Property Name="Badanie" Type="datetime" />
+          <Property Name="Licznik" Type="int" />
+          <Property Name="Paliwo" Type="int" />
+          <Property Name="DataP" Type="datetime" />
+          <Property Name="DataW" Type="datetime" />
+          <Property Name="Dowod" Type="int" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CATEGORY" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIRMA" Type="nvarchar" MaxLength="100" />
+          <Property Name="IMIE" Type="nvarchar" MaxLength="100" />
+          <Property Name="NAZWISKO" Type="nvarchar" MaxLength="100" />
+          <Property Name="ADRES" Type="nvarchar" MaxLength="100" />
+          <Property Name="NIP" Type="nvarchar" MaxLength="100" />
+          <Property Name="PESEL" Type="nvarchar" MaxLength="100" />
+          <Property Name="BANK" Type="nvarchar" MaxLength="100" />
+          <Property Name="TEL" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ItemsPzWz">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PZID" Type="int" />
+          <Property Name="PID" Type="int" />
+          <Property Name="CNT" Type="float" />
+          <Property Name="VATPRICE" Type="money" />
+        </EntityType>
+        <EntityType Name="Magazyn">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PID" Type="int" />
+          <Property Name="MID" Type="int" />
+          <Property Name="CNT" Type="float" />
+        </EntityType>
+        <EntityType Name="MagType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MAGAZYN" Type="nvarchar" MaxLength="100" />
+          <Property Name="ADRES" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Programs">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CATID" Type="int" />
+          <Property Name="CID" Type="int" />
+          <Property Name="NUMERKAT" Type="nvarchar" MaxLength="100" />
+          <Property Name="MODEL" Type="nvarchar" MaxLength="100" />
+          <Property Name="NUMERSER" Type="nvarchar" MaxLength="100" />
+          <Property Name="OPIS" Type="nvarchar" MaxLength="500" />
+          <Property Name="NAZWA" Type="nvarchar" MaxLength="100" />
+          <Property Name="PRICE" Type="money" />
+          <Property Name="VATPRICE" Type="money" />
+          <Property Name="JEDNOSTKA" Type="nvarchar" MaxLength="100" />
+          <Property Name="PROWIZJA" Type="money" />
+          <Property Name="PRICE2" Type="money" />
+          <Property Name="VATPRICE2" Type="money" />
+          <Property Name="Vat" Type="int" />
+        </EntityType>
+        <EntityType Name="PZWZ">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UID" Type="int" />
+          <Property Name="CID" Type="int" />
+          <Property Name="MID" Type="int" />
+          <Property Name="TYPE" Type="int" />
+          <Property Name="DATA" Type="datetime" />
+          <Property Name="SUMA" Type="money" />
+        </EntityType>
+        <EntityType Name="Transakcje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NUMER" Type="nvarchar" MaxLength="100" />
+          <Property Name="PRICE" Type="money" />
+          <Property Name="VATPRICE" Type="money" />
+          <Property Name="CID" Type="int" />
+          <Property Name="UID" Type="int" />
+          <Property Name="PLATNOSC" Type="int" />
+          <Property Name="DATA" Type="datetime" />
+          <Property Name="STATUS" Type="int" />
+          <Property Name="UWAGI" Type="nvarchar" MaxLength="500" />
+          <Property Name="CARID" Type="int" />
+          <Property Name="TERMIN" Type="datetime" />
+          <Property Name="TERMINU" Type="datetime" />
+          <Property Name="Licznik" Type="int" />
+          <Property Name="Paliwo" Type="int" />
+          <Property Name="Dowod" Type="int" />
+        </EntityType>
+        <EntityType Name="TransItems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IID" Type="int" />
+          <Property Name="MAGID" Type="int" />
+          <Property Name="PID" Type="int" />
+          <Property Name="CNT" Type="float" />
+          <Property Name="PRICE" Type="money" />
+          <Property Name="VATPRICE" Type="money" />
+          <Property Name="WID" Type="int" />
+        </EntityType>
+        <EntityType Name="Urs">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="USR" Type="nvarchar" MaxLength="100" />
+          <Property Name="PASS" Type="nvarchar" MaxLength="100" />
+          <Property Name="IMIE" Type="nvarchar" MaxLength="100" />
+          <Property Name="NAZWISKO" Type="nvarchar" MaxLength="100" />
+          <Property Name="PRIV" Type="int" />
+        </EntityType>
+        <EntityType Name="Uslugi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Opis" Type="nvarchar" MaxLength="1000" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Netto" Type="money" />
+          <Property Name="VAT" Type="int" />
+          <Property Name="Brutto" Type="money" />
+          <Property Name="Numer" Type="nvarchar" MaxLength="100" />
+          <Property Name="Nazwa" Type="nvarchar" MaxLength="100" />
+          <Property Name="TimeIndex" Type="int" />
+        </EntityType>
+        <EntityType Name="Usterki">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CARID" Type="int" />
+          <Property Name="USTERKA" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Workers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IMIE" Type="nvarchar" MaxLength="100" />
+          <Property Name="NAZWISKO" Type="nvarchar" MaxLength="100" />
+          <Property Name="ADRESS" Type="nvarchar" MaxLength="100" />
+          <Property Name="PESEL" Type="nvarchar" MaxLength="100" />
+          <Property Name="NIP" Type="nvarchar" MaxLength="100" />
+          <Property Name="BANK" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cars" EntityType="DatabaseModel.Cars" />
+          <EntitySet Name="Categories" EntityType="DatabaseModel.Categories" />
+          <EntitySet Name="Customers" EntityType="DatabaseModel.Customers" />
+          <EntitySet Name="ItemsPzWz" EntityType="DatabaseModel.ItemsPzWz" />
+          <EntitySet Name="Magazyn" EntityType="DatabaseModel.Magazyn" />
+          <EntitySet Name="MagType" EntityType="DatabaseModel.MagType" />
+          <EntitySet Name="Programs" EntityType="DatabaseModel.Programs" />
+          <EntitySet Name="PZWZ" EntityType="DatabaseModel.PZWZ" />
+          <EntitySet Name="Transakcje" EntityType="DatabaseModel.Transakcje" />
+          <EntitySet Name="TransItems" EntityType="DatabaseModel.TransItems" />
+          <EntitySet Name="Urs" EntityType="DatabaseModel.Urs" />
+          <EntitySet Name="Uslugi" EntityType="DatabaseModel.Uslugi" />
+          <EntitySet Name="Usterki" EntityType="DatabaseModel.Usterki" />
+          <EntitySet Name="Workers" EntityType="DatabaseModel.Workers" />
+        </EntityContainer>
+        <EntityType Name="Cars">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CID" Type="Int32" />
+          <Property Name="Marka" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Model" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Poj" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Typ" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Rok" Type="String" MaxLength="8" Unicode="true" FixedLength="true" />
+          <Property Name="Rej" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Vin" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Opis" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Silnik" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Badanie" Type="DateTime" Precision="3" />
+          <Property Name="Licznik" Type="Int32" />
+          <Property Name="Paliwo" Type="Int32" />
+          <Property Name="DataP" Type="DateTime" Precision="3" />
+          <Property Name="DataW" Type="DateTime" Precision="3" />
+          <Property Name="Dowod" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CATEGORY" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FIRMA" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IMIE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NAZWISKO" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ADRES" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NIP" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PESEL" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="BANK" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="TEL" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ItemsPzWz">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PZID" Type="Int32" />
+          <Property Name="PID" Type="Int32" />
+          <Property Name="CNT" Type="Double" />
+          <Property Name="VATPRICE" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="Magazyn">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PID" Type="Int32" />
+          <Property Name="MID" Type="Int32" />
+          <Property Name="CNT" Type="Double" />
+        </EntityType>
+        <EntityType Name="MagType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MAGAZYN" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ADRES" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Programs">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CATID" Type="Int32" />
+          <Property Name="CID" Type="Int32" />
+          <Property Name="NUMERKAT" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="MODEL" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NUMERSER" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OPIS" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="NAZWA" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PRICE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="VATPRICE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="JEDNOSTKA" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PROWIZJA" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PRICE2" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="VATPRICE2" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Vat" Type="Int32" />
+        </EntityType>
+        <EntityType Name="PZWZ">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UID" Type="Int32" />
+          <Property Name="CID" Type="Int32" />
+          <Property Name="MID" Type="Int32" />
+          <Property Name="TYPE" Type="Int32" />
+          <Property Name="DATA" Type="DateTime" Precision="3" />
+          <Property Name="SUMA" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="Transakcje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NUMER" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PRICE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="VATPRICE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="CID" Type="Int32" />
+          <Property Name="UID" Type="Int32" />
+          <Property Name="PLATNOSC" Type="Int32" />
+          <Property Name="DATA" Type="DateTime" Precision="3" />
+          <Property Name="STATUS" Type="Int32" />
+          <Property Name="UWAGI" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CARID" Type="Int32" />
+          <Property Name="TERMIN" Type="DateTime" Precision="3" />
+          <Property Name="TERMINU" Type="DateTime" Precision="3" />
+          <Property Name="Licznik" Type="Int32" />
+          <Property Name="Paliwo" Type="Int32" />
+          <Property Name="Dowod" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TransItems">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IID" Type="Int32" />
+          <Property Name="MAGID" Type="Int32" />
+          <Property Name="PID" Type="Int32" />
+          <Property Name="CNT" Type="Double" />
+          <Property Name="PRICE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="VATPRICE" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="WID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Urs">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USR" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PASS" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="IMIE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NAZWISKO" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PRIV" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Uslugi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Opis" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Netto" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="VAT" Type="Int32" />
+          <Property Name="Brutto" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Numer" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Nazwa" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="TimeIndex" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Usterki">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CARID" Type="Int32" />
+          <Property Name="USTERKA" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Workers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IMIE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NAZWISKO" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ADRESS" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="PESEL" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NIP" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="BANK" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DatabaseEntities">
+          <EntitySetMapping Name="Cars">
+            <EntityTypeMapping TypeName="DatabaseModel.Cars">
+              <MappingFragment StoreEntitySet="Cars">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="Marka" ColumnName="Marka" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Poj" ColumnName="Poj" />
+                <ScalarProperty Name="Typ" ColumnName="Typ" />
+                <ScalarProperty Name="Rok" ColumnName="Rok" />
+                <ScalarProperty Name="Rej" ColumnName="Rej" />
+                <ScalarProperty Name="Vin" ColumnName="Vin" />
+                <ScalarProperty Name="Opis" ColumnName="Opis" />
+                <ScalarProperty Name="Silnik" ColumnName="Silnik" />
+                <ScalarProperty Name="Badanie" ColumnName="Badanie" />
+                <ScalarProperty Name="Licznik" ColumnName="Licznik" />
+                <ScalarProperty Name="Paliwo" ColumnName="Paliwo" />
+                <ScalarProperty Name="DataP" ColumnName="DataP" />
+                <ScalarProperty Name="DataW" ColumnName="DataW" />
+                <ScalarProperty Name="Dowod" ColumnName="Dowod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="DatabaseModel.Categories">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="DatabaseModel.Customers">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIRMA" ColumnName="FIRMA" />
+                <ScalarProperty Name="IMIE" ColumnName="IMIE" />
+                <ScalarProperty Name="NAZWISKO" ColumnName="NAZWISKO" />
+                <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+                <ScalarProperty Name="NIP" ColumnName="NIP" />
+                <ScalarProperty Name="PESEL" ColumnName="PESEL" />
+                <ScalarProperty Name="BANK" ColumnName="BANK" />
+                <ScalarProperty Name="TEL" ColumnName="TEL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ItemsPzWz">
+            <EntityTypeMapping TypeName="DatabaseModel.ItemsPzWz">
+              <MappingFragment StoreEntitySet="ItemsPzWz">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PZID" ColumnName="PZID" />
+                <ScalarProperty Name="PID" ColumnName="PID" />
+                <ScalarProperty Name="CNT" ColumnName="CNT" />
+                <ScalarProperty Name="VATPRICE" ColumnName="VATPRICE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Magazyn">
+            <EntityTypeMapping TypeName="DatabaseModel.Magazyn">
+              <MappingFragment StoreEntitySet="Magazyn">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PID" ColumnName="PID" />
+                <ScalarProperty Name="MID" ColumnName="MID" />
+                <ScalarProperty Name="CNT" ColumnName="CNT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MagType">
+            <EntityTypeMapping TypeName="DatabaseModel.MagType">
+              <MappingFragment StoreEntitySet="MagType">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MAGAZYN" ColumnName="MAGAZYN" />
+                <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Programs">
+            <EntityTypeMapping TypeName="DatabaseModel.Programs">
+              <MappingFragment StoreEntitySet="Programs">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CATID" ColumnName="CATID" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="NUMERKAT" ColumnName="NUMERKAT" />
+                <ScalarProperty Name="MODEL" ColumnName="MODEL" />
+                <ScalarProperty Name="NUMERSER" ColumnName="NUMERSER" />
+                <ScalarProperty Name="OPIS" ColumnName="OPIS" />
+                <ScalarProperty Name="NAZWA" ColumnName="NAZWA" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+                <ScalarProperty Name="VATPRICE" ColumnName="VATPRICE" />
+                <ScalarProperty Name="JEDNOSTKA" ColumnName="JEDNOSTKA" />
+                <ScalarProperty Name="PROWIZJA" ColumnName="PROWIZJA" />
+                <ScalarProperty Name="PRICE2" ColumnName="PRICE2" />
+                <ScalarProperty Name="VATPRICE2" ColumnName="VATPRICE2" />
+                <ScalarProperty Name="Vat" ColumnName="Vat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PZWZ">
+            <EntityTypeMapping TypeName="DatabaseModel.PZWZ">
+              <MappingFragment StoreEntitySet="PZWZ">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UID" ColumnName="UID" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="MID" ColumnName="MID" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="DATA" ColumnName="DATA" />
+                <ScalarProperty Name="SUMA" ColumnName="SUMA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transakcje">
+            <EntityTypeMapping TypeName="DatabaseModel.Transakcje">
+              <MappingFragment StoreEntitySet="Transakcje">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NUMER" ColumnName="NUMER" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+                <ScalarProperty Name="VATPRICE" ColumnName="VATPRICE" />
+                <ScalarProperty Name="CID" ColumnName="CID" />
+                <ScalarProperty Name="UID" ColumnName="UID" />
+                <ScalarProperty Name="PLATNOSC" ColumnName="PLATNOSC" />
+                <ScalarProperty Name="DATA" ColumnName="DATA" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="UWAGI" ColumnName="UWAGI" />
+                <ScalarProperty Name="CARID" ColumnName="CARID" />
+                <ScalarProperty Name="TERMIN" ColumnName="TERMIN" />
+                <ScalarProperty Name="TERMINU" ColumnName="TERMINU" />
+                <ScalarProperty Name="Licznik" ColumnName="Licznik" />
+                <ScalarProperty Name="Paliwo" ColumnName="Paliwo" />
+                <ScalarProperty Name="Dowod" ColumnName="Dowod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TransItems">
+            <EntityTypeMapping TypeName="DatabaseModel.TransItems">
+              <MappingFragment StoreEntitySet="TransItems">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IID" ColumnName="IID" />
+                <ScalarProperty Name="MAGID" ColumnName="MAGID" />
+                <ScalarProperty Name="PID" ColumnName="PID" />
+                <ScalarProperty Name="CNT" ColumnName="CNT" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+                <ScalarProperty Name="VATPRICE" ColumnName="VATPRICE" />
+                <ScalarProperty Name="WID" ColumnName="WID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Urs">
+            <EntityTypeMapping TypeName="DatabaseModel.Urs">
+              <MappingFragment StoreEntitySet="Urs">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USR" ColumnName="USR" />
+                <ScalarProperty Name="PASS" ColumnName="PASS" />
+                <ScalarProperty Name="IMIE" ColumnName="IMIE" />
+                <ScalarProperty Name="NAZWISKO" ColumnName="NAZWISKO" />
+                <ScalarProperty Name="PRIV" ColumnName="PRIV" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uslugi">
+            <EntityTypeMapping TypeName="DatabaseModel.Uslugi">
+              <MappingFragment StoreEntitySet="Uslugi">
+                <ScalarProperty Name="Opis" ColumnName="Opis" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Netto" ColumnName="Netto" />
+                <ScalarProperty Name="VAT" ColumnName="VAT" />
+                <ScalarProperty Name="Brutto" ColumnName="Brutto" />
+                <ScalarProperty Name="Numer" ColumnName="Numer" />
+                <ScalarProperty Name="Nazwa" ColumnName="Nazwa" />
+                <ScalarProperty Name="TimeIndex" ColumnName="TimeIndex" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usterki">
+            <EntityTypeMapping TypeName="DatabaseModel.Usterki">
+              <MappingFragment StoreEntitySet="Usterki">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CARID" ColumnName="CARID" />
+                <ScalarProperty Name="USTERKA" ColumnName="USTERKA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Workers">
+            <EntityTypeMapping TypeName="DatabaseModel.Workers">
+              <MappingFragment StoreEntitySet="Workers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IMIE" ColumnName="IMIE" />
+                <ScalarProperty Name="NAZWISKO" ColumnName="NAZWISKO" />
+                <ScalarProperty Name="ADRESS" ColumnName="ADRESS" />
+                <ScalarProperty Name="PESEL" ColumnName="PESEL" />
+                <ScalarProperty Name="NIP" ColumnName="NIP" />
+                <ScalarProperty Name="BANK" ColumnName="BANK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

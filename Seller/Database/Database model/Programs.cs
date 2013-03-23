@@ -28,5 +28,6 @@ namespace Pawel.Workshop.Database.Database_model
         public Nullable<decimal> PROWIZJA { get; set; }
         public Nullable<decimal> PRICE2 { get; set; }
         public Nullable<decimal> VATPRICE2 { get; set; }
+        public Nullable<int> Vat { get; set; }
     }
 }

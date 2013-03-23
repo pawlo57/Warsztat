@@ -190,61 +190,61 @@
       <DependentUpon>Usterki.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Cars.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Categories.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Customers.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database model\DatabaseModel.Context.cs">
+    <Compile Include="Database\Database model\DatabseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseModel.Context.tt</DependentUpon>
+      <DependentUpon>DatabseModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database model\DatabaseModel.cs">
+    <Compile Include="Database\Database model\DatabseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database model\DatabaseModel.Designer.cs">
+    <Compile Include="Database\Database model\DatabseModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
+      <DependentUpon>DatabseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\ItemsPzWz.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Magazyn.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\MagType.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Programs.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\PZWZ.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Transakcje.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\TransItems.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Urs.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Uslugi.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Usterki.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Workers.cs">
-      <DependentUpon>DatabaseModel.tt</DependentUpon>
+      <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Lista.cs">
       <SubType>Form</SubType>
@@ -494,23 +494,24 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <EntityDeploy Include="Database\Database model\DatabaseModel.edmx">
+    <EntityDeploy Include="Database\Database model\DatabseModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DatabaseModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>DatabseModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Database\Database model\DatabaseModel.Context.tt">
+    <None Include="Database\Database model\DatabseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>DatabaseModel.Context.cs</LastGenOutput>
+      <DependentUpon>DatabseModel.edmx</DependentUpon>
+      <LastGenOutput>DatabseModel.Context.cs</LastGenOutput>
     </None>
-    <None Include="Database\Database model\DatabaseModel.edmx.diagram">
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
+    <None Include="Database\Database model\DatabseModel.edmx.diagram">
+      <DependentUpon>DatabseModel.edmx</DependentUpon>
     </None>
-    <None Include="Database\Database model\DatabaseModel.tt">
+    <None Include="Database\Database model\DatabseModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatabaseModel.edmx</DependentUpon>
-      <LastGenOutput>DatabaseModel.cs</LastGenOutput>
+      <DependentUpon>DatabseModel.edmx</DependentUpon>
+      <LastGenOutput>DatabseModel.cs</LastGenOutput>
     </None>
+    <None Include="Properties\DataSources\Pawel.Workshop.Database.Database_model.Programs.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -585,6 +586,7 @@
     <Content Include="Logo\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\newDocument.png" />
     <Content Include="Stampa.dll" />
     <Content Include="Telemarketer.ico" />
     <Content Include="Ul.xml">

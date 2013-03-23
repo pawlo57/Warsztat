@@ -46,7 +46,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
         private void Programs_Load(object sender, EventArgs e)
         {
-            //LoadCategories();
+            programsBindingSource.DataSource = Data_providers.DatabaseDataProvider.getGoodsByGood(new Programs { CATID = 1 }).ToList(); ;
         }
 
         private void cmdSzukaj_Click(object sender, EventArgs e)
