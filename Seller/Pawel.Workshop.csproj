@@ -246,6 +246,7 @@
     <Compile Include="Database\Database model\Workers.cs">
       <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Good.cs" />
     <Compile Include="Lista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,7 +266,7 @@
     </Compile>
     <Compile Include="Mgzyn.cs" />
     <Compile Include="Class\Produkt.cs" />
-    <Compile Include="Data providers\DatabaseDataProvider.cs" />
+    <Compile Include="Data providers\Database\DatabaseDataProvider.cs" />
     <Compile Include="Statystyka.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="Custom controls\Customers.cs">
@@ -511,7 +512,8 @@
       <DependentUpon>DatabseModel.edmx</DependentUpon>
       <LastGenOutput>DatabseModel.cs</LastGenOutput>
     </None>
-    <None Include="Properties\DataSources\Pawel.Workshop.Database.Database_model.Programs.datasource" />
+    <None Include="Properties\DataSources\Pawel.Workshop.Database.Database_model.Categories.datasource" />
+    <None Include="Properties\DataSources\Pawel.Workshop.Entities.Good.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

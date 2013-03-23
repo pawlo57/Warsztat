@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using Seller;
 using Pawel.Workshop.Database.Database_model;
+using Pawel.Workshop.Data_providers.Databse;
 
 namespace Pawel.Workshop.Custom_controls.Goods
 {
@@ -16,19 +17,11 @@ namespace Pawel.Workshop.Custom_controls.Goods
         public Goods()
         {
             InitializeComponent();
-
-            IEnumerable<Programs> goof = Pawel.Workshop.Data_providers.DatabaseDataProvider.getGoodsByGood(new Database.Database_model.Programs { CATID = 1 });
-
-            int cnt = goof.Count();
         }
 
-        private void LoadCategories()
+        private void loadCategories()
         {
-            dgwProdukty.DataSource = null;
-
-            dgwProdukty.DataSource = Settings.CATEORIES;
-
-            SetDataGridView.SetKategorieView(ref dgwProdukty);
+            comboBoxCategories.DataSource = DatabaseDataProvider.getCategories();   
         }
 
         private void LoadProducts(int CATID, int CID, string name,string numerKat, string model,
@@ -39,14 +32,16 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             if (product == null) { Seller.Message.InfoMessage("Nie znaleziono"); return; }
 
-            dgwProdukty.DataSource = product;
+            dataGridViewGoods.DataSource = product;
 
-            SetDataGridView.SetProduktyView(ref dgwProdukty);
+            SetDataGridView.SetProduktyView(ref dataGridViewGoods);
         }
 
         private void Programs_Load(object sender, EventArgs e)
         {
-            programsBindingSource.DataSource = Data_providers.DatabaseDataProvider.getGoodsByGood(new Programs { CATID = 1 }).ToList(); ;
+            loadCategories();
+
+            goodBindingSource.DataSource = DatabaseDataProvider.getGoodsByGood();
         }
 
         private void cmdSzukaj_Click(object sender, EventArgs e)
@@ -78,14 +73,14 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             Settings.LoadCategories();
 
-            LoadCategories();
+            //LoadCategories();
         }
 
         private void cmdEdytujKat_Click(object sender, EventArgs e)
         {
             Category selected = null;
 
-            try { selected = (Category)dgwProdukty.CurrentRow.DataBoundItem; }
+            try { selected = (Category)dataGridViewGoods.CurrentRow.DataBoundItem; }
             catch { Seller.Message.Position(); return; }
 
             newCategory editCat = new newCategory("Edycja kategorii", "Zmień");
@@ -105,7 +100,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             Settings.LoadCategories();
 
-            LoadCategories();
+            //LoadCategories();
         }
 
 
@@ -138,7 +133,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             Produkt product;
 
-            try { product = (Produkt)dgwProdukty.CurrentRow.DataBoundItem; }
+            try { product = (Produkt)dataGridViewGoods.CurrentRow.DataBoundItem; }
             catch { return; }
 
             newProgram.PRODUKT = product;
@@ -163,7 +158,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
         private void cmdListaKat_Click(object sender, EventArgs e)
         {
-            LoadCategories();
+            //LoadCategories();
         }
 
         private void cmdPodglad_Click(object sender, EventArgs e)
@@ -172,7 +167,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             Produkt product;
 
-            try { product = (Produkt)dgwProdukty.CurrentRow.DataBoundItem; }
+            try { product = (Produkt)dataGridViewGoods.CurrentRow.DataBoundItem; }
             catch { return; }
 
             newProgram.PRODUKT = product;

@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Goods));
-            this.cmdNowy = new System.Windows.Forms.Button();
-            this.cmdEdytuj = new System.Windows.Forms.Button();
-            this.cmdSzukaj = new System.Windows.Forms.Button();
-            this.dgwProdukty = new System.Windows.Forms.DataGridView();
-            this.Kategorie = new System.Windows.Forms.GroupBox();
-            this.cmdListaKat = new System.Windows.Forms.Button();
-            this.cmdEdytujKat = new System.Windows.Forms.Button();
-            this.cmdNowaKat = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmdPodglad = new System.Windows.Forms.Button();
+            this.dataGridViewGoods = new System.Windows.Forms.DataGridView();
+            this.catalogueNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serialNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nettoPriceSellDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bruttoPriceSellDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.towaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,208 +64,133 @@
             this.wklejToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.pomocToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.Vat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtBrutto = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txtNetto = new System.Windows.Forms.TextBox();
             this.lblJednostka = new System.Windows.Forms.Label();
-            this.txtJednostka = new System.Windows.Forms.ComboBox();
-            this.txtDSC = new System.Windows.Forms.TextBox();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtMODEL = new System.Windows.Forms.TextBox();
+            this.textBoxModel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.MNtextBox = new System.Windows.Forms.TextBox();
-            this.cbxKategorie = new System.Windows.Forms.ComboBox();
+            this.textBoxSerialNumber = new System.Windows.Forms.TextBox();
+            this.comboBoxCategories = new System.Windows.Forms.ComboBox();
+            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
-            this.cmdKatDodaj = new System.Windows.Forms.Button();
-            this.txtKAT = new System.Windows.Forms.TextBox();
+            this.textBoxCatalogueNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.MNNtextBox = new System.Windows.Forms.TextBox();
-            this.cmdKontrahent = new System.Windows.Forms.Button();
+            this.textBoxGoodName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmdDodaj = new System.Windows.Forms.Button();
-            this.txtKontrahent = new System.Windows.Forms.ComboBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.OCBtextBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.OCNtextBox = new System.Windows.Forms.TextBox();
-            this.nAZWADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nUMERKATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mODELDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nUMERSERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vATPRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROWIZJADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pRICE2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vATPRICE2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.programsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwProdukty)).BeginInit();
-            this.Kategorie.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.textBoxCustomer = new System.Windows.Forms.TextBox();
+            this.textBoxUnit = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.buttonAddCategory = new System.Windows.Forms.Button();
+            this.buttonFindCustomer = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoods)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.programsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // cmdNowy
+            // dataGridViewGoods
             // 
-            this.cmdNowy.Image = ((System.Drawing.Image)(resources.GetObject("cmdNowy.Image")));
-            this.cmdNowy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdNowy.Location = new System.Drawing.Point(13, 19);
-            this.cmdNowy.Name = "cmdNowy";
-            this.cmdNowy.Size = new System.Drawing.Size(149, 23);
-            this.cmdNowy.TabIndex = 0;
-            this.cmdNowy.Text = "Nowy";
-            this.cmdNowy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdNowy, "Kliknij aby dodać  do bazy");
-            this.cmdNowy.UseVisualStyleBackColor = true;
-            this.cmdNowy.Click += new System.EventHandler(this.cmdNowy_Click);
-            // 
-            // cmdEdytuj
-            // 
-            this.cmdEdytuj.Image = ((System.Drawing.Image)(resources.GetObject("cmdEdytuj.Image")));
-            this.cmdEdytuj.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdEdytuj.Location = new System.Drawing.Point(13, 48);
-            this.cmdEdytuj.Name = "cmdEdytuj";
-            this.cmdEdytuj.Size = new System.Drawing.Size(149, 23);
-            this.cmdEdytuj.TabIndex = 1;
-            this.cmdEdytuj.Text = "Edytuj";
-            this.cmdEdytuj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdEdytuj, "Kliknij aby edytować");
-            this.cmdEdytuj.UseVisualStyleBackColor = true;
-            this.cmdEdytuj.Click += new System.EventHandler(this.cmdEdytuj_Click);
-            // 
-            // cmdSzukaj
-            // 
-            this.cmdSzukaj.Image = ((System.Drawing.Image)(resources.GetObject("cmdSzukaj.Image")));
-            this.cmdSzukaj.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdSzukaj.Location = new System.Drawing.Point(13, 121);
-            this.cmdSzukaj.Name = "cmdSzukaj";
-            this.cmdSzukaj.Size = new System.Drawing.Size(149, 39);
-            this.cmdSzukaj.TabIndex = 2;
-            this.cmdSzukaj.Text = "Szukaj";
-            this.cmdSzukaj.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdSzukaj, "Kliknij aby wyszukać w bazie części");
-            this.cmdSzukaj.UseVisualStyleBackColor = true;
-            this.cmdSzukaj.Click += new System.EventHandler(this.cmdSzukaj_Click);
-            // 
-            // dgwProdukty
-            // 
-            this.dgwProdukty.AllowUserToAddRows = false;
-            this.dgwProdukty.AllowUserToDeleteRows = false;
-            this.dgwProdukty.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dataGridViewGoods.AllowUserToAddRows = false;
+            this.dataGridViewGoods.AllowUserToDeleteRows = false;
+            this.dataGridViewGoods.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgwProdukty.AutoGenerateColumns = false;
-            this.dgwProdukty.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgwProdukty.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgwProdukty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwProdukty.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nAZWADataGridViewTextBoxColumn,
-            this.nUMERKATDataGridViewTextBoxColumn,
-            this.mODELDataGridViewTextBoxColumn,
-            this.nUMERSERDataGridViewTextBoxColumn,
-            this.pRICEDataGridViewTextBoxColumn,
-            this.Vat,
-            this.vATPRICEDataGridViewTextBoxColumn,
-            this.pROWIZJADataGridViewTextBoxColumn,
-            this.pRICE2DataGridViewTextBoxColumn,
-            this.vATPRICE2DataGridViewTextBoxColumn});
-            this.dgwProdukty.DataSource = this.programsBindingSource;
-            this.dgwProdukty.Location = new System.Drawing.Point(214, 389);
-            this.dgwProdukty.Name = "dgwProdukty";
-            this.dgwProdukty.ReadOnly = true;
-            this.dgwProdukty.Size = new System.Drawing.Size(791, 253);
-            this.dgwProdukty.TabIndex = 3;
+            this.dataGridViewGoods.AutoGenerateColumns = false;
+            this.dataGridViewGoods.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewGoods.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewGoods.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridViewGoods.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridViewGoods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGoods.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.catalogueNumberDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.modelDataGridViewTextBoxColumn,
+            this.serialNumberDataGridViewTextBoxColumn,
+            this.unitDataGridViewTextBoxColumn,
+            this.nettoPriceSellDataGridViewTextBoxColumn,
+            this.vatDataGridViewTextBoxColumn,
+            this.bruttoPriceSellDataGridViewTextBoxColumn});
+            this.dataGridViewGoods.DataSource = this.goodBindingSource;
+            this.dataGridViewGoods.Location = new System.Drawing.Point(0, 208);
+            this.dataGridViewGoods.MultiSelect = false;
+            this.dataGridViewGoods.Name = "dataGridViewGoods";
+            this.dataGridViewGoods.ReadOnly = true;
+            this.dataGridViewGoods.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewGoods.Size = new System.Drawing.Size(1005, 434);
+            this.dataGridViewGoods.TabIndex = 3;
+            this.dataGridViewGoods.TabStop = false;
             // 
-            // Kategorie
+            // catalogueNumberDataGridViewTextBoxColumn
             // 
-            this.Kategorie.Controls.Add(this.cmdListaKat);
-            this.Kategorie.Controls.Add(this.cmdEdytujKat);
-            this.Kategorie.Controls.Add(this.cmdNowaKat);
-            this.Kategorie.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Kategorie.Location = new System.Drawing.Point(70, 462);
-            this.Kategorie.Name = "Kategorie";
-            this.Kategorie.Size = new System.Drawing.Size(174, 150);
-            this.Kategorie.TabIndex = 4;
-            this.Kategorie.TabStop = false;
-            this.Kategorie.Text = "Kategorie";
+            this.catalogueNumberDataGridViewTextBoxColumn.DataPropertyName = "catalogueNumber";
+            this.catalogueNumberDataGridViewTextBoxColumn.HeaderText = "Numer katalogowy";
+            this.catalogueNumberDataGridViewTextBoxColumn.Name = "catalogueNumberDataGridViewTextBoxColumn";
+            this.catalogueNumberDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cmdListaKat
+            // nameDataGridViewTextBoxColumn
             // 
-            this.cmdListaKat.Image = ((System.Drawing.Image)(resources.GetObject("cmdListaKat.Image")));
-            this.cmdListaKat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdListaKat.Location = new System.Drawing.Point(13, 93);
-            this.cmdListaKat.Name = "cmdListaKat";
-            this.cmdListaKat.Size = new System.Drawing.Size(149, 39);
-            this.cmdListaKat.TabIndex = 6;
-            this.cmdListaKat.Text = "Lista kategorii";
-            this.cmdListaKat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdListaKat, "Kliknij aby wyświetlić listę kategorii części");
-            this.cmdListaKat.UseVisualStyleBackColor = true;
-            this.cmdListaKat.Click += new System.EventHandler(this.cmdListaKat_Click);
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Nazwa";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cmdEdytujKat
+            // modelDataGridViewTextBoxColumn
             // 
-            this.cmdEdytujKat.Image = ((System.Drawing.Image)(resources.GetObject("cmdEdytujKat.Image")));
-            this.cmdEdytujKat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdEdytujKat.Location = new System.Drawing.Point(13, 48);
-            this.cmdEdytujKat.Name = "cmdEdytujKat";
-            this.cmdEdytujKat.Size = new System.Drawing.Size(149, 23);
-            this.cmdEdytujKat.TabIndex = 6;
-            this.cmdEdytujKat.Text = "Edytuj";
-            this.cmdEdytujKat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdEdytujKat, "Kliknij aby edytować kategorię części");
-            this.cmdEdytujKat.UseVisualStyleBackColor = true;
-            this.cmdEdytujKat.Click += new System.EventHandler(this.cmdEdytujKat_Click);
+            this.modelDataGridViewTextBoxColumn.DataPropertyName = "model";
+            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
+            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
+            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cmdNowaKat
+            // serialNumberDataGridViewTextBoxColumn
             // 
-            this.cmdNowaKat.Image = ((System.Drawing.Image)(resources.GetObject("cmdNowaKat.Image")));
-            this.cmdNowaKat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdNowaKat.Location = new System.Drawing.Point(13, 19);
-            this.cmdNowaKat.Name = "cmdNowaKat";
-            this.cmdNowaKat.Size = new System.Drawing.Size(149, 23);
-            this.cmdNowaKat.TabIndex = 5;
-            this.cmdNowaKat.Text = "Nowa";
-            this.cmdNowaKat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdNowaKat, "Kliknij aby dodać nową kategorię części");
-            this.cmdNowaKat.UseVisualStyleBackColor = true;
-            this.cmdNowaKat.Click += new System.EventHandler(this.cmdNowaKat_Click);
+            this.serialNumberDataGridViewTextBoxColumn.DataPropertyName = "serialNumber";
+            this.serialNumberDataGridViewTextBoxColumn.HeaderText = "Numer seryjny";
+            this.serialNumberDataGridViewTextBoxColumn.Name = "serialNumberDataGridViewTextBoxColumn";
+            this.serialNumberDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // groupBox1
+            // unitDataGridViewTextBoxColumn
             // 
-            this.groupBox1.Controls.Add(this.cmdPodglad);
-            this.groupBox1.Controls.Add(this.cmdNowy);
-            this.groupBox1.Controls.Add(this.cmdEdytuj);
-            this.groupBox1.Controls.Add(this.cmdSzukaj);
-            this.groupBox1.Location = new System.Drawing.Point(101, 264);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(174, 177);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Baza części";
+            this.unitDataGridViewTextBoxColumn.DataPropertyName = "unit";
+            this.unitDataGridViewTextBoxColumn.HeaderText = "Jednostka";
+            this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
+            this.unitDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cmdPodglad
+            // nettoPriceSellDataGridViewTextBoxColumn
             // 
-            this.cmdPodglad.Image = ((System.Drawing.Image)(resources.GetObject("cmdPodglad.Image")));
-            this.cmdPodglad.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.cmdPodglad.Location = new System.Drawing.Point(13, 77);
-            this.cmdPodglad.Name = "cmdPodglad";
-            this.cmdPodglad.Size = new System.Drawing.Size(149, 23);
-            this.cmdPodglad.TabIndex = 3;
-            this.cmdPodglad.Text = "Podgląd";
-            this.cmdPodglad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.toolTip1.SetToolTip(this.cmdPodglad, "Kliknij aby edytować");
-            this.cmdPodglad.UseVisualStyleBackColor = true;
-            this.cmdPodglad.Click += new System.EventHandler(this.cmdPodglad_Click);
+            this.nettoPriceSellDataGridViewTextBoxColumn.DataPropertyName = "nettoPriceSell";
+            this.nettoPriceSellDataGridViewTextBoxColumn.HeaderText = "Cena netto";
+            this.nettoPriceSellDataGridViewTextBoxColumn.Name = "nettoPriceSellDataGridViewTextBoxColumn";
+            this.nettoPriceSellDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vatDataGridViewTextBoxColumn
+            // 
+            this.vatDataGridViewTextBoxColumn.DataPropertyName = "vat";
+            this.vatDataGridViewTextBoxColumn.HeaderText = "vat";
+            this.vatDataGridViewTextBoxColumn.Name = "vatDataGridViewTextBoxColumn";
+            this.vatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bruttoPriceSellDataGridViewTextBoxColumn
+            // 
+            this.bruttoPriceSellDataGridViewTextBoxColumn.DataPropertyName = "bruttoPriceSell";
+            this.bruttoPriceSellDataGridViewTextBoxColumn.HeaderText = "Cena brutto";
+            this.bruttoPriceSellDataGridViewTextBoxColumn.Name = "bruttoPriceSellDataGridViewTextBoxColumn";
+            this.bruttoPriceSellDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // goodBindingSource
+            // 
+            this.goodBindingSource.DataSource = typeof(Pawel.Workshop.Entities.Good);
             // 
             // toolTip1
             // 
@@ -481,116 +406,80 @@
             this.pomocToolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.pomocToolStripButton1.Text = "&Pomoc";
             // 
-            // Vat
-            // 
-            this.Vat.DataPropertyName = "Vat";
-            this.Vat.HeaderText = "Vat";
-            this.Vat.Name = "Vat";
-            this.Vat.ReadOnly = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtBrutto);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.txtNetto);
-            this.groupBox2.Location = new System.Drawing.Point(359, 302);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(416, 51);
-            this.groupBox2.TabIndex = 82;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cena sprzedaży";
-            // 
             // txtBrutto
             // 
-            this.txtBrutto.Location = new System.Drawing.Point(277, 19);
+            this.txtBrutto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtBrutto.Location = new System.Drawing.Point(804, 127);
             this.txtBrutto.MaxLength = 10;
             this.txtBrutto.Name = "txtBrutto";
-            this.txtBrutto.Size = new System.Drawing.Size(109, 20);
+            this.txtBrutto.Size = new System.Drawing.Size(130, 29);
             this.txtBrutto.TabIndex = 1;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(236, 22);
+            this.label15.Location = new System.Drawing.Point(801, 111);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(35, 13);
+            this.label15.Size = new System.Drawing.Size(112, 13);
             this.label15.TabIndex = 54;
-            this.label15.Text = "Brutto";
+            this.label15.Text = "Cena sprzedaży brutto";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(16, 22);
+            this.label16.Location = new System.Drawing.Point(801, 56);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(33, 13);
+            this.label16.Size = new System.Drawing.Size(109, 13);
             this.label16.TabIndex = 53;
-            this.label16.Text = "Netto";
+            this.label16.Text = "Cena sprzadaży netto";
             // 
             // txtNetto
             // 
-            this.txtNetto.Location = new System.Drawing.Point(55, 19);
+            this.txtNetto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtNetto.Location = new System.Drawing.Point(804, 72);
             this.txtNetto.MaxLength = 10;
             this.txtNetto.Name = "txtNetto";
-            this.txtNetto.Size = new System.Drawing.Size(109, 20);
+            this.txtNetto.Size = new System.Drawing.Size(130, 29);
             this.txtNetto.TabIndex = 0;
             // 
             // lblJednostka
             // 
             this.lblJednostka.AutoSize = true;
-            this.lblJednostka.Location = new System.Drawing.Point(907, 264);
+            this.lblJednostka.Location = new System.Drawing.Point(542, 88);
             this.lblJednostka.Name = "lblJednostka";
             this.lblJednostka.Size = new System.Drawing.Size(56, 13);
             this.lblJednostka.TabIndex = 81;
             this.lblJednostka.Text = "Jednostka";
             // 
-            // txtJednostka
+            // textBoxDescription
             // 
-            this.txtJednostka.FormattingEnabled = true;
-            this.txtJednostka.Items.AddRange(new object[] {
-            "Wybierz lub wpisz",
-            "sztuk",
-            "litrów",
-            "metrów",
-            "kilogramów",
-            "centymetrów",
-            "milimetrów",
-            "ton",
-            "gramów"});
-            this.txtJednostka.Location = new System.Drawing.Point(856, 133);
-            this.txtJednostka.Name = "txtJednostka";
-            this.txtJednostka.Size = new System.Drawing.Size(107, 21);
-            this.txtJednostka.TabIndex = 69;
-            // 
-            // txtDSC
-            // 
-            this.txtDSC.Location = new System.Drawing.Point(120, 203);
-            this.txtDSC.MaxLength = 100;
-            this.txtDSC.Name = "txtDSC";
-            this.txtDSC.Size = new System.Drawing.Size(687, 20);
-            this.txtDSC.TabIndex = 65;
+            this.textBoxDescription.Location = new System.Drawing.Point(6, 182);
+            this.textBoxDescription.MaxLength = 500;
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.Size = new System.Drawing.Size(630, 20);
+            this.textBoxDescription.TabIndex = 65;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(86, 206);
+            this.label8.Location = new System.Drawing.Point(3, 166);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 13);
             this.label8.TabIndex = 77;
             this.label8.Text = "Opis";
             // 
-            // txtMODEL
+            // textBoxModel
             // 
-            this.txtMODEL.Location = new System.Drawing.Point(344, 177);
-            this.txtMODEL.MaxLength = 100;
-            this.txtMODEL.Name = "txtMODEL";
-            this.txtMODEL.Size = new System.Drawing.Size(199, 20);
-            this.txtMODEL.TabIndex = 63;
+            this.textBoxModel.Location = new System.Drawing.Point(188, 104);
+            this.textBoxModel.MaxLength = 100;
+            this.textBoxModel.Name = "textBoxModel";
+            this.textBoxModel.Size = new System.Drawing.Size(199, 20);
+            this.textBoxModel.TabIndex = 63;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(302, 180);
+            this.label7.Location = new System.Drawing.Point(185, 88);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 13);
             this.label7.TabIndex = 76;
@@ -599,28 +488,34 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(549, 180);
+            this.label5.Location = new System.Drawing.Point(390, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 13);
             this.label5.TabIndex = 75;
             this.label5.Text = "Numer seryjny";
             // 
-            // MNtextBox
+            // textBoxSerialNumber
             // 
-            this.MNtextBox.Location = new System.Drawing.Point(628, 177);
-            this.MNtextBox.MaxLength = 100;
-            this.MNtextBox.Name = "MNtextBox";
-            this.MNtextBox.Size = new System.Drawing.Size(180, 20);
-            this.MNtextBox.TabIndex = 62;
+            this.textBoxSerialNumber.Location = new System.Drawing.Point(393, 104);
+            this.textBoxSerialNumber.MaxLength = 100;
+            this.textBoxSerialNumber.Name = "textBoxSerialNumber";
+            this.textBoxSerialNumber.Size = new System.Drawing.Size(146, 20);
+            this.textBoxSerialNumber.TabIndex = 62;
             // 
-            // cbxKategorie
+            // comboBoxCategories
             // 
-            this.cbxKategorie.FormattingEnabled = true;
-            this.cbxKategorie.Location = new System.Drawing.Point(435, 65);
-            this.cbxKategorie.Name = "cbxKategorie";
-            this.cbxKategorie.Size = new System.Drawing.Size(170, 21);
-            this.cbxKategorie.TabIndex = 61;
-            this.cbxKategorie.Text = "Wybierz kategorię";
+            this.comboBoxCategories.DataSource = this.categoriesBindingSource;
+            this.comboBoxCategories.DisplayMember = "CATEGORY";
+            this.comboBoxCategories.FormattingEnabled = true;
+            this.comboBoxCategories.Location = new System.Drawing.Point(435, 65);
+            this.comboBoxCategories.Name = "comboBoxCategories";
+            this.comboBoxCategories.Size = new System.Drawing.Size(170, 21);
+            this.comboBoxCategories.TabIndex = 61;
+            this.comboBoxCategories.ValueMember = "ID";
+            // 
+            // categoriesBindingSource
+            // 
+            this.categoriesBindingSource.DataSource = typeof(Pawel.Workshop.Database.Database_model.Categories);
             // 
             // label4
             // 
@@ -631,31 +526,22 @@
             this.label4.TabIndex = 74;
             this.label4.Text = "Kategoria";
             // 
-            // cmdKatDodaj
+            // textBoxCatalogueNumber
             // 
-            this.cmdKatDodaj.Image = global::Pawel.Workshop.Properties.Resources.newDocument;
-            this.cmdKatDodaj.Location = new System.Drawing.Point(611, 62);
-            this.cmdKatDodaj.Name = "cmdKatDodaj";
-            this.cmdKatDodaj.Size = new System.Drawing.Size(25, 25);
-            this.cmdKatDodaj.TabIndex = 64;
-            this.cmdKatDodaj.UseVisualStyleBackColor = true;
-            // 
-            // txtKAT
-            // 
-            this.txtKAT.Location = new System.Drawing.Point(120, 177);
-            this.txtKAT.MaxLength = 100;
-            this.txtKAT.Name = "txtKAT";
-            this.txtKAT.Size = new System.Drawing.Size(176, 20);
-            this.txtKAT.TabIndex = 60;
+            this.textBoxCatalogueNumber.Location = new System.Drawing.Point(6, 104);
+            this.textBoxCatalogueNumber.MaxLength = 100;
+            this.textBoxCatalogueNumber.Name = "textBoxCatalogueNumber";
+            this.textBoxCatalogueNumber.Size = new System.Drawing.Size(176, 20);
+            this.textBoxCatalogueNumber.TabIndex = 60;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(52, 180);
+            this.label3.Location = new System.Drawing.Point(3, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(95, 13);
             this.label3.TabIndex = 73;
-            this.label3.Text = "Numer kat.";
+            this.label3.Text = "Numer katalogowy";
             // 
             // label2
             // 
@@ -666,210 +552,155 @@
             this.label2.TabIndex = 72;
             this.label2.Text = "Nazwa towaru";
             // 
-            // MNNtextBox
+            // textBoxGoodName
             // 
-            this.MNNtextBox.Location = new System.Drawing.Point(6, 65);
-            this.MNNtextBox.MaxLength = 100;
-            this.MNNtextBox.Name = "MNNtextBox";
-            this.MNNtextBox.Size = new System.Drawing.Size(423, 20);
-            this.MNNtextBox.TabIndex = 59;
-            // 
-            // cmdKontrahent
-            // 
-            this.cmdKontrahent.Image = ((System.Drawing.Image)(resources.GetObject("cmdKontrahent.Image")));
-            this.cmdKontrahent.Location = new System.Drawing.Point(782, 356);
-            this.cmdKontrahent.Name = "cmdKontrahent";
-            this.cmdKontrahent.Size = new System.Drawing.Size(25, 25);
-            this.cmdKontrahent.TabIndex = 58;
-            this.cmdKontrahent.UseVisualStyleBackColor = true;
+            this.textBoxGoodName.Location = new System.Drawing.Point(6, 65);
+            this.textBoxGoodName.MaxLength = 100;
+            this.textBoxGoodName.Name = "textBoxGoodName";
+            this.textBoxGoodName.Size = new System.Drawing.Size(423, 20);
+            this.textBoxGoodName.TabIndex = 59;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(303, 362);
+            this.label1.Location = new System.Drawing.Point(3, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 71;
-            this.label1.Text = "Kontrahent (dostawca towaru)";
-            // 
-            // cmdDodaj
-            // 
-            this.cmdDodaj.Location = new System.Drawing.Point(751, 356);
-            this.cmdDodaj.Name = "cmdDodaj";
-            this.cmdDodaj.Size = new System.Drawing.Size(25, 25);
-            this.cmdDodaj.TabIndex = 56;
-            this.cmdDodaj.Text = "+";
-            this.cmdDodaj.UseVisualStyleBackColor = true;
-            // 
-            // txtKontrahent
-            // 
-            this.txtKontrahent.FormattingEnabled = true;
-            this.txtKontrahent.Location = new System.Drawing.Point(458, 359);
-            this.txtKontrahent.Name = "txtKontrahent";
-            this.txtKontrahent.Size = new System.Drawing.Size(287, 21);
-            this.txtKontrahent.TabIndex = 57;
-            this.txtKontrahent.Text = "Wybierz lub dodaj dostawcę";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.OCBtextBox);
-            this.groupBox10.Controls.Add(this.label14);
-            this.groupBox10.Controls.Add(this.label13);
-            this.groupBox10.Controls.Add(this.OCNtextBox);
-            this.groupBox10.Location = new System.Drawing.Point(358, 245);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(416, 51);
-            this.groupBox10.TabIndex = 70;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Cena zakupu";
+            this.label1.Text = "Kontrahent";
             // 
             // OCBtextBox
             // 
-            this.OCBtextBox.Location = new System.Drawing.Point(277, 19);
+            this.OCBtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OCBtextBox.Location = new System.Drawing.Point(668, 127);
             this.OCBtextBox.MaxLength = 10;
             this.OCBtextBox.Name = "OCBtextBox";
-            this.OCBtextBox.Size = new System.Drawing.Size(109, 20);
+            this.OCBtextBox.Size = new System.Drawing.Size(130, 29);
             this.OCBtextBox.TabIndex = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(236, 22);
+            this.label14.Location = new System.Drawing.Point(665, 111);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(35, 13);
+            this.label14.Size = new System.Drawing.Size(100, 13);
             this.label14.TabIndex = 54;
-            this.label14.Text = "Brutto";
+            this.label14.Text = "Cena zakupu brutto";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(16, 22);
+            this.label13.Location = new System.Drawing.Point(665, 56);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 13);
+            this.label13.Size = new System.Drawing.Size(97, 13);
             this.label13.TabIndex = 53;
-            this.label13.Text = "Netto";
+            this.label13.Text = "Cena zakupu netto";
             // 
             // OCNtextBox
             // 
-            this.OCNtextBox.Location = new System.Drawing.Point(55, 19);
+            this.OCNtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OCNtextBox.Location = new System.Drawing.Point(668, 72);
             this.OCNtextBox.MaxLength = 10;
             this.OCNtextBox.Name = "OCNtextBox";
-            this.OCNtextBox.Size = new System.Drawing.Size(109, 20);
+            this.OCNtextBox.Size = new System.Drawing.Size(130, 29);
             this.OCNtextBox.TabIndex = 0;
+            this.OCNtextBox.Text = "2,45";
+            this.OCNtextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // nAZWADataGridViewTextBoxColumn
+            // textBoxCustomer
             // 
-            this.nAZWADataGridViewTextBoxColumn.DataPropertyName = "NAZWA";
-            this.nAZWADataGridViewTextBoxColumn.HeaderText = "Nazwa";
-            this.nAZWADataGridViewTextBoxColumn.Name = "nAZWADataGridViewTextBoxColumn";
-            this.nAZWADataGridViewTextBoxColumn.ReadOnly = true;
+            this.textBoxCustomer.Location = new System.Drawing.Point(6, 143);
+            this.textBoxCustomer.Name = "textBoxCustomer";
+            this.textBoxCustomer.Size = new System.Drawing.Size(599, 20);
+            this.textBoxCustomer.TabIndex = 83;
             // 
-            // nUMERKATDataGridViewTextBoxColumn
+            // textBoxUnit
             // 
-            this.nUMERKATDataGridViewTextBoxColumn.DataPropertyName = "NUMERKAT";
-            this.nUMERKATDataGridViewTextBoxColumn.HeaderText = "Numer katalogowy";
-            this.nUMERKATDataGridViewTextBoxColumn.Name = "nUMERKATDataGridViewTextBoxColumn";
-            this.nUMERKATDataGridViewTextBoxColumn.ReadOnly = true;
+            this.textBoxUnit.Location = new System.Drawing.Point(545, 104);
+            this.textBoxUnit.Name = "textBoxUnit";
+            this.textBoxUnit.Size = new System.Drawing.Size(91, 20);
+            this.textBoxUnit.TabIndex = 84;
             // 
-            // mODELDataGridViewTextBoxColumn
+            // textBox1
             // 
-            this.mODELDataGridViewTextBoxColumn.DataPropertyName = "MODEL";
-            this.mODELDataGridViewTextBoxColumn.HeaderText = "Model";
-            this.mODELDataGridViewTextBoxColumn.Name = "mODELDataGridViewTextBoxColumn";
-            this.mODELDataGridViewTextBoxColumn.ReadOnly = true;
+            this.textBox1.Location = new System.Drawing.Point(668, 182);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(86, 20);
+            this.textBox1.TabIndex = 85;
             // 
-            // nUMERSERDataGridViewTextBoxColumn
+            // label6
             // 
-            this.nUMERSERDataGridViewTextBoxColumn.DataPropertyName = "NUMERSER";
-            this.nUMERSERDataGridViewTextBoxColumn.HeaderText = "Numer seryjny";
-            this.nUMERSERDataGridViewTextBoxColumn.Name = "nUMERSERDataGridViewTextBoxColumn";
-            this.nUMERSERDataGridViewTextBoxColumn.ReadOnly = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(665, 166);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 13);
+            this.label6.TabIndex = 86;
+            this.label6.Text = "Stawka Vat";
             // 
-            // pRICEDataGridViewTextBoxColumn
+            // buttonAddCategory
             // 
-            this.pRICEDataGridViewTextBoxColumn.DataPropertyName = "PRICE";
-            this.pRICEDataGridViewTextBoxColumn.HeaderText = "Cena netto";
-            this.pRICEDataGridViewTextBoxColumn.Name = "pRICEDataGridViewTextBoxColumn";
-            this.pRICEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.buttonAddCategory.Image = global::Pawel.Workshop.Properties.Resources.newDocument;
+            this.buttonAddCategory.Location = new System.Drawing.Point(611, 62);
+            this.buttonAddCategory.Name = "buttonAddCategory";
+            this.buttonAddCategory.Size = new System.Drawing.Size(25, 25);
+            this.buttonAddCategory.TabIndex = 64;
+            this.buttonAddCategory.UseVisualStyleBackColor = true;
             // 
-            // vATPRICEDataGridViewTextBoxColumn
+            // buttonFindCustomer
             // 
-            this.vATPRICEDataGridViewTextBoxColumn.DataPropertyName = "VATPRICE";
-            this.vATPRICEDataGridViewTextBoxColumn.HeaderText = "Cena brutto";
-            this.vATPRICEDataGridViewTextBoxColumn.Name = "vATPRICEDataGridViewTextBoxColumn";
-            this.vATPRICEDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pROWIZJADataGridViewTextBoxColumn
-            // 
-            this.pROWIZJADataGridViewTextBoxColumn.DataPropertyName = "PROWIZJA";
-            this.pROWIZJADataGridViewTextBoxColumn.HeaderText = "Prowizja";
-            this.pROWIZJADataGridViewTextBoxColumn.Name = "pROWIZJADataGridViewTextBoxColumn";
-            this.pROWIZJADataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pRICE2DataGridViewTextBoxColumn
-            // 
-            this.pRICE2DataGridViewTextBoxColumn.DataPropertyName = "PRICE2";
-            this.pRICE2DataGridViewTextBoxColumn.HeaderText = "PRICE2";
-            this.pRICE2DataGridViewTextBoxColumn.Name = "pRICE2DataGridViewTextBoxColumn";
-            this.pRICE2DataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vATPRICE2DataGridViewTextBoxColumn
-            // 
-            this.vATPRICE2DataGridViewTextBoxColumn.DataPropertyName = "VATPRICE2";
-            this.vATPRICE2DataGridViewTextBoxColumn.HeaderText = "VATPRICE2";
-            this.vATPRICE2DataGridViewTextBoxColumn.Name = "vATPRICE2DataGridViewTextBoxColumn";
-            this.vATPRICE2DataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // programsBindingSource
-            // 
-            this.programsBindingSource.DataSource = typeof(Pawel.Workshop.Database.Database_model.Programs);
+            this.buttonFindCustomer.Image = global::Pawel.Workshop.Properties.Resources.newDocument;
+            this.buttonFindCustomer.Location = new System.Drawing.Point(611, 140);
+            this.buttonFindCustomer.Name = "buttonFindCustomer";
+            this.buttonFindCustomer.Size = new System.Drawing.Size(25, 25);
+            this.buttonFindCustomer.TabIndex = 58;
+            this.buttonFindCustomer.UseVisualStyleBackColor = true;
             // 
             // Goods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtBrutto);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.OCBtextBox);
+            this.Controls.Add(this.txtNetto);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.textBoxUnit);
+            this.Controls.Add(this.textBoxCustomer);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.OCNtextBox);
             this.Controls.Add(this.lblJednostka);
-            this.Controls.Add(this.txtJednostka);
-            this.Controls.Add(this.txtDSC);
+            this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtMODEL);
+            this.Controls.Add(this.textBoxModel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.MNtextBox);
-            this.Controls.Add(this.cbxKategorie);
+            this.Controls.Add(this.textBoxSerialNumber);
+            this.Controls.Add(this.comboBoxCategories);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmdKatDodaj);
-            this.Controls.Add(this.txtKAT);
+            this.Controls.Add(this.buttonAddCategory);
+            this.Controls.Add(this.textBoxCatalogueNumber);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.MNNtextBox);
-            this.Controls.Add(this.cmdKontrahent);
+            this.Controls.Add(this.textBoxGoodName);
+            this.Controls.Add(this.buttonFindCustomer);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmdDodaj);
-            this.Controls.Add(this.txtKontrahent);
-            this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.Kategorie);
-            this.Controls.Add(this.dgwProdukty);
+            this.Controls.Add(this.dataGridViewGoods);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Goods";
             this.Size = new System.Drawing.Size(1008, 658);
             this.Load += new System.EventHandler(this.Programs_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwProdukty)).EndInit();
-            this.Kategorie.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoods)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.programsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -877,17 +708,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button cmdNowy;
-        private System.Windows.Forms.Button cmdEdytuj;
-        private System.Windows.Forms.Button cmdSzukaj;
-        private System.Windows.Forms.DataGridView dgwProdukty;
-        private System.Windows.Forms.GroupBox Kategorie;
-        private System.Windows.Forms.Button cmdNowaKat;
-        private System.Windows.Forms.Button cmdEdytujKat;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button cmdListaKat;
+        private System.Windows.Forms.DataGridView dataGridViewGoods;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button cmdPodglad;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem towaryToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
@@ -901,7 +723,6 @@
         private System.Windows.Forms.ToolStripButton wklejToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton pomocToolStripButton;
-        private System.Windows.Forms.BindingSource programsBindingSource;
         private System.Windows.Forms.ToolStripButton nowyToolStripButton1;
         private System.Windows.Forms.ToolStripButton otwórzToolStripButton1;
         private System.Windows.Forms.ToolStripButton zapiszToolStripButton1;
@@ -912,44 +733,43 @@
         private System.Windows.Forms.ToolStripButton wklejToolStripButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton pomocToolStripButton1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nAZWADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nUMERKATDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mODELDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nUMERSERDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pRICEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vATPRICEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pROWIZJADataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pRICE2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vATPRICE2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtBrutto;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtNetto;
         private System.Windows.Forms.Label lblJednostka;
-        private System.Windows.Forms.ComboBox txtJednostka;
-        private System.Windows.Forms.TextBox txtDSC;
+        private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtMODEL;
+        private System.Windows.Forms.TextBox textBoxModel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox MNtextBox;
-        private System.Windows.Forms.ComboBox cbxKategorie;
+        private System.Windows.Forms.TextBox textBoxSerialNumber;
+        private System.Windows.Forms.ComboBox comboBoxCategories;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button cmdKatDodaj;
-        private System.Windows.Forms.TextBox txtKAT;
+        private System.Windows.Forms.Button buttonAddCategory;
+        private System.Windows.Forms.TextBox textBoxCatalogueNumber;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox MNNtextBox;
-        private System.Windows.Forms.Button cmdKontrahent;
+        private System.Windows.Forms.TextBox textBoxGoodName;
+        private System.Windows.Forms.Button buttonFindCustomer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button cmdDodaj;
-        private System.Windows.Forms.ComboBox txtKontrahent;
-        private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.TextBox OCBtextBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox OCNtextBox;
+        private System.Windows.Forms.TextBox textBoxCustomer;
+        private System.Windows.Forms.TextBox textBoxUnit;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.BindingSource goodBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn catalogueNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn serialNumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nettoPriceSellDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bruttoPriceSellDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource categoriesBindingSource;
     }
 }
