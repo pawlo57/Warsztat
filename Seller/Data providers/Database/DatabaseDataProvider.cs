@@ -48,10 +48,10 @@ namespace Pawel.Workshop.Data_providers.Databse
                             serialNumber = good.NUMERSER,
                             description = good.OPIS,
                             name = good.NAZWA,
+                            vat = good.Vat == null ? 0 : (int)good.Vat,
                             bruttoPriceSell = (decimal)good.VATPRICE,
                             bruttoPriceBuy = (decimal)good.VATPRICE2,
-                            unit = good.JEDNOSTKA,
-                            vat = good.Vat == null ? 0 : (int)good.Vat
+                            unit = good.JEDNOSTKA
                         };
 
             return query.ToList();

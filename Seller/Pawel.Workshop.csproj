@@ -267,6 +267,11 @@
     <Compile Include="Mgzyn.cs" />
     <Compile Include="Class\Produkt.cs" />
     <Compile Include="Data providers\Database\DatabaseDataProvider.cs" />
+    <Compile Include="Strings\strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Statystyka.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="Custom controls\Customers.cs">
@@ -473,6 +478,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pz.resx">
       <DependentUpon>Pz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings\strings.pl.resx" />
+    <EmbeddedResource Include="Strings\strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Transakcje.resx">
       <DependentUpon>Transakcje.cs</DependentUpon>

@@ -45,35 +45,61 @@ namespace Pawel.Workshop.Entities
 
         public string unit { get; set; }
 
-        public decimal bruttoPriceSell { get; set; }
-
-        public decimal bruttoPriceBuy { get; set; }
-
-        public int vat { get; set; }
-
+        private decimal _nettoPriceSell = -1;
         public decimal nettoPriceSell
         {
             get
             {
-                try 
-                {
-                    return decimal.Round(bruttoPriceSell / vatMuller, 2);
-                }
-                catch { return -1; }
+                return vatMuller == 0.00M ? _bruttoPriceSell : decimal.Round(_bruttoPriceSell / vatMuller, 2);
+            }
+            set
+            {
+                _nettoPriceSell = value;
             }
         }
 
+        private decimal _bruttoPriceSell = -1;
+        public decimal bruttoPriceSell
+        {
+            get
+            {
+                return _nettoPriceSell < 0.00M ? _bruttoPriceSell : decimal.Round(_nettoPriceSell * vatMuller, 2);   
+            }
+            set
+            {
+                _bruttoPriceSell = value;
+            }
+        }
+
+        private decimal _nettoPriceBuy = -1;
         public decimal nettoPriceBuy
         {
             get
             {
-                try
-                {
-                    return decimal.Round(bruttoPriceBuy / vatMuller, 2);
-                }
-                catch { return -1; }
+                return decimal.Round(vatMuller == 0.00M ? _bruttoPriceBuy : _bruttoPriceBuy / vatMuller, 2);
+            }
+
+            set
+            {
+                _nettoPriceBuy = value;
             }
         }
+
+        private decimal _bruttoPriceBuy;
+        public decimal bruttoPriceBuy
+        {
+            get
+            {
+                return _nettoPriceBuy < 0.00M ? _bruttoPriceBuy : decimal.Round(_nettoPriceBuy * vatMuller, 2);
+            }
+
+            set
+            {
+                _bruttoPriceBuy = value;
+            }
+        }
+
+        public int vat { get; set; }
 
         private decimal vatMuller
         {

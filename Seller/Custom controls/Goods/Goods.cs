@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using Seller;
 using Pawel.Workshop.Database.Database_model;
 using Pawel.Workshop.Data_providers.Databse;
+using Pawel.Workshop.Strings;
+using Pawel.Workshop.Entities;
 
 namespace Pawel.Workshop.Custom_controls.Goods
 {
@@ -19,15 +21,127 @@ namespace Pawel.Workshop.Custom_controls.Goods
             InitializeComponent();
         }
 
+        public Good currentGood
+        {
+            get
+            {
+                return new Good
+                {
+                    ID = -1,
+                    categoryID = -1,
+                    catalogueNumber = textBoxCatalogueNumber.Text,
+                    model = textBoxModel.Text,
+                    serialNumber = textBoxSerialNumber.Text,
+                    description = textBoxDescription.Text,
+                    name = textBoxGoodName.Text,
+                    nettoPriceSell = this.nettoPriceSell,
+                    bruttoPriceSell = this.bruttoPriceSell,
+                    nettoPriceBuy = this.nettoPriceBuy,
+                    bruttoPriceBuy = this.bruttoPriceBuy,
+                    vat = this.vat
+                };
+            }
+
+            set
+            {
+                    //ID = -1,
+                    //categoryID = -1,
+                    textBoxCatalogueNumber.Text = value.catalogueNumber;
+                    textBoxModel.Text = value.model;
+                    textBoxSerialNumber.Text = value.serialNumber;
+                    textBoxDescription.Text = value.description;
+                    textBoxGoodName.Text = value.name;
+                    this.nettoPriceSell = value.nettoPriceSell;
+                    this.bruttoPriceSell = value.bruttoPriceSell;
+                    this.nettoPriceBuy = value.nettoPriceBuy;
+                    this.bruttoPriceBuy = value.bruttoPriceBuy;
+                    this.vat = value.vat;
+                
+            }
+        }
+
+        private List<Categories> categories = new List<Categories>();
+
+        private int vat
+        {
+            get
+            {
+                int result = 0;
+                int.TryParse(textBoxVat.Text,out result);
+
+                return result;
+            }
+
+            set { textBoxVat.Text = value.ToString(); }
+        }
+        private decimal vatMuller
+        {
+            get
+            {
+                return ((decimal)100 + vat) / 100;
+            }
+        }
+        private decimal nettoPriceSell
+        {
+            get
+            {
+                decimal result = 0;
+                decimal.TryParse(textBoxNettoPriceSell.Text, out result);
+
+                return result;
+            }
+
+            set { textBoxNettoPriceSell.Text = value.ToString(); }
+        }
+        private decimal bruttoPriceSell
+        {
+            get
+            {
+                decimal result = 0;
+                decimal.TryParse(textBoxBruttoPriceSell.Text, out result);
+
+                return result;
+            }
+
+            set { textBoxBruttoPriceSell.Text = value.ToString(); }
+        }
+        private decimal nettoPriceBuy
+        {
+            get
+            {
+                decimal result = 0;
+                decimal.TryParse(textBoxNettoPriceBuy.Text, out result);
+
+                return result;
+            }
+
+            set { textBoxNettoPriceBuy.Text = value.ToString(); }
+        }
+        private decimal bruttoPriceBuy
+        {
+            get
+            {
+                decimal result = 0;
+                decimal.TryParse(textBoxBruttoPriceBuy.Text, out result);
+
+                return result;
+            }
+
+            set { textBoxBruttoPriceBuy.Text = value.ToString(); }
+        }
+
+
         private void loadCategories()
         {
-            comboBoxCategories.DataSource = DatabaseDataProvider.getCategories();   
+            categories.Add(new Categories { ID = -1, CATEGORY = strings.All });
+            categories.AddRange(DatabaseDataProvider.getCategories());
+
+            categoriesBindingSource.DataSource = categories;
         }
 
         private void LoadProducts(int CATID, int CID, string name,string numerKat, string model,
             string numerSer)
         {
-
             List<Produkt> product = CustomerDatabase.GetPrograms(-1, CATID, CID, name, numerKat, model, numerSer);
 
             if (product == null) { Seller.Message.InfoMessage("Nie znaleziono"); return; }
@@ -41,7 +155,14 @@ namespace Pawel.Workshop.Custom_controls.Goods
         {
             loadCategories();
 
+            newCurrentGood();
+
             goodBindingSource.DataSource = DatabaseDataProvider.getGoodsByGood();
+        }
+
+        private void newCurrentGood()
+        {
+            this.currentGood = new Good { nettoPriceSell = 0, bruttoPriceSell = 0, vat = 23, nettoPriceBuy = 0, bruttoPriceBuy = 0 };
         }
 
         private void cmdSzukaj_Click(object sender, EventArgs e)
@@ -173,6 +294,44 @@ namespace Pawel.Workshop.Custom_controls.Goods
             newProgram.PRODUKT = product;
 
             newProgram.ShowDialog();
+        }
+
+
+        private void textBoxNettoPriceSell_TextChanged(object sender, EventArgs e)
+        {
+            if (!textBoxNettoPriceSell.Focused)
+            {
+                return;
+            }
+            bruttoPriceSell = currentGood.bruttoPriceSell;
+        }
+
+        private void textBoxBruttoPriceSell_TextChanged(object sender, EventArgs e)
+        {
+            if (!textBoxBruttoPriceSell.Focused)
+            {
+                return;
+            }
+            nettoPriceSell = currentGood.nettoPriceSell;
+        }
+
+        private void textBoxNettoPriceBuy_TextChanged(object sender, EventArgs e)
+        {
+            if (!textBoxNettoPriceBuy.Focused)
+            {
+                return;
+            }
+            bruttoPriceBuy = currentGood.bruttoPriceBuy;
+
+        }
+
+        private void textBoxBruttoPriceBuy_TextChanged(object sender, EventArgs e)
+        {
+            if (!textBoxBruttoPriceBuy.Focused)
+            {
+                return;
+            }
+            nettoPriceBuy = currentGood.nettoPriceBuy;
         }
     }
 }

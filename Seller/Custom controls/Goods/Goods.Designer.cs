@@ -43,7 +43,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.towaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripGoods = new System.Windows.Forms.ToolStrip();
             this.nowyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.otwórzToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.zapiszToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -64,10 +64,10 @@
             this.wklejToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.pomocToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.txtBrutto = new System.Windows.Forms.TextBox();
+            this.textBoxBruttoPriceSell = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtNetto = new System.Windows.Forms.TextBox();
+            this.textBoxNettoPriceSell = new System.Windows.Forms.TextBox();
             this.lblJednostka = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -83,20 +83,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxGoodName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.OCBtextBox = new System.Windows.Forms.TextBox();
+            this.textBoxBruttoPriceBuy = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.OCNtextBox = new System.Windows.Forms.TextBox();
+            this.textBoxNettoPriceBuy = new System.Windows.Forms.TextBox();
             this.textBoxCustomer = new System.Windows.Forms.TextBox();
             this.textBoxUnit = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxVat = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonAddCategory = new System.Windows.Forms.Button();
             this.buttonFindCustomer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoods)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.toolStripGoods.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -212,10 +212,10 @@
             this.towaryToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.towaryToolStripMenuItem.Text = "Towary";
             // 
-            // toolStrip1
+            // toolStripGoods
             // 
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripGoods.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStripGoods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nowyToolStripButton,
             this.otwórzToolStripButton,
             this.zapiszToolStripButton,
@@ -236,11 +236,11 @@
             this.wklejToolStripButton1,
             this.toolStripSeparator3,
             this.pomocToolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1008, 25);
-            this.toolStrip1.TabIndex = 7;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStripGoods.Location = new System.Drawing.Point(0, 24);
+            this.toolStripGoods.Name = "toolStripGoods";
+            this.toolStripGoods.Size = new System.Drawing.Size(1008, 25);
+            this.toolStripGoods.TabIndex = 7;
+            this.toolStripGoods.Text = "toolStripGoods";
             // 
             // nowyToolStripButton
             // 
@@ -406,14 +406,16 @@
             this.pomocToolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.pomocToolStripButton1.Text = "&Pomoc";
             // 
-            // txtBrutto
+            // textBoxBruttoPriceSell
             // 
-            this.txtBrutto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtBrutto.Location = new System.Drawing.Point(804, 127);
-            this.txtBrutto.MaxLength = 10;
-            this.txtBrutto.Name = "txtBrutto";
-            this.txtBrutto.Size = new System.Drawing.Size(130, 29);
-            this.txtBrutto.TabIndex = 1;
+            this.textBoxBruttoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxBruttoPriceSell.Location = new System.Drawing.Point(804, 127);
+            this.textBoxBruttoPriceSell.MaxLength = 10;
+            this.textBoxBruttoPriceSell.Name = "textBoxBruttoPriceSell";
+            this.textBoxBruttoPriceSell.Size = new System.Drawing.Size(130, 29);
+            this.textBoxBruttoPriceSell.TabIndex = 1;
+            this.textBoxBruttoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBruttoPriceSell.TextChanged += new System.EventHandler(this.textBoxBruttoPriceSell_TextChanged);
             // 
             // label15
             // 
@@ -433,14 +435,16 @@
             this.label16.TabIndex = 53;
             this.label16.Text = "Cena sprzadaży netto";
             // 
-            // txtNetto
+            // textBoxNettoPriceSell
             // 
-            this.txtNetto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNetto.Location = new System.Drawing.Point(804, 72);
-            this.txtNetto.MaxLength = 10;
-            this.txtNetto.Name = "txtNetto";
-            this.txtNetto.Size = new System.Drawing.Size(130, 29);
-            this.txtNetto.TabIndex = 0;
+            this.textBoxNettoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNettoPriceSell.Location = new System.Drawing.Point(804, 72);
+            this.textBoxNettoPriceSell.MaxLength = 10;
+            this.textBoxNettoPriceSell.Name = "textBoxNettoPriceSell";
+            this.textBoxNettoPriceSell.Size = new System.Drawing.Size(130, 29);
+            this.textBoxNettoPriceSell.TabIndex = 0;
+            this.textBoxNettoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceSell.TextChanged += new System.EventHandler(this.textBoxNettoPriceSell_TextChanged);
             // 
             // lblJednostka
             // 
@@ -569,14 +573,16 @@
             this.label1.TabIndex = 71;
             this.label1.Text = "Kontrahent";
             // 
-            // OCBtextBox
+            // textBoxBruttoPriceBuy
             // 
-            this.OCBtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.OCBtextBox.Location = new System.Drawing.Point(668, 127);
-            this.OCBtextBox.MaxLength = 10;
-            this.OCBtextBox.Name = "OCBtextBox";
-            this.OCBtextBox.Size = new System.Drawing.Size(130, 29);
-            this.OCBtextBox.TabIndex = 1;
+            this.textBoxBruttoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxBruttoPriceBuy.Location = new System.Drawing.Point(668, 127);
+            this.textBoxBruttoPriceBuy.MaxLength = 10;
+            this.textBoxBruttoPriceBuy.Name = "textBoxBruttoPriceBuy";
+            this.textBoxBruttoPriceBuy.Size = new System.Drawing.Size(130, 29);
+            this.textBoxBruttoPriceBuy.TabIndex = 1;
+            this.textBoxBruttoPriceBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBruttoPriceBuy.TextChanged += new System.EventHandler(this.textBoxBruttoPriceBuy_TextChanged);
             // 
             // label14
             // 
@@ -596,16 +602,16 @@
             this.label13.TabIndex = 53;
             this.label13.Text = "Cena zakupu netto";
             // 
-            // OCNtextBox
+            // textBoxNettoPriceBuy
             // 
-            this.OCNtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.OCNtextBox.Location = new System.Drawing.Point(668, 72);
-            this.OCNtextBox.MaxLength = 10;
-            this.OCNtextBox.Name = "OCNtextBox";
-            this.OCNtextBox.Size = new System.Drawing.Size(130, 29);
-            this.OCNtextBox.TabIndex = 0;
-            this.OCNtextBox.Text = "2,45";
-            this.OCNtextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNettoPriceBuy.Location = new System.Drawing.Point(668, 72);
+            this.textBoxNettoPriceBuy.MaxLength = 10;
+            this.textBoxNettoPriceBuy.Name = "textBoxNettoPriceBuy";
+            this.textBoxNettoPriceBuy.Size = new System.Drawing.Size(130, 29);
+            this.textBoxNettoPriceBuy.TabIndex = 0;
+            this.textBoxNettoPriceBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceBuy.TextChanged += new System.EventHandler(this.textBoxNettoPriceBuy_TextChanged);
             // 
             // textBoxCustomer
             // 
@@ -621,12 +627,12 @@
             this.textBoxUnit.Size = new System.Drawing.Size(91, 20);
             this.textBoxUnit.TabIndex = 84;
             // 
-            // textBox1
+            // textBoxVat
             // 
-            this.textBox1.Location = new System.Drawing.Point(668, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(86, 20);
-            this.textBox1.TabIndex = 85;
+            this.textBoxVat.Location = new System.Drawing.Point(668, 182);
+            this.textBoxVat.Name = "textBoxVat";
+            this.textBoxVat.Size = new System.Drawing.Size(86, 20);
+            this.textBoxVat.TabIndex = 85;
             // 
             // label6
             // 
@@ -661,17 +667,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxVat);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.txtBrutto);
+            this.Controls.Add(this.textBoxBruttoPriceSell);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.OCBtextBox);
-            this.Controls.Add(this.txtNetto);
+            this.Controls.Add(this.textBoxBruttoPriceBuy);
+            this.Controls.Add(this.textBoxNettoPriceSell);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.textBoxUnit);
             this.Controls.Add(this.textBoxCustomer);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.OCNtextBox);
+            this.Controls.Add(this.textBoxNettoPriceBuy);
             this.Controls.Add(this.lblJednostka);
             this.Controls.Add(this.textBoxDescription);
             this.Controls.Add(this.label8);
@@ -688,7 +694,7 @@
             this.Controls.Add(this.textBoxGoodName);
             this.Controls.Add(this.buttonFindCustomer);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.toolStripGoods);
             this.Controls.Add(this.dataGridViewGoods);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Goods";
@@ -698,8 +704,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.toolStripGoods.ResumeLayout(false);
+            this.toolStripGoods.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -712,7 +718,7 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem towaryToolStripMenuItem;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStripGoods;
         private System.Windows.Forms.ToolStripButton nowyToolStripButton;
         private System.Windows.Forms.ToolStripButton otwórzToolStripButton;
         private System.Windows.Forms.ToolStripButton zapiszToolStripButton;
@@ -733,10 +739,10 @@
         private System.Windows.Forms.ToolStripButton wklejToolStripButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton pomocToolStripButton1;
-        private System.Windows.Forms.TextBox txtBrutto;
+        private System.Windows.Forms.TextBox textBoxBruttoPriceSell;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtNetto;
+        private System.Windows.Forms.TextBox textBoxNettoPriceSell;
         private System.Windows.Forms.Label lblJednostka;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Label label8;
@@ -753,13 +759,13 @@
         private System.Windows.Forms.TextBox textBoxGoodName;
         private System.Windows.Forms.Button buttonFindCustomer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox OCBtextBox;
+        private System.Windows.Forms.TextBox textBoxBruttoPriceBuy;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox OCNtextBox;
+        private System.Windows.Forms.TextBox textBoxNettoPriceBuy;
         private System.Windows.Forms.TextBox textBoxCustomer;
         private System.Windows.Forms.TextBox textBoxUnit;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxVat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.BindingSource goodBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn catalogueNumberDataGridViewTextBoxColumn;
