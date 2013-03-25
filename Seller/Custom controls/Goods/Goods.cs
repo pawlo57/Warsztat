@@ -34,9 +34,9 @@ namespace Pawel.Workshop.Custom_controls.Goods
                     serialNumber = textBoxSerialNumber.Text,
                     description = textBoxDescription.Text,
                     name = textBoxGoodName.Text,
-                    nettoPriceSell = this.nettoPriceSell,
+                    //nettoPriceSell = this.nettoPriceSell,
                     bruttoPriceSell = this.bruttoPriceSell,
-                    nettoPriceBuy = this.nettoPriceBuy,
+                    //nettoPriceBuy = this.nettoPriceBuy,
                     bruttoPriceBuy = this.bruttoPriceBuy,
                     vat = this.vat
                 };
@@ -162,7 +162,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
         private void newCurrentGood()
         {
-            this.currentGood = new Good { nettoPriceSell = 0, bruttoPriceSell = 0, vat = 23, nettoPriceBuy = 0, bruttoPriceBuy = 0 };
+            this.currentGood = new Good { bruttoPriceSell = 2.23M, vat = 23, bruttoPriceBuy = 0 };
         }
 
         private void cmdSzukaj_Click(object sender, EventArgs e)
