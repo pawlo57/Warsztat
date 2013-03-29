@@ -43,6 +43,9 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.towaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nowyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripGoods = new System.Windows.Forms.ToolStrip();
             this.nowyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.otwórzToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -69,7 +72,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.textBoxNettoPriceSell = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
             this.lblJednostka = new System.Windows.Forms.Label();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.textBoxDescription = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxModel = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -208,9 +211,31 @@
             // 
             // towaryToolStripMenuItem
             // 
+            this.towaryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nowyToolStripMenuItem,
+            this.edycjaToolStripMenuItem,
+            this.usuńToolStripMenuItem});
             this.towaryToolStripMenuItem.Name = "towaryToolStripMenuItem";
             this.towaryToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.towaryToolStripMenuItem.Text = "Towary";
+            // 
+            // nowyToolStripMenuItem
+            // 
+            this.nowyToolStripMenuItem.Name = "nowyToolStripMenuItem";
+            this.nowyToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.nowyToolStripMenuItem.Text = "Nowy";
+            // 
+            // edycjaToolStripMenuItem
+            // 
+            this.edycjaToolStripMenuItem.Name = "edycjaToolStripMenuItem";
+            this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.edycjaToolStripMenuItem.Text = "Edycja";
+            // 
+            // usuńToolStripMenuItem
+            // 
+            this.usuńToolStripMenuItem.Name = "usuńToolStripMenuItem";
+            this.usuńToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.usuńToolStripMenuItem.Text = "Usuń";
             // 
             // toolStripGoods
             // 
@@ -263,7 +288,7 @@
             // zapiszToolStripButton
             // 
             this.zapiszToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zapiszToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("zapiszToolStripButton.Image")));
+            this.zapiszToolStripButton.Image = global::Pawel.Workshop.Properties.Resources.delDocument;
             this.zapiszToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.zapiszToolStripButton.Name = "zapiszToolStripButton";
             this.zapiszToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -286,7 +311,7 @@
             // wytnijToolStripButton
             // 
             this.wytnijToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.wytnijToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("wytnijToolStripButton.Image")));
+            this.wytnijToolStripButton.Image = global::Pawel.Workshop.Properties.Resources.Trash_Empty;
             this.wytnijToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.wytnijToolStripButton.Name = "wytnijToolStripButton";
             this.wytnijToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -451,12 +476,13 @@
             this.textBoxNettoPriceSell.Name = "textBoxNettoPriceSell";
             this.textBoxNettoPriceSell.Size = new System.Drawing.Size(130, 29);
             this.textBoxNettoPriceSell.TabIndex = 0;
+            this.textBoxNettoPriceSell.Text = "0,00";
             this.textBoxNettoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxNettoPriceSell.value = new decimal(new int[] {
             0,
             0,
             0,
-            0});
+            131072});
             this.textBoxNettoPriceSell.TextChanged += new System.EventHandler(this.textBoxNettoPriceSell_TextChanged);
             // 
             // lblJednostka
@@ -470,6 +496,7 @@
             // 
             // textBoxDescription
             // 
+            this.textBoxDescription.checkValue = false;
             this.textBoxDescription.Location = new System.Drawing.Point(6, 182);
             this.textBoxDescription.MaxLength = 500;
             this.textBoxDescription.Name = "textBoxDescription";
@@ -588,13 +615,20 @@
             // 
             // textBoxBruttoPriceBuy
             // 
+            this.textBoxBruttoPriceBuy.checkValue = false;
             this.textBoxBruttoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxBruttoPriceBuy.Location = new System.Drawing.Point(668, 127);
             this.textBoxBruttoPriceBuy.MaxLength = 10;
             this.textBoxBruttoPriceBuy.Name = "textBoxBruttoPriceBuy";
             this.textBoxBruttoPriceBuy.Size = new System.Drawing.Size(130, 29);
             this.textBoxBruttoPriceBuy.TabIndex = 1;
+            this.textBoxBruttoPriceBuy.Text = "0,00";
             this.textBoxBruttoPriceBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBruttoPriceBuy.value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
             this.textBoxBruttoPriceBuy.TextChanged += new System.EventHandler(this.textBoxBruttoPriceBuy_TextChanged);
             // 
             // label14
@@ -617,13 +651,20 @@
             // 
             // textBoxNettoPriceBuy
             // 
+            this.textBoxNettoPriceBuy.checkValue = false;
             this.textBoxNettoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNettoPriceBuy.Location = new System.Drawing.Point(668, 72);
             this.textBoxNettoPriceBuy.MaxLength = 10;
             this.textBoxNettoPriceBuy.Name = "textBoxNettoPriceBuy";
             this.textBoxNettoPriceBuy.Size = new System.Drawing.Size(130, 29);
             this.textBoxNettoPriceBuy.TabIndex = 0;
+            this.textBoxNettoPriceBuy.Text = "0,00";
             this.textBoxNettoPriceBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceBuy.value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
             this.textBoxNettoPriceBuy.TextChanged += new System.EventHandler(this.textBoxNettoPriceBuy_TextChanged);
             // 
             // textBoxCustomer
@@ -642,10 +683,16 @@
             // 
             // textBoxVat
             // 
+            this.textBoxVat.checkValue = false;
+            this.textBoxVat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxVat.Location = new System.Drawing.Point(668, 182);
             this.textBoxVat.Name = "textBoxVat";
             this.textBoxVat.Size = new System.Drawing.Size(86, 20);
             this.textBoxVat.TabIndex = 85;
+            this.textBoxVat.Text = "0";
+            this.textBoxVat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxVat.value = 0;
+            this.textBoxVat.TextChanged += new System.EventHandler(this.textBoxVat_TextChanged);
             // 
             // label6
             // 
@@ -757,7 +804,7 @@
         private System.Windows.Forms.Label label16;
         private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxNettoPriceSell;
         private System.Windows.Forms.Label lblJednostka;
-        private System.Windows.Forms.TextBox textBoxDescription;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxDescription;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxModel;
         private System.Windows.Forms.Label label7;
@@ -790,5 +837,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bruttoPriceSellDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource categoriesBindingSource;
+        private System.Windows.Forms.ToolStripMenuItem nowyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem edycjaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuńToolStripMenuItem;
     }
 }

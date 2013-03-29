@@ -63,9 +63,29 @@ namespace Pawel.Workshop.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delDocument {
+            get {
+                object obj = ResourceManager.GetObject("delDocument", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap newDocument {
             get {
                 object obj = ResourceManager.GetObject("newDocument", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trash_Empty {
+            get {
+                object obj = ResourceManager.GetObject("Trash Empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -5,33 +5,27 @@ using System.Text;
 using Pawel.Workshop.Custom_controls.Custom_TextBox;
 using Pawel.Workshop.Utils.Key_Checker;
 
-namespace Pawel.Workshop.Custom_controls.Integer_TextBox
+namespace Pawel.Workshop.Custom_controls.Letter_TextBox
 {
-    class IntegerTextBox : CustomTextBox
+    class LetterTextBox : CustomTextBox
     {
-        public IntegerTextBox()
+        public LetterTextBox()
             : base()
         {
-        }
-
-        public int value
-        {
-            get
-            {
-                int result = 0;
-                int.TryParse(this.Text, out result);
-
-                return result;
-            }
-
-            set { this.Text = value.ToString(); }
         }
 
         public override bool checkValueControl()
         {
             if (checkValue)
             {
-                if (value > 0) return true;
+                if (string.IsNullOrWhiteSpace(this.Text))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
 
             return false;
@@ -41,7 +35,7 @@ namespace Pawel.Workshop.Custom_controls.Integer_TextBox
         {
             base.OnKeyPress(e);
 
-            e.Handled = KeyChecker.checkForIntegerKey(this.Text, e.KeyChar);
+            e.Handled = KeyChecker.checkForLetterOrDigitKey(this.Text, e.KeyChar);
         }
     }
 }

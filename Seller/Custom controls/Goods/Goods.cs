@@ -11,6 +11,7 @@ using Pawel.Workshop.Database.Database_model;
 using Pawel.Workshop.Data_providers.Databse;
 using Pawel.Workshop.Strings;
 using Pawel.Workshop.Entities;
+using Pawel.Workshop.Properties;
 
 namespace Pawel.Workshop.Custom_controls.Goods
 {
@@ -62,14 +63,6 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
         private List<Categories> categories = new List<Categories>();
 
-        //private decimal vatMuller
-        //{
-        //    get
-        //    {
-        //        return ((decimal)100 + vat) / 100;
-        //    }
-        //}
-
         private void loadCategories()
         {
             categories.Add(new Categories { ID = -1, CATEGORY = strings.All });
@@ -101,7 +94,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
         private void newCurrentGood()
         {
-            this.currentGood = new Good { bruttoPriceSell = 2.23M, vat = 23, bruttoPriceBuy = 0 };
+            this.currentGood = new Good { bruttoPriceSell = 0, vat = AppSettings.Default.Vat , bruttoPriceBuy = 0 };
         }
 
         private void cmdSzukaj_Click(object sender, EventArgs e)
@@ -270,6 +263,16 @@ namespace Pawel.Workshop.Custom_controls.Goods
             {
                 return;
             }
+            textBoxNettoPriceBuy.value = currentGood.nettoPriceBuy;
+        }
+
+        private void textBoxVat_TextChanged(object sender, EventArgs e)
+        {
+            if (!textBoxVat.Focused)
+            {
+                return;
+            }
+            textBoxNettoPriceSell.value = currentGood.nettoPriceSell;
             textBoxNettoPriceBuy.value = currentGood.nettoPriceBuy;
         }
     }

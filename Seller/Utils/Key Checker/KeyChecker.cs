@@ -27,8 +27,19 @@ namespace Pawel.Workshop.Utils.Key_Checker
             }
             else
             {
-                return checkCurrentDotLength(text, keyChar);
+                return checkCurrentLength(text, keyChar);
             }
+        }
+
+        public static bool checkForLetterOrDigitKey(string text, char keyChar)
+        {
+            return (!char.IsLetterOrDigit(keyChar) && !checkForControlOrPunctation(keyChar));
+        }
+
+
+        private static bool checkForControlOrPunctation(char keyChar)
+        {
+            return (char.IsControl(keyChar) || char.IsPunctuation(keyChar));
         }
 
         private static bool checkForControlOrDot(char keyChar)
@@ -54,6 +65,16 @@ namespace Pawel.Workshop.Utils.Key_Checker
             }
 
             return false;
+        }
+
+        private static bool checkCurrentLength(string text, char keyChar)
+        {
+            if (char.IsControl(keyChar))
+            {
+                return false;
+            }
+
+            return text.Length >= 2;
         }
     }
 }
