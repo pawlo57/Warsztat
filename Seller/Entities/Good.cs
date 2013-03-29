@@ -50,12 +50,12 @@ namespace Pawel.Workshop.Entities
         {
             get
             {
-                return _bruttoPriceSell <= 0 ? _nettoPriceSell : (vatMuller == 0 ? _bruttoPriceSell : decimal.Round(_bruttoPriceSell / vatMuller, 2));
+                return _bruttoPriceSell < 0 ? _nettoPriceSell : (vatMuller == 0 ? _bruttoPriceSell : decimal.Round(_bruttoPriceSell / vatMuller, 2));
             }
-            //set
-            //{
-            //    _nettoPriceSell = value;
-            //}
+            set
+            {
+                _nettoPriceSell = value;
+            }
         }
 
         private decimal _bruttoPriceSell = -1;
@@ -78,11 +78,11 @@ namespace Pawel.Workshop.Entities
             {
                 return decimal.Round(vatMuller == 0.00M ? _bruttoPriceBuy : _bruttoPriceBuy / vatMuller, 2);
             }
+            set
+            {
+                _nettoPriceBuy = value;
+            }
 
-            //set
-            //{
-            //    _nettoPriceBuy = value;
-            //}
         }
 
         private decimal _bruttoPriceBuy;

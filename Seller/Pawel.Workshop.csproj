@@ -129,11 +129,20 @@
     <Compile Include="Class\WorkIdx.cs" />
     <Compile Include="Class\WorkIdxData.cs" />
     <Compile Include="Connect.cs" />
+    <Compile Include="Custom controls\Custom TextBox\CustomTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Custom controls\FakturyTrue.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Custom controls\FakturyTrue.Designer.cs">
       <DependentUpon>FakturyTrue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom controls\Integer TextBox\IntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom controls\Numeric TextBox\NumericTextBox.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Custom controls\Pracownicy\WorkerRep.cs">
       <SubType>Form</SubType>
@@ -247,6 +256,7 @@
       <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Good.cs" />
+    <Compile Include="Interfaces\ICustomTextBoxChecker.cs" />
     <Compile Include="Lista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -564,6 +574,7 @@
     <Compile Include="Ustawiania.Designer.cs">
       <DependentUpon>Ustawiania.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Key Checker\KeyChecker.cs" />
     <Compile Include="Uzytkownicy.cs">
       <SubType>Form</SubType>
     </Compile>

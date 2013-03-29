@@ -64,10 +64,10 @@
             this.wklejToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.pomocToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.textBoxBruttoPriceSell = new System.Windows.Forms.TextBox();
+            this.textBoxBruttoPriceSell = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBoxNettoPriceSell = new System.Windows.Forms.TextBox();
+            this.textBoxNettoPriceSell = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
             this.lblJednostka = new System.Windows.Forms.Label();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -83,13 +83,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxGoodName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxBruttoPriceBuy = new System.Windows.Forms.TextBox();
+            this.textBoxBruttoPriceBuy = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBoxNettoPriceBuy = new System.Windows.Forms.TextBox();
+            this.textBoxNettoPriceBuy = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
             this.textBoxCustomer = new System.Windows.Forms.TextBox();
             this.textBoxUnit = new System.Windows.Forms.TextBox();
-            this.textBoxVat = new System.Windows.Forms.TextBox();
+            this.textBoxVat = new Pawel.Workshop.Custom_controls.Integer_TextBox.IntegerTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonAddCategory = new System.Windows.Forms.Button();
             this.buttonFindCustomer = new System.Windows.Forms.Button();
@@ -408,13 +408,20 @@
             // 
             // textBoxBruttoPriceSell
             // 
+            this.textBoxBruttoPriceSell.checkValue = true;
             this.textBoxBruttoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxBruttoPriceSell.Location = new System.Drawing.Point(804, 127);
             this.textBoxBruttoPriceSell.MaxLength = 10;
             this.textBoxBruttoPriceSell.Name = "textBoxBruttoPriceSell";
             this.textBoxBruttoPriceSell.Size = new System.Drawing.Size(130, 29);
             this.textBoxBruttoPriceSell.TabIndex = 1;
+            this.textBoxBruttoPriceSell.Text = "0,00";
             this.textBoxBruttoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBruttoPriceSell.value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            131072});
             this.textBoxBruttoPriceSell.TextChanged += new System.EventHandler(this.textBoxBruttoPriceSell_TextChanged);
             // 
             // label15
@@ -437,6 +444,7 @@
             // 
             // textBoxNettoPriceSell
             // 
+            this.textBoxNettoPriceSell.checkValue = true;
             this.textBoxNettoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNettoPriceSell.Location = new System.Drawing.Point(804, 72);
             this.textBoxNettoPriceSell.MaxLength = 10;
@@ -444,6 +452,11 @@
             this.textBoxNettoPriceSell.Size = new System.Drawing.Size(130, 29);
             this.textBoxNettoPriceSell.TabIndex = 0;
             this.textBoxNettoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceSell.value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.textBoxNettoPriceSell.TextChanged += new System.EventHandler(this.textBoxNettoPriceSell_TextChanged);
             // 
             // lblJednostka
@@ -739,10 +752,10 @@
         private System.Windows.Forms.ToolStripButton wklejToolStripButton1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton pomocToolStripButton1;
-        private System.Windows.Forms.TextBox textBoxBruttoPriceSell;
+        private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxBruttoPriceSell;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBoxNettoPriceSell;
+        private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxNettoPriceSell;
         private System.Windows.Forms.Label lblJednostka;
         private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.Label label8;
@@ -759,13 +772,13 @@
         private System.Windows.Forms.TextBox textBoxGoodName;
         private System.Windows.Forms.Button buttonFindCustomer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxBruttoPriceBuy;
+        private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxBruttoPriceBuy;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBoxNettoPriceBuy;
+        private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxNettoPriceBuy;
         private System.Windows.Forms.TextBox textBoxCustomer;
         private System.Windows.Forms.TextBox textBoxUnit;
-        private System.Windows.Forms.TextBox textBoxVat;
+        private Pawel.Workshop.Custom_controls.Integer_TextBox.IntegerTextBox textBoxVat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.BindingSource goodBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn catalogueNumberDataGridViewTextBoxColumn;

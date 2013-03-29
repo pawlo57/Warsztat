@@ -34,11 +34,11 @@ namespace Pawel.Workshop.Custom_controls.Goods
                     serialNumber = textBoxSerialNumber.Text,
                     description = textBoxDescription.Text,
                     name = textBoxGoodName.Text,
-                    //nettoPriceSell = this.nettoPriceSell,
-                    bruttoPriceSell = this.bruttoPriceSell,
-                    //nettoPriceBuy = this.nettoPriceBuy,
-                    bruttoPriceBuy = this.bruttoPriceBuy,
-                    vat = this.vat
+                    nettoPriceSell = textBoxNettoPriceSell.value,
+                    bruttoPriceSell = textBoxBruttoPriceSell.value,
+                    nettoPriceBuy = textBoxNettoPriceBuy.value,
+                    bruttoPriceBuy = textBoxBruttoPriceBuy.value,
+                    vat = textBoxVat.value
                 };
             }
 
@@ -51,85 +51,24 @@ namespace Pawel.Workshop.Custom_controls.Goods
                     textBoxSerialNumber.Text = value.serialNumber;
                     textBoxDescription.Text = value.description;
                     textBoxGoodName.Text = value.name;
-                    this.nettoPriceSell = value.nettoPriceSell;
-                    this.bruttoPriceSell = value.bruttoPriceSell;
-                    this.nettoPriceBuy = value.nettoPriceBuy;
-                    this.bruttoPriceBuy = value.bruttoPriceBuy;
-                    this.vat = value.vat;
+                    textBoxNettoPriceSell.value = value.nettoPriceSell;
+                    textBoxBruttoPriceSell.value = value.bruttoPriceSell;
+                    textBoxNettoPriceBuy.value = value.nettoPriceBuy;
+                    textBoxBruttoPriceBuy.value = value.bruttoPriceBuy;
+                    textBoxVat.value = value.vat;
                 
             }
         }
 
         private List<Categories> categories = new List<Categories>();
 
-        private int vat
-        {
-            get
-            {
-                int result = 0;
-                int.TryParse(textBoxVat.Text,out result);
-
-                return result;
-            }
-
-            set { textBoxVat.Text = value.ToString(); }
-        }
-        private decimal vatMuller
-        {
-            get
-            {
-                return ((decimal)100 + vat) / 100;
-            }
-        }
-        private decimal nettoPriceSell
-        {
-            get
-            {
-                decimal result = 0;
-                decimal.TryParse(textBoxNettoPriceSell.Text, out result);
-
-                return result;
-            }
-
-            set { textBoxNettoPriceSell.Text = value.ToString(); }
-        }
-        private decimal bruttoPriceSell
-        {
-            get
-            {
-                decimal result = 0;
-                decimal.TryParse(textBoxBruttoPriceSell.Text, out result);
-
-                return result;
-            }
-
-            set { textBoxBruttoPriceSell.Text = value.ToString(); }
-        }
-        private decimal nettoPriceBuy
-        {
-            get
-            {
-                decimal result = 0;
-                decimal.TryParse(textBoxNettoPriceBuy.Text, out result);
-
-                return result;
-            }
-
-            set { textBoxNettoPriceBuy.Text = value.ToString(); }
-        }
-        private decimal bruttoPriceBuy
-        {
-            get
-            {
-                decimal result = 0;
-                decimal.TryParse(textBoxBruttoPriceBuy.Text, out result);
-
-                return result;
-            }
-
-            set { textBoxBruttoPriceBuy.Text = value.ToString(); }
-        }
-
+        //private decimal vatMuller
+        //{
+        //    get
+        //    {
+        //        return ((decimal)100 + vat) / 100;
+        //    }
+        //}
 
         private void loadCategories()
         {
@@ -303,7 +242,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
             {
                 return;
             }
-            bruttoPriceSell = currentGood.bruttoPriceSell;
+            textBoxBruttoPriceSell.value = currentGood.bruttoPriceSell;
         }
 
         private void textBoxBruttoPriceSell_TextChanged(object sender, EventArgs e)
@@ -312,7 +251,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
             {
                 return;
             }
-            nettoPriceSell = currentGood.nettoPriceSell;
+            textBoxNettoPriceSell.value = currentGood.nettoPriceSell;
         }
 
         private void textBoxNettoPriceBuy_TextChanged(object sender, EventArgs e)
@@ -321,7 +260,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
             {
                 return;
             }
-            bruttoPriceBuy = currentGood.bruttoPriceBuy;
+            textBoxBruttoPriceBuy.value = currentGood.bruttoPriceBuy;
 
         }
 
@@ -331,7 +270,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
             {
                 return;
             }
-            nettoPriceBuy = currentGood.nettoPriceBuy;
+            textBoxNettoPriceBuy.value = currentGood.nettoPriceBuy;
         }
     }
 }
