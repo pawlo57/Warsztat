@@ -43,24 +43,14 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.towaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nowyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemNewGood = new System.Windows.Forms.ToolStripMenuItem();
             this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripGoods = new System.Windows.Forms.ToolStrip();
-            this.nowyToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.otwórzToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.zapiszToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.drukujToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.wytnijToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.kopiujToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.wklejToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.pomocToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.nowyToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.otwórzToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.zapiszToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.drukujToolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonNewGood = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonOpenGood = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonSaveGood = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonPrintGood = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.wytnijToolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.kopiujToolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -78,7 +68,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxSerialNumber = new System.Windows.Forms.TextBox();
-            this.comboBoxCategories = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategories = new Pawel.Workshop.Custom_controls.Custom_ComboBox.CustomComboBox();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxCatalogueNumber = new System.Windows.Forms.TextBox();
@@ -134,6 +124,7 @@
             this.dataGridViewGoods.Size = new System.Drawing.Size(1005, 434);
             this.dataGridViewGoods.TabIndex = 3;
             this.dataGridViewGoods.TabStop = false;
+            this.dataGridViewGoods.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGoods_CellDoubleClick);
             // 
             // catalogueNumberDataGridViewTextBoxColumn
             // 
@@ -212,49 +203,40 @@
             // towaryToolStripMenuItem
             // 
             this.towaryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nowyToolStripMenuItem,
+            this.toolStripMenuItemNewGood,
             this.edycjaToolStripMenuItem,
             this.usuńToolStripMenuItem});
             this.towaryToolStripMenuItem.Name = "towaryToolStripMenuItem";
             this.towaryToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.towaryToolStripMenuItem.Text = "Towary";
             // 
-            // nowyToolStripMenuItem
+            // toolStripMenuItemNewGood
             // 
-            this.nowyToolStripMenuItem.Name = "nowyToolStripMenuItem";
-            this.nowyToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.nowyToolStripMenuItem.Text = "Nowy";
+            this.toolStripMenuItemNewGood.Name = "toolStripMenuItemNewGood";
+            this.toolStripMenuItemNewGood.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemNewGood.Text = "Nowy";
+            this.toolStripMenuItemNewGood.Click += new System.EventHandler(this.toolStripButtonNewGood_Click);
             // 
             // edycjaToolStripMenuItem
             // 
             this.edycjaToolStripMenuItem.Name = "edycjaToolStripMenuItem";
-            this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.edycjaToolStripMenuItem.Text = "Edycja";
             // 
             // usuńToolStripMenuItem
             // 
             this.usuńToolStripMenuItem.Name = "usuńToolStripMenuItem";
-            this.usuńToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.usuńToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuńToolStripMenuItem.Text = "Usuń";
             // 
             // toolStripGoods
             // 
             this.toolStripGoods.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStripGoods.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nowyToolStripButton,
-            this.otwórzToolStripButton,
-            this.zapiszToolStripButton,
-            this.drukujToolStripButton,
-            this.toolStripSeparator,
-            this.wytnijToolStripButton,
-            this.kopiujToolStripButton,
-            this.wklejToolStripButton,
-            this.toolStripSeparator1,
-            this.pomocToolStripButton,
-            this.nowyToolStripButton1,
-            this.otwórzToolStripButton1,
-            this.zapiszToolStripButton1,
-            this.drukujToolStripButton1,
+            this.toolStripButtonNewGood,
+            this.toolStripButtonOpenGood,
+            this.toolStripButtonSaveGood,
+            this.toolStripButtonPrintGood,
             this.toolStripSeparator2,
             this.wytnijToolStripButton1,
             this.kopiujToolStripButton1,
@@ -267,123 +249,43 @@
             this.toolStripGoods.TabIndex = 7;
             this.toolStripGoods.Text = "toolStripGoods";
             // 
-            // nowyToolStripButton
+            // toolStripButtonNewGood
             // 
-            this.nowyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.nowyToolStripButton.Image = global::Pawel.Workshop.Properties.Resources.newDocument;
-            this.nowyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.nowyToolStripButton.Name = "nowyToolStripButton";
-            this.nowyToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.nowyToolStripButton.Text = "&Nowy";
+            this.toolStripButtonNewGood.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonNewGood.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonNewGood.Image")));
+            this.toolStripButtonNewGood.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonNewGood.Name = "toolStripButtonNewGood";
+            this.toolStripButtonNewGood.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonNewGood.Text = "&Nowy";
+            this.toolStripButtonNewGood.Click += new System.EventHandler(this.toolStripButtonNewGood_Click);
             // 
-            // otwórzToolStripButton
+            // toolStripButtonOpenGood
             // 
-            this.otwórzToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.otwórzToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("otwórzToolStripButton.Image")));
-            this.otwórzToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.otwórzToolStripButton.Name = "otwórzToolStripButton";
-            this.otwórzToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.otwórzToolStripButton.Text = "&Otwórz";
+            this.toolStripButtonOpenGood.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonOpenGood.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonOpenGood.Image")));
+            this.toolStripButtonOpenGood.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonOpenGood.Name = "toolStripButtonOpenGood";
+            this.toolStripButtonOpenGood.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonOpenGood.Text = "&Otwórz";
+            this.toolStripButtonOpenGood.Click += new System.EventHandler(this.toolStripButtonOpenGood_Click);
             // 
-            // zapiszToolStripButton
+            // toolStripButtonSaveGood
             // 
-            this.zapiszToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zapiszToolStripButton.Image = global::Pawel.Workshop.Properties.Resources.delDocument;
-            this.zapiszToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.zapiszToolStripButton.Name = "zapiszToolStripButton";
-            this.zapiszToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.zapiszToolStripButton.Text = "&Zapisz";
+            this.toolStripButtonSaveGood.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonSaveGood.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSaveGood.Image")));
+            this.toolStripButtonSaveGood.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonSaveGood.Name = "toolStripButtonSaveGood";
+            this.toolStripButtonSaveGood.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonSaveGood.Text = "&Zapisz";
             // 
-            // drukujToolStripButton
+            // toolStripButtonPrintGood
             // 
-            this.drukujToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.drukujToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("drukujToolStripButton.Image")));
-            this.drukujToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.drukujToolStripButton.Name = "drukujToolStripButton";
-            this.drukujToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.drukujToolStripButton.Text = "&Drukuj";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // wytnijToolStripButton
-            // 
-            this.wytnijToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.wytnijToolStripButton.Image = global::Pawel.Workshop.Properties.Resources.Trash_Empty;
-            this.wytnijToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.wytnijToolStripButton.Name = "wytnijToolStripButton";
-            this.wytnijToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.wytnijToolStripButton.Text = "&Wytnij";
-            // 
-            // kopiujToolStripButton
-            // 
-            this.kopiujToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.kopiujToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("kopiujToolStripButton.Image")));
-            this.kopiujToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.kopiujToolStripButton.Name = "kopiujToolStripButton";
-            this.kopiujToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.kopiujToolStripButton.Text = "&Kopiuj";
-            // 
-            // wklejToolStripButton
-            // 
-            this.wklejToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.wklejToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("wklejToolStripButton.Image")));
-            this.wklejToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.wklejToolStripButton.Name = "wklejToolStripButton";
-            this.wklejToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.wklejToolStripButton.Text = "&Wklej";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // pomocToolStripButton
-            // 
-            this.pomocToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.pomocToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pomocToolStripButton.Image")));
-            this.pomocToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pomocToolStripButton.Name = "pomocToolStripButton";
-            this.pomocToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.pomocToolStripButton.Text = "&Pomoc";
-            // 
-            // nowyToolStripButton1
-            // 
-            this.nowyToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.nowyToolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("nowyToolStripButton1.Image")));
-            this.nowyToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.nowyToolStripButton1.Name = "nowyToolStripButton1";
-            this.nowyToolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.nowyToolStripButton1.Text = "&Nowy";
-            // 
-            // otwórzToolStripButton1
-            // 
-            this.otwórzToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.otwórzToolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("otwórzToolStripButton1.Image")));
-            this.otwórzToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.otwórzToolStripButton1.Name = "otwórzToolStripButton1";
-            this.otwórzToolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.otwórzToolStripButton1.Text = "&Otwórz";
-            // 
-            // zapiszToolStripButton1
-            // 
-            this.zapiszToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.zapiszToolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("zapiszToolStripButton1.Image")));
-            this.zapiszToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.zapiszToolStripButton1.Name = "zapiszToolStripButton1";
-            this.zapiszToolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.zapiszToolStripButton1.Text = "&Zapisz";
-            // 
-            // drukujToolStripButton1
-            // 
-            this.drukujToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.drukujToolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("drukujToolStripButton1.Image")));
-            this.drukujToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.drukujToolStripButton1.Name = "drukujToolStripButton1";
-            this.drukujToolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.drukujToolStripButton1.Text = "&Drukuj";
+            this.toolStripButtonPrintGood.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonPrintGood.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonPrintGood.Image")));
+            this.toolStripButtonPrintGood.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonPrintGood.Name = "toolStripButtonPrintGood";
+            this.toolStripButtonPrintGood.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonPrintGood.Text = "&Drukuj";
             // 
             // toolStripSeparator2
             // 
@@ -433,8 +335,8 @@
             // 
             // textBoxBruttoPriceSell
             // 
-            this.textBoxBruttoPriceSell.checkValue = true;
             this.textBoxBruttoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxBruttoPriceSell.isCheckValue = true;
             this.textBoxBruttoPriceSell.Location = new System.Drawing.Point(804, 127);
             this.textBoxBruttoPriceSell.MaxLength = 10;
             this.textBoxBruttoPriceSell.Name = "textBoxBruttoPriceSell";
@@ -469,8 +371,8 @@
             // 
             // textBoxNettoPriceSell
             // 
-            this.textBoxNettoPriceSell.checkValue = true;
             this.textBoxNettoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNettoPriceSell.isCheckValue = false;
             this.textBoxNettoPriceSell.Location = new System.Drawing.Point(804, 72);
             this.textBoxNettoPriceSell.MaxLength = 10;
             this.textBoxNettoPriceSell.Name = "textBoxNettoPriceSell";
@@ -496,7 +398,7 @@
             // 
             // textBoxDescription
             // 
-            this.textBoxDescription.checkValue = false;
+            this.textBoxDescription.isCheckValue = false;
             this.textBoxDescription.Location = new System.Drawing.Point(6, 182);
             this.textBoxDescription.MaxLength = 500;
             this.textBoxDescription.Name = "textBoxDescription";
@@ -551,10 +453,12 @@
             this.comboBoxCategories.DataSource = this.categoriesBindingSource;
             this.comboBoxCategories.DisplayMember = "CATEGORY";
             this.comboBoxCategories.FormattingEnabled = true;
+            this.comboBoxCategories.isCheckValue = true;
             this.comboBoxCategories.Location = new System.Drawing.Point(435, 65);
             this.comboBoxCategories.Name = "comboBoxCategories";
             this.comboBoxCategories.Size = new System.Drawing.Size(170, 21);
             this.comboBoxCategories.TabIndex = 61;
+            this.comboBoxCategories.value = -1;
             this.comboBoxCategories.ValueMember = "ID";
             // 
             // categoriesBindingSource
@@ -603,6 +507,7 @@
             this.textBoxGoodName.Name = "textBoxGoodName";
             this.textBoxGoodName.Size = new System.Drawing.Size(423, 20);
             this.textBoxGoodName.TabIndex = 59;
+            this.textBoxGoodName.TextChanged += new System.EventHandler(this.textBoxGoodName_TextChanged);
             // 
             // label1
             // 
@@ -615,8 +520,8 @@
             // 
             // textBoxBruttoPriceBuy
             // 
-            this.textBoxBruttoPriceBuy.checkValue = false;
             this.textBoxBruttoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxBruttoPriceBuy.isCheckValue = false;
             this.textBoxBruttoPriceBuy.Location = new System.Drawing.Point(668, 127);
             this.textBoxBruttoPriceBuy.MaxLength = 10;
             this.textBoxBruttoPriceBuy.Name = "textBoxBruttoPriceBuy";
@@ -651,8 +556,8 @@
             // 
             // textBoxNettoPriceBuy
             // 
-            this.textBoxNettoPriceBuy.checkValue = false;
             this.textBoxNettoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNettoPriceBuy.isCheckValue = false;
             this.textBoxNettoPriceBuy.Location = new System.Drawing.Point(668, 72);
             this.textBoxNettoPriceBuy.MaxLength = 10;
             this.textBoxNettoPriceBuy.Name = "textBoxNettoPriceBuy";
@@ -683,8 +588,8 @@
             // 
             // textBoxVat
             // 
-            this.textBoxVat.checkValue = false;
             this.textBoxVat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxVat.isCheckValue = false;
             this.textBoxVat.Location = new System.Drawing.Point(668, 182);
             this.textBoxVat.Name = "textBoxVat";
             this.textBoxVat.Size = new System.Drawing.Size(86, 20);
@@ -779,20 +684,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem towaryToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStripGoods;
-        private System.Windows.Forms.ToolStripButton nowyToolStripButton;
-        private System.Windows.Forms.ToolStripButton otwórzToolStripButton;
-        private System.Windows.Forms.ToolStripButton zapiszToolStripButton;
-        private System.Windows.Forms.ToolStripButton drukujToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.ToolStripButton wytnijToolStripButton;
-        private System.Windows.Forms.ToolStripButton kopiujToolStripButton;
-        private System.Windows.Forms.ToolStripButton wklejToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton pomocToolStripButton;
-        private System.Windows.Forms.ToolStripButton nowyToolStripButton1;
-        private System.Windows.Forms.ToolStripButton otwórzToolStripButton1;
-        private System.Windows.Forms.ToolStripButton zapiszToolStripButton1;
-        private System.Windows.Forms.ToolStripButton drukujToolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonNewGood;
+        private System.Windows.Forms.ToolStripButton toolStripButtonOpenGood;
+        private System.Windows.Forms.ToolStripButton toolStripButtonSaveGood;
+        private System.Windows.Forms.ToolStripButton toolStripButtonPrintGood;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton wytnijToolStripButton1;
         private System.Windows.Forms.ToolStripButton kopiujToolStripButton1;
@@ -810,7 +705,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxSerialNumber;
-        private System.Windows.Forms.ComboBox comboBoxCategories;
+        private Pawel.Workshop.Custom_controls.Custom_ComboBox.CustomComboBox comboBoxCategories;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonAddCategory;
         private System.Windows.Forms.TextBox textBoxCatalogueNumber;
@@ -837,7 +732,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vatDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bruttoPriceSellDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource categoriesBindingSource;
-        private System.Windows.Forms.ToolStripMenuItem nowyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemNewGood;
         private System.Windows.Forms.ToolStripMenuItem edycjaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuńToolStripMenuItem;
     }

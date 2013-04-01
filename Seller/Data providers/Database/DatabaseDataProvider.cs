@@ -33,11 +33,11 @@ namespace Pawel.Workshop.Data_providers.Databse
 
         #region Goods
 
-        public static List<Good> getGoodsByGood()
+        public static List<Good> getGoodsByGood(Good findGood)
         {
             var query = from good in dbContext.Programs
                         join category in dbContext.Categories on good.CATID equals category.ID
-                        //where (good.CATID > 0 && (programs.CATID == good.CATID))
+                        where good.NAZWA.Contains(findGood.name) || findGood.isGoodName
                         select new Good
                         {
                             ID = good.ID,

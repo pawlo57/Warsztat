@@ -45,6 +45,14 @@ namespace Pawel.Workshop.Entities
 
         public string unit { get; set; }
 
+        public bool isGoodName
+        {
+            get
+            {
+                return string.IsNullOrWhiteSpace(this.name);
+            }
+        }
+
         private decimal _nettoPriceSell = -1;
         public decimal nettoPriceSell
         {

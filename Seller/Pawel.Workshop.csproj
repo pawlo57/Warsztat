@@ -129,6 +129,9 @@
     <Compile Include="Class\WorkIdx.cs" />
     <Compile Include="Class\WorkIdxData.cs" />
     <Compile Include="Connect.cs" />
+    <Compile Include="Custom controls\Custom ComboBox\CustomComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Custom controls\Custom TextBox\CustomTextBox.cs">
       <SubType>Component</SubType>
     </Compile>

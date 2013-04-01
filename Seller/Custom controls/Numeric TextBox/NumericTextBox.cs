@@ -27,9 +27,9 @@ namespace Pawel.Workshop.Custom_controls.Numeric_TextBox
             set { this.Text = value.ToString("0.00"); }
         }
 
-        public override bool checkValueControl()
+        protected override bool checkValueControl()
         {
-            if (checkValue)
+            if (isCheckValue)
             {
                 if (this.value < 0)
                 {

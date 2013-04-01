@@ -10,9 +10,19 @@ namespace Pawel.Workshop.Custom_controls.Custom_TextBox
 {
     abstract class CustomTextBox : TextBox, ICustomTextBoxChecker
     {
-        public bool checkValue { get; set; }
+        public bool isCheckValue { get; set; }
 
-        public abstract bool checkValueControl();
+        public bool checkValue()
+        {
+            if (isCheckValue)
+            {
+                return checkValueControl();
+            }
+
+            return true;
+        }
+
+        protected abstract bool checkValueControl();
 
         public void setHighlitedState()
         {

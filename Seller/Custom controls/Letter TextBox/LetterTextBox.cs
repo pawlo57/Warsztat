@@ -14,21 +14,16 @@ namespace Pawel.Workshop.Custom_controls.Letter_TextBox
         {
         }
 
-        public override bool checkValueControl()
+        protected override bool checkValueControl()
         {
-            if (checkValue)
+            if (string.IsNullOrWhiteSpace(this.Text))
             {
-                if (string.IsNullOrWhiteSpace(this.Text))
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+                return false;
             }
-
-            return false;
+            else
+            {
+                return true;
+            }
         }
 
         protected override void OnKeyPress(System.Windows.Forms.KeyPressEventArgs e)

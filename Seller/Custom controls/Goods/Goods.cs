@@ -29,7 +29,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
                 return new Good
                 {
                     ID = -1,
-                    categoryID = -1,
+                    categoryID = comboBoxCategories.value,
                     catalogueNumber = textBoxCatalogueNumber.Text,
                     model = textBoxModel.Text,
                     serialNumber = textBoxSerialNumber.Text,
@@ -46,18 +46,17 @@ namespace Pawel.Workshop.Custom_controls.Goods
             set
             {
                     //ID = -1,
-                    //categoryID = -1,
-                    textBoxCatalogueNumber.Text = value.catalogueNumber;
-                    textBoxModel.Text = value.model;
-                    textBoxSerialNumber.Text = value.serialNumber;
-                    textBoxDescription.Text = value.description;
-                    textBoxGoodName.Text = value.name;
-                    textBoxNettoPriceSell.value = value.nettoPriceSell;
-                    textBoxBruttoPriceSell.value = value.bruttoPriceSell;
-                    textBoxNettoPriceBuy.value = value.nettoPriceBuy;
-                    textBoxBruttoPriceBuy.value = value.bruttoPriceBuy;
-                    textBoxVat.value = value.vat;
-                
+                comboBoxCategories.value = value.categoryID;
+                textBoxCatalogueNumber.Text = value.catalogueNumber;
+                textBoxModel.Text = value.model;
+                textBoxSerialNumber.Text = value.serialNumber;
+                textBoxDescription.Text = value.description;
+                textBoxGoodName.Text = value.name;
+                textBoxNettoPriceSell.value = value.nettoPriceSell;
+                textBoxBruttoPriceSell.value = value.bruttoPriceSell;
+                textBoxNettoPriceBuy.value = value.nettoPriceBuy;
+                textBoxBruttoPriceBuy.value = value.bruttoPriceBuy;
+                textBoxVat.value = value.vat;
             }
         }
 
@@ -71,30 +70,31 @@ namespace Pawel.Workshop.Custom_controls.Goods
             categoriesBindingSource.DataSource = categories;
         }
 
-        private void LoadProducts(int CATID, int CID, string name,string numerKat, string model,
-            string numerSer)
+        private void loadGoods()
         {
-            List<Produkt> product = CustomerDatabase.GetPrograms(-1, CATID, CID, name, numerKat, model, numerSer);
+            List<Good> goodList = DatabaseDataProvider.getGoodsByGood(currentGood);
 
-            if (product == null) { Seller.Message.InfoMessage("Nie znaleziono"); return; }
+            if (goodList == null) { Seller.Message.InfoMessage("Nie znaleziono"); return; }
 
-            dataGridViewGoods.DataSource = product;
-
-            SetDataGridView.SetProduktyView(ref dataGridViewGoods);
+            goodBindingSource.DataSource = goodList;
         }
 
         private void Programs_Load(object sender, EventArgs e)
         {
             loadCategories();
-
             newCurrentGood();
-
-            goodBindingSource.DataSource = DatabaseDataProvider.getGoodsByGood();
+            loadGoods();
         }
 
         private void newCurrentGood()
         {
             this.currentGood = new Good { bruttoPriceSell = 0, vat = AppSettings.Default.Vat , bruttoPriceBuy = 0 };
+        }
+
+        private void loadSelectedGood()
+        {
+            Good good = (Good)goodBindingSource.Current;
+            this.currentGood = good;
         }
 
         private void cmdSzukaj_Click(object sender, EventArgs e)
@@ -105,8 +105,8 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             if (products.CANCEL) return;
 
-            LoadProducts(products.KATID, products.CID, products.NAZWA_TOWARU, 
-                products.NUMER_KATALOGOWY, products.MODEL, products.NUMER_SERYJNY);
+            //LoadProducts(products.KATID, products.CID, products.NAZWA_TOWARU, 
+            //    products.NUMER_KATALOGOWY, products.MODEL, products.NUMER_SERYJNY);
         }
 
         private void cmdNowaKat_Click(object sender, EventArgs e)
@@ -176,8 +176,8 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             Seller.Message.InfoMessage("Produkt został dodany");
 
-            LoadProducts(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL, 
-                newProgram.NUMER_SERYJNY);
+            //LoadProducts(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL, 
+            //    newProgram.NUMER_SERYJNY);
         }
 
         private void cmdEdytuj_Click(object sender, EventArgs e)
@@ -205,8 +205,8 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
             Seller.Message.InfoMessage("Produkt został zmieniony");
 
-            LoadProducts(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL,
-                newProgram.NUMER_SERYJNY);
+            //LoadProducts(newProgram.KATID, newProgram.CID, newProgram.NAZWA_TOWARU, newProgram.NUMER_KATALOGOWY, newProgram.MODEL,
+            //    newProgram.NUMER_SERYJNY);
         }
 
         private void cmdListaKat_Click(object sender, EventArgs e)
@@ -274,6 +274,27 @@ namespace Pawel.Workshop.Custom_controls.Goods
             }
             textBoxNettoPriceSell.value = currentGood.nettoPriceSell;
             textBoxNettoPriceBuy.value = currentGood.nettoPriceBuy;
+        }
+
+        private void toolStripButtonNewGood_Click(object sender, EventArgs e)
+        {
+            newCurrentGood();
+            loadGoods();
+        }
+
+        private void textBoxGoodName_TextChanged(object sender, EventArgs e)
+        {
+            loadGoods();
+        }
+
+        private void toolStripButtonOpenGood_Click(object sender, EventArgs e)
+        {
+            loadSelectedGood();
+        }
+
+        private void dataGridViewGoods_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            loadSelectedGood();
         }
     }
 }

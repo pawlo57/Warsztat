@@ -8,9 +8,9 @@ namespace Pawel.Workshop.Interfaces
 {
     interface ICustomTextBoxChecker
     {
-        bool checkValue { get; set; }
+        bool isCheckValue { get; set; }
 
-        bool checkValueControl();
+        bool checkValue();
 
         void setHighlitedState();
 

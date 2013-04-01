@@ -27,9 +27,9 @@ namespace Pawel.Workshop.Custom_controls.Integer_TextBox
             set { this.Text = value.ToString(); }
         }
 
-        public override bool checkValueControl()
+        protected override bool checkValueControl()
         {
-            if (checkValue)
+            if (isCheckValue)
             {
                 if (value > 0) return true;
             }
