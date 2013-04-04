@@ -28,13 +28,14 @@ namespace Pawel.Workshop.Custom_controls.Goods
             {
                 return new Good
                 {
-                    ID = -1,
+                    Id = -1,
                     categoryID = comboBoxCategories.value,
                     catalogueNumber = textBoxCatalogueNumber.Text,
                     model = textBoxModel.Text,
                     serialNumber = textBoxSerialNumber.Text,
                     description = textBoxDescription.Text,
                     name = textBoxGoodName.Text,
+                    unit = textBoxUnit.Text,
                     nettoPriceSell = textBoxNettoPriceSell.value,
                     bruttoPriceSell = textBoxBruttoPriceSell.value,
                     nettoPriceBuy = textBoxNettoPriceBuy.value,
@@ -52,6 +53,8 @@ namespace Pawel.Workshop.Custom_controls.Goods
                 textBoxSerialNumber.Text = value.serialNumber;
                 textBoxDescription.Text = value.description;
                 textBoxGoodName.Text = value.name;
+                textBoxUnit.Text = value.unit;
+                kontrahent = value.kontrahent;
                 textBoxNettoPriceSell.value = value.nettoPriceSell;
                 textBoxBruttoPriceSell.value = value.bruttoPriceSell;
                 textBoxNettoPriceBuy.value = value.nettoPriceBuy;
@@ -59,6 +62,20 @@ namespace Pawel.Workshop.Custom_controls.Goods
                 textBoxVat.value = value.vat;
             }
         }
+
+        private Kontrahent kontrahent
+        {
+            get
+            {
+                return null;
+            }
+
+            set
+            {
+                textBoxKontrahent.Text = value.ToString();
+            }
+        }
+
 
         private List<Categories> categories = new List<Categories>();
 
@@ -88,7 +105,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
         private void newCurrentGood()
         {
-            this.currentGood = new Good { bruttoPriceSell = 0, vat = AppSettings.Default.Vat , bruttoPriceBuy = 0 };
+            this.currentGood = new Good { bruttoPriceSell = 0, vat = AppSettings.Default.Vat, bruttoPriceBuy = 0, kontrahent = new Kontrahent { Id = -1 } };
         }
 
         private void loadSelectedGood()

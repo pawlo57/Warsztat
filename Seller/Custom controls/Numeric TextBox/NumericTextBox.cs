@@ -43,12 +43,9 @@ namespace Pawel.Workshop.Custom_controls.Numeric_TextBox
             return true;
         }
 
-        protected override void OnKeyPress(KeyPressEventArgs e)
+        protected override bool getProperKeyChecker(KeyPressEventArgs e)
         {
-            base.OnKeyPress(e);
-
-            e.Handled = KeyChecker.checkForNumericKey(this.Text, e.KeyChar); 
+            return KeyChecker.checkForNumericKey(this.Text, e.KeyChar); 
         }
-
     }
 }

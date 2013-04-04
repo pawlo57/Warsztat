@@ -26,11 +26,9 @@ namespace Pawel.Workshop.Custom_controls.Letter_TextBox
             }
         }
 
-        protected override void OnKeyPress(System.Windows.Forms.KeyPressEventArgs e)
+        protected override bool getProperKeyChecker(System.Windows.Forms.KeyPressEventArgs e)
         {
-            base.OnKeyPress(e);
-
-            e.Handled = KeyChecker.checkForLetterOrDigitKey(this.Text, e.KeyChar);
+            return KeyChecker.checkForLetterOrDigitKey(this.Text, e.KeyChar);
         }
     }
 }

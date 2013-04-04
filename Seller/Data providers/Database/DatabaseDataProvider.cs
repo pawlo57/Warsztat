@@ -40,9 +40,8 @@ namespace Pawel.Workshop.Data_providers.Databse
                         where good.NAZWA.Contains(findGood.name) || findGood.isGoodName
                         select new Good
                         {
-                            ID = good.ID,
+                            Id = good.ID,
                             categoryID = good.CATID == null ? 0 : (int)good.CATID,
-                            customerID = good.CID == null ? 0 : (int)good.CID,
                             catalogueNumber = good.NUMERKAT,
                             model = good.MODEL,
                             serialNumber = good.NUMERSER,
@@ -51,10 +50,33 @@ namespace Pawel.Workshop.Data_providers.Databse
                             vat = good.Vat == null ? 0 : (int)good.Vat,
                             bruttoPriceSell = (decimal)good.VATPRICE,
                             bruttoPriceBuy = (decimal)good.VATPRICE2,
-                            unit = good.JEDNOSTKA
+                            unit = good.JEDNOSTKA,
+                            kontrahent = (from customer in dbContext.Customers
+                                          where customer.ID == good.CID
+                                          select new Kontrahent
+                                          {
+                                              Id = customer.ID,
+                                              name = customer.FIRMA,
+                                              ownerName = customer.IMIE,
+                                              ownerSurname = customer.NAZWISKO,
+                                              Address = customer.ADRES,
+                                              nipNumber = customer.NIP,
+                                              peselNumber = customer.PESEL,
+                                              bankName = customer.BANK,
+                                              phoneNumber = customer.TEL
+                                          }).FirstOrDefault()
                         };
 
             return query.ToList();
+        }
+
+        #endregion
+
+        #region Kontrahents
+
+        public static List<Kontrahent> getCustomerByCustomer(Customers customer)
+        {
+            return null;
         }
 
         #endregion

@@ -46,6 +46,11 @@
             this.toolStripMenuItemNewGood = new System.Windows.Forms.ToolStripMenuItem();
             this.edycjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.podstawowaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aktywnyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.archiwalnyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripGoods = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonNewGood = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonOpenGood = new System.Windows.Forms.ToolStripButton();
@@ -64,28 +69,30 @@
             this.lblJednostka = new System.Windows.Forms.Label();
             this.textBoxDescription = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBoxModel = new System.Windows.Forms.TextBox();
+            this.textBoxModel = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxSerialNumber = new System.Windows.Forms.TextBox();
+            this.textBoxSerialNumber = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.comboBoxCategories = new Pawel.Workshop.Custom_controls.Custom_ComboBox.CustomComboBox();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxCatalogueNumber = new System.Windows.Forms.TextBox();
+            this.textBoxCatalogueNumber = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxGoodName = new System.Windows.Forms.TextBox();
+            this.textBoxGoodName = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxBruttoPriceBuy = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.textBoxNettoPriceBuy = new Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox();
-            this.textBoxCustomer = new System.Windows.Forms.TextBox();
-            this.textBoxUnit = new System.Windows.Forms.TextBox();
+            this.textBoxKontrahent = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
+            this.textBoxUnit = new Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox();
             this.textBoxVat = new Pawel.Workshop.Custom_controls.Integer_TextBox.IntegerTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonAddCategory = new System.Windows.Forms.Button();
             this.buttonFindCustomer = new System.Windows.Forms.Button();
+            this.customComboBoxKindOfPrice = new Pawel.Workshop.Custom_controls.Custom_ComboBox.CustomComboBox();
+            this.labelKindOfPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoods)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -121,7 +128,7 @@
             this.dataGridViewGoods.Name = "dataGridViewGoods";
             this.dataGridViewGoods.ReadOnly = true;
             this.dataGridViewGoods.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewGoods.Size = new System.Drawing.Size(1005, 434);
+            this.dataGridViewGoods.Size = new System.Drawing.Size(1008, 434);
             this.dataGridViewGoods.TabIndex = 3;
             this.dataGridViewGoods.TabStop = false;
             this.dataGridViewGoods.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGoods_CellDoubleClick);
@@ -193,7 +200,9 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.towaryToolStripMenuItem});
+            this.towaryToolStripMenuItem,
+            this.cenaToolStripMenuItem,
+            this.statusToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1008, 24);
@@ -213,21 +222,56 @@
             // toolStripMenuItemNewGood
             // 
             this.toolStripMenuItemNewGood.Name = "toolStripMenuItemNewGood";
-            this.toolStripMenuItemNewGood.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemNewGood.Size = new System.Drawing.Size(108, 22);
             this.toolStripMenuItemNewGood.Text = "Nowy";
             this.toolStripMenuItemNewGood.Click += new System.EventHandler(this.toolStripButtonNewGood_Click);
             // 
             // edycjaToolStripMenuItem
             // 
             this.edycjaToolStripMenuItem.Name = "edycjaToolStripMenuItem";
-            this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.edycjaToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.edycjaToolStripMenuItem.Text = "Edycja";
             // 
             // usuńToolStripMenuItem
             // 
             this.usuńToolStripMenuItem.Name = "usuńToolStripMenuItem";
-            this.usuńToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuńToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.usuńToolStripMenuItem.Text = "Usuń";
+            // 
+            // cenaToolStripMenuItem
+            // 
+            this.cenaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.podstawowaToolStripMenuItem});
+            this.cenaToolStripMenuItem.Name = "cenaToolStripMenuItem";
+            this.cenaToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.cenaToolStripMenuItem.Text = "Cena";
+            // 
+            // podstawowaToolStripMenuItem
+            // 
+            this.podstawowaToolStripMenuItem.Name = "podstawowaToolStripMenuItem";
+            this.podstawowaToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.podstawowaToolStripMenuItem.Text = "Podstawowa";
+            // 
+            // statusToolStripMenuItem
+            // 
+            this.statusToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aktywnyToolStripMenuItem,
+            this.archiwalnyToolStripMenuItem});
+            this.statusToolStripMenuItem.Name = "statusToolStripMenuItem";
+            this.statusToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.statusToolStripMenuItem.Text = "Status";
+            // 
+            // aktywnyToolStripMenuItem
+            // 
+            this.aktywnyToolStripMenuItem.Name = "aktywnyToolStripMenuItem";
+            this.aktywnyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.aktywnyToolStripMenuItem.Text = "Aktywny";
+            // 
+            // archiwalnyToolStripMenuItem
+            // 
+            this.archiwalnyToolStripMenuItem.Name = "archiwalnyToolStripMenuItem";
+            this.archiwalnyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.archiwalnyToolStripMenuItem.Text = "Archiwalny";
             // 
             // toolStripGoods
             // 
@@ -335,6 +379,7 @@
             // 
             // textBoxBruttoPriceSell
             // 
+            this.textBoxBruttoPriceSell.acceptKeys = true;
             this.textBoxBruttoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxBruttoPriceSell.isCheckValue = true;
             this.textBoxBruttoPriceSell.Location = new System.Drawing.Point(804, 127);
@@ -344,6 +389,7 @@
             this.textBoxBruttoPriceSell.TabIndex = 1;
             this.textBoxBruttoPriceSell.Text = "0,00";
             this.textBoxBruttoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBruttoPriceSell.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             this.textBoxBruttoPriceSell.value = new decimal(new int[] {
             0,
             0,
@@ -371,6 +417,7 @@
             // 
             // textBoxNettoPriceSell
             // 
+            this.textBoxNettoPriceSell.acceptKeys = true;
             this.textBoxNettoPriceSell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNettoPriceSell.isCheckValue = false;
             this.textBoxNettoPriceSell.Location = new System.Drawing.Point(804, 72);
@@ -380,6 +427,7 @@
             this.textBoxNettoPriceSell.TabIndex = 0;
             this.textBoxNettoPriceSell.Text = "0,00";
             this.textBoxNettoPriceSell.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceSell.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             this.textBoxNettoPriceSell.value = new decimal(new int[] {
             0,
             0,
@@ -398,12 +446,14 @@
             // 
             // textBoxDescription
             // 
+            this.textBoxDescription.acceptKeys = true;
             this.textBoxDescription.isCheckValue = false;
             this.textBoxDescription.Location = new System.Drawing.Point(6, 182);
             this.textBoxDescription.MaxLength = 500;
             this.textBoxDescription.Name = "textBoxDescription";
             this.textBoxDescription.Size = new System.Drawing.Size(630, 20);
             this.textBoxDescription.TabIndex = 65;
+            this.textBoxDescription.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             // 
             // label8
             // 
@@ -416,11 +466,14 @@
             // 
             // textBoxModel
             // 
+            this.textBoxModel.acceptKeys = true;
+            this.textBoxModel.isCheckValue = false;
             this.textBoxModel.Location = new System.Drawing.Point(188, 104);
             this.textBoxModel.MaxLength = 100;
             this.textBoxModel.Name = "textBoxModel";
             this.textBoxModel.Size = new System.Drawing.Size(199, 20);
             this.textBoxModel.TabIndex = 63;
+            this.textBoxModel.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             // 
             // label7
             // 
@@ -442,11 +495,14 @@
             // 
             // textBoxSerialNumber
             // 
+            this.textBoxSerialNumber.acceptKeys = true;
+            this.textBoxSerialNumber.isCheckValue = false;
             this.textBoxSerialNumber.Location = new System.Drawing.Point(393, 104);
             this.textBoxSerialNumber.MaxLength = 100;
             this.textBoxSerialNumber.Name = "textBoxSerialNumber";
             this.textBoxSerialNumber.Size = new System.Drawing.Size(146, 20);
             this.textBoxSerialNumber.TabIndex = 62;
+            this.textBoxSerialNumber.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             // 
             // comboBoxCategories
             // 
@@ -476,11 +532,14 @@
             // 
             // textBoxCatalogueNumber
             // 
+            this.textBoxCatalogueNumber.acceptKeys = true;
+            this.textBoxCatalogueNumber.isCheckValue = false;
             this.textBoxCatalogueNumber.Location = new System.Drawing.Point(6, 104);
             this.textBoxCatalogueNumber.MaxLength = 100;
             this.textBoxCatalogueNumber.Name = "textBoxCatalogueNumber";
             this.textBoxCatalogueNumber.Size = new System.Drawing.Size(176, 20);
             this.textBoxCatalogueNumber.TabIndex = 60;
+            this.textBoxCatalogueNumber.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             // 
             // label3
             // 
@@ -502,11 +561,14 @@
             // 
             // textBoxGoodName
             // 
+            this.textBoxGoodName.acceptKeys = true;
+            this.textBoxGoodName.isCheckValue = false;
             this.textBoxGoodName.Location = new System.Drawing.Point(6, 65);
             this.textBoxGoodName.MaxLength = 100;
             this.textBoxGoodName.Name = "textBoxGoodName";
             this.textBoxGoodName.Size = new System.Drawing.Size(423, 20);
             this.textBoxGoodName.TabIndex = 59;
+            this.textBoxGoodName.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             this.textBoxGoodName.TextChanged += new System.EventHandler(this.textBoxGoodName_TextChanged);
             // 
             // label1
@@ -520,6 +582,7 @@
             // 
             // textBoxBruttoPriceBuy
             // 
+            this.textBoxBruttoPriceBuy.acceptKeys = true;
             this.textBoxBruttoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxBruttoPriceBuy.isCheckValue = false;
             this.textBoxBruttoPriceBuy.Location = new System.Drawing.Point(668, 127);
@@ -529,6 +592,7 @@
             this.textBoxBruttoPriceBuy.TabIndex = 1;
             this.textBoxBruttoPriceBuy.Text = "0,00";
             this.textBoxBruttoPriceBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBruttoPriceBuy.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             this.textBoxBruttoPriceBuy.value = new decimal(new int[] {
             0,
             0,
@@ -556,6 +620,7 @@
             // 
             // textBoxNettoPriceBuy
             // 
+            this.textBoxNettoPriceBuy.acceptKeys = true;
             this.textBoxNettoPriceBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNettoPriceBuy.isCheckValue = false;
             this.textBoxNettoPriceBuy.Location = new System.Drawing.Point(668, 72);
@@ -565,6 +630,7 @@
             this.textBoxNettoPriceBuy.TabIndex = 0;
             this.textBoxNettoPriceBuy.Text = "0,00";
             this.textBoxNettoPriceBuy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxNettoPriceBuy.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             this.textBoxNettoPriceBuy.value = new decimal(new int[] {
             0,
             0,
@@ -572,22 +638,29 @@
             131072});
             this.textBoxNettoPriceBuy.TextChanged += new System.EventHandler(this.textBoxNettoPriceBuy_TextChanged);
             // 
-            // textBoxCustomer
+            // textBoxKontrahent
             // 
-            this.textBoxCustomer.Location = new System.Drawing.Point(6, 143);
-            this.textBoxCustomer.Name = "textBoxCustomer";
-            this.textBoxCustomer.Size = new System.Drawing.Size(599, 20);
-            this.textBoxCustomer.TabIndex = 83;
+            this.textBoxKontrahent.acceptKeys = false;
+            this.textBoxKontrahent.isCheckValue = false;
+            this.textBoxKontrahent.Location = new System.Drawing.Point(6, 143);
+            this.textBoxKontrahent.Name = "textBoxKontrahent";
+            this.textBoxKontrahent.Size = new System.Drawing.Size(599, 20);
+            this.textBoxKontrahent.TabIndex = 83;
+            this.textBoxKontrahent.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             // 
             // textBoxUnit
             // 
+            this.textBoxUnit.acceptKeys = true;
+            this.textBoxUnit.isCheckValue = false;
             this.textBoxUnit.Location = new System.Drawing.Point(545, 104);
             this.textBoxUnit.Name = "textBoxUnit";
             this.textBoxUnit.Size = new System.Drawing.Size(91, 20);
             this.textBoxUnit.TabIndex = 84;
+            this.textBoxUnit.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             // 
             // textBoxVat
             // 
+            this.textBoxVat.acceptKeys = true;
             this.textBoxVat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxVat.isCheckValue = false;
             this.textBoxVat.Location = new System.Drawing.Point(668, 182);
@@ -596,6 +669,7 @@
             this.textBoxVat.TabIndex = 85;
             this.textBoxVat.Text = "0";
             this.textBoxVat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxVat.Type = Pawel.Workshop.Custom_controls.Custom_TextBox.CustomTextBox.TextBoxType.Text;
             this.textBoxVat.value = 0;
             this.textBoxVat.TextChanged += new System.EventHandler(this.textBoxVat_TextChanged);
             // 
@@ -626,11 +700,35 @@
             this.buttonFindCustomer.TabIndex = 58;
             this.buttonFindCustomer.UseVisualStyleBackColor = true;
             // 
+            // customComboBoxKindOfPrice
+            // 
+            this.customComboBoxKindOfPrice.FormattingEnabled = true;
+            this.customComboBoxKindOfPrice.isCheckValue = false;
+            this.customComboBoxKindOfPrice.Items.AddRange(new object[] {
+            "Podstawowa: Brutto - 4,56 Netto - 6,77"});
+            this.customComboBoxKindOfPrice.Location = new System.Drawing.Point(804, 181);
+            this.customComboBoxKindOfPrice.Name = "customComboBoxKindOfPrice";
+            this.customComboBoxKindOfPrice.Size = new System.Drawing.Size(130, 21);
+            this.customComboBoxKindOfPrice.TabIndex = 87;
+            this.customComboBoxKindOfPrice.Text = "Podstawowa - 5,99";
+            this.customComboBoxKindOfPrice.value = -1;
+            // 
+            // labelKindOfPrice
+            // 
+            this.labelKindOfPrice.AutoSize = true;
+            this.labelKindOfPrice.Location = new System.Drawing.Point(801, 166);
+            this.labelKindOfPrice.Name = "labelKindOfPrice";
+            this.labelKindOfPrice.Size = new System.Drawing.Size(32, 13);
+            this.labelKindOfPrice.TabIndex = 88;
+            this.labelKindOfPrice.Text = "Cena";
+            // 
             // Goods
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.labelKindOfPrice);
+            this.Controls.Add(this.customComboBoxKindOfPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxVat);
             this.Controls.Add(this.label15);
@@ -640,7 +738,7 @@
             this.Controls.Add(this.textBoxNettoPriceSell);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.textBoxUnit);
-            this.Controls.Add(this.textBoxCustomer);
+            this.Controls.Add(this.textBoxKontrahent);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxNettoPriceBuy);
             this.Controls.Add(this.lblJednostka);
@@ -701,25 +799,25 @@
         private System.Windows.Forms.Label lblJednostka;
         private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxDescription;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBoxModel;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxModel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxSerialNumber;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxSerialNumber;
         private Pawel.Workshop.Custom_controls.Custom_ComboBox.CustomComboBox comboBoxCategories;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonAddCategory;
-        private System.Windows.Forms.TextBox textBoxCatalogueNumber;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxCatalogueNumber;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxGoodName;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxGoodName;
         private System.Windows.Forms.Button buttonFindCustomer;
         private System.Windows.Forms.Label label1;
         private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxBruttoPriceBuy;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private Pawel.Workshop.Custom_controls.Numeric_TextBox.NumericTextBox textBoxNettoPriceBuy;
-        private System.Windows.Forms.TextBox textBoxCustomer;
-        private System.Windows.Forms.TextBox textBoxUnit;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxKontrahent;
+        private Pawel.Workshop.Custom_controls.Letter_TextBox.LetterTextBox textBoxUnit;
         private Pawel.Workshop.Custom_controls.Integer_TextBox.IntegerTextBox textBoxVat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.BindingSource goodBindingSource;
@@ -735,5 +833,12 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemNewGood;
         private System.Windows.Forms.ToolStripMenuItem edycjaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuńToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aktywnyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem archiwalnyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cenaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem podstawowaToolStripMenuItem;
+        private Custom_ComboBox.CustomComboBox customComboBoxKindOfPrice;
+        private System.Windows.Forms.Label labelKindOfPrice;
     }
 }

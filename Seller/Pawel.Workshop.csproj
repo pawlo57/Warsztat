@@ -262,6 +262,7 @@
       <DependentUpon>DatabseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Good.cs" />
+    <Compile Include="Entities\Kontrahent.cs" />
     <Compile Include="Interfaces\ICustomTextBoxChecker.cs" />
     <Compile Include="Lista.cs">
       <SubType>Form</SubType>

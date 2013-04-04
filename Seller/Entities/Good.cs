@@ -9,13 +9,12 @@ namespace Pawel.Workshop.Entities
     {
         public Good() { }
 
-        public Good(int ID, int categoryID, int customerID, string catalogueNumber, string model, string serialNumber, string description, string name, string unit, 
+        public Good(int Id, int categoryID, string catalogueNumber, string model, string serialNumber, string description, string name, string unit, 
             decimal bruttoPriceSell, decimal bruttoPriceBuy, int vat)
             : this()
         {
-            this.ID = ID;
+            this.Id = Id;
             this.categoryID = categoryID;
-            this.customerID = customerID;
             this.catalogueNumber = catalogueNumber;
             this.model = model;
             this.serialNumber = serialNumber;
@@ -27,11 +26,11 @@ namespace Pawel.Workshop.Entities
             this.vat = vat;
         }
 
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public int categoryID { get; set; }
 
-        public int customerID { get; set; }
+        public Kontrahent kontrahent { get; set; }
 
         public string catalogueNumber { get; set; }
 

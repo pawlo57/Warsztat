@@ -37,11 +37,9 @@ namespace Pawel.Workshop.Custom_controls.Integer_TextBox
             return false;
         }
 
-        protected override void OnKeyPress(System.Windows.Forms.KeyPressEventArgs e)
+        protected override bool getProperKeyChecker(System.Windows.Forms.KeyPressEventArgs e)
         {
-            base.OnKeyPress(e);
-
-            e.Handled = KeyChecker.checkForIntegerKey(this.Text, e.KeyChar);
+            return KeyChecker.checkForIntegerKey(this.Text, e.KeyChar);
         }
     }
 }

@@ -48,12 +48,35 @@ namespace Pawel.Workshop.Custom_controls.Custom_ComboBox
             this.BackColor = Color.White;
         }
 
-       // private string classType
-
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
             base.OnKeyPress(e);
             e.Handled = true;
+        }
+      
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            //base.OnPaint(e);
+            Graphics g = e.Graphics;
+
+            g.DrawString("test", new Font("Times New Roman", 12), Brushes.Aqua, 0, 0);
+
+            g.FillRectangle(Brushes.Coral, 0, 0, 100, 100);
+        }
+
+        protected override void OnDrawItem(DrawItemEventArgs e)
+        {
+            e.DrawBackground();
+            e.DrawFocusRectangle();
+
+           // DropDownItem item = (DropDownItem)Items[e.Index];
+            // Draw the colored 16 x 16 square
+           // e.Graphics.DrawImage(item.Image, e.Bounds.Left, e.Bounds.Top);
+            // Draw the value (in this case, the color name)
+            e.Graphics.DrawString("))", e.Font, new
+                    SolidBrush(e.ForeColor), e.Bounds.Left + 20, e.Bounds.Top + 2);
+
+            //base.OnDrawItem(e);
         }
     }
 }
