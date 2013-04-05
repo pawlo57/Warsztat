@@ -44,6 +44,8 @@ namespace Pawel.Workshop.Entities
 
         public string unit { get; set; }
 
+        public int priceId { get; set; }
+
         public bool isGoodName
         {
             get

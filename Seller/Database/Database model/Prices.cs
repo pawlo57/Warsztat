@@ -12,15 +12,19 @@ namespace Pawel.Workshop.Database.Database_model
     using System;
     using System.Collections.Generic;
     
-    public partial class Uslugi
+    public partial class Prices
     {
-        public string Opis { get; set; }
-        public int ID { get; set; }
-        public Nullable<decimal> Netto { get; set; }
-        public Nullable<int> VAT { get; set; }
-        public Nullable<decimal> Brutto { get; set; }
-        public string Numer { get; set; }
-        public string Nazwa { get; set; }
-        public Nullable<int> TimeIndex { get; set; }
+        public Prices()
+        {
+            this.Programs = new HashSet<Programs>();
+        }
+    
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Nullable<decimal> BruttoPriceBuy { get; set; }
+        public Nullable<decimal> BruttoPriceSell { get; set; }
+        public Nullable<bool> IsArchive { get; set; }
+    
+        public virtual ICollection<Programs> Programs { get; set; }
     }
 }

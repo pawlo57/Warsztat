@@ -205,23 +205,23 @@
       <DependentUpon>Usterki.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Cars.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Categories.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Customers.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database model\DatabseModel.Context.cs">
+    <Compile Include="Database\Database model\DatabaseModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabseModel.Context.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database model\DatabseModel.cs">
+    <Compile Include="Database\Database model\DatabaseModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\DatabseModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -229,37 +229,40 @@
       <DependentUpon>DatabseModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\ItemsPzWz.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Magazyn.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\MagType.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Database model\Prices.cs">
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Programs.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\PZWZ.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Transakcje.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\TransItems.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Urs.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Uslugi.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Usterki.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database model\Workers.cs">
-      <DependentUpon>DatabseModel.tt</DependentUpon>
+      <DependentUpon>DatabaseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Good.cs" />
     <Compile Include="Entities\Kontrahent.cs" />
@@ -526,20 +529,21 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DatabseModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Database\Database model\DatabseModel.Context.tt">
+    <None Include="Database\Database model\DatabaseModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DatabaseModel.Context.cs</LastGenOutput>
       <DependentUpon>DatabseModel.edmx</DependentUpon>
-      <LastGenOutput>DatabseModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Database\Database model\DatabaseModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DatabaseModel.cs</LastGenOutput>
+      <DependentUpon>DatabseModel.edmx</DependentUpon>
     </None>
     <None Include="Database\Database model\DatabseModel.edmx.diagram">
       <DependentUpon>DatabseModel.edmx</DependentUpon>
     </None>
-    <None Include="Database\Database model\DatabseModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DatabseModel.edmx</DependentUpon>
-      <LastGenOutput>DatabseModel.cs</LastGenOutput>
-    </None>
     <None Include="Properties\DataSources\Pawel.Workshop.Database.Database_model.Categories.datasource" />
+    <None Include="Properties\DataSources\Pawel.Workshop.Database.Database_model.Prices.datasource" />
     <None Include="Properties\DataSources\Pawel.Workshop.Entities.Good.datasource" />
     <None Include="Properties\AppSettings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

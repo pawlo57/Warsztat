@@ -78,6 +78,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
 
 
         private List<Categories> categories = new List<Categories>();
+        private List<Prices> prices = new List<Prices>();
 
         private void loadCategories()
         {
@@ -85,6 +86,13 @@ namespace Pawel.Workshop.Custom_controls.Goods
             categories.AddRange(DatabaseDataProvider.getCategories());
 
             categoriesBindingSource.DataSource = categories;
+        }
+
+        private void loadPrices()
+        {
+            prices.Add(new Prices { Id = -1, Name = strings.BasicPrice });
+
+            pricesBindingSource.DataSource = prices;
         }
 
         private void loadGoods()
@@ -99,6 +107,7 @@ namespace Pawel.Workshop.Custom_controls.Goods
         private void Programs_Load(object sender, EventArgs e)
         {
             loadCategories();
+            loadPrices();
             newCurrentGood();
             loadGoods();
         }

@@ -120,4 +120,7 @@
   <data name="All" xml:space="preserve">
     <value>All</value>
   </data>
+  <data name="BasicPrice" xml:space="preserve">
+    <value>Basic</value>
+  </data>
 </root>

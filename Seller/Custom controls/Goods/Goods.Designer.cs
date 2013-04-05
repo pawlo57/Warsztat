@@ -92,12 +92,14 @@
             this.buttonAddCategory = new System.Windows.Forms.Button();
             this.buttonFindCustomer = new System.Windows.Forms.Button();
             this.customComboBoxKindOfPrice = new Pawel.Workshop.Custom_controls.Custom_ComboBox.CustomComboBox();
+            this.pricesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelKindOfPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGoods)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goodBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolStripGoods.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pricesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridViewGoods
@@ -684,7 +686,6 @@
             // 
             // buttonAddCategory
             // 
-            this.buttonAddCategory.Image = global::Pawel.Workshop.Properties.Resources.newDocument;
             this.buttonAddCategory.Location = new System.Drawing.Point(611, 62);
             this.buttonAddCategory.Name = "buttonAddCategory";
             this.buttonAddCategory.Size = new System.Drawing.Size(25, 25);
@@ -693,7 +694,6 @@
             // 
             // buttonFindCustomer
             // 
-            this.buttonFindCustomer.Image = global::Pawel.Workshop.Properties.Resources.newDocument;
             this.buttonFindCustomer.Location = new System.Drawing.Point(611, 140);
             this.buttonFindCustomer.Name = "buttonFindCustomer";
             this.buttonFindCustomer.Size = new System.Drawing.Size(25, 25);
@@ -702,16 +702,20 @@
             // 
             // customComboBoxKindOfPrice
             // 
+            this.customComboBoxKindOfPrice.DataSource = this.pricesBindingSource;
+            this.customComboBoxKindOfPrice.DisplayMember = "Name";
             this.customComboBoxKindOfPrice.FormattingEnabled = true;
             this.customComboBoxKindOfPrice.isCheckValue = false;
-            this.customComboBoxKindOfPrice.Items.AddRange(new object[] {
-            "Podstawowa: Brutto - 4,56 Netto - 6,77"});
             this.customComboBoxKindOfPrice.Location = new System.Drawing.Point(804, 181);
             this.customComboBoxKindOfPrice.Name = "customComboBoxKindOfPrice";
             this.customComboBoxKindOfPrice.Size = new System.Drawing.Size(130, 21);
             this.customComboBoxKindOfPrice.TabIndex = 87;
-            this.customComboBoxKindOfPrice.Text = "Podstawowa - 5,99";
             this.customComboBoxKindOfPrice.value = -1;
+            this.customComboBoxKindOfPrice.ValueMember = "Id";
+            // 
+            // pricesBindingSource
+            // 
+            this.pricesBindingSource.DataSource = typeof(Pawel.Workshop.Database.Database_model.Prices);
             // 
             // labelKindOfPrice
             // 
@@ -770,6 +774,7 @@
             this.toolStripGoods.ResumeLayout(false);
             this.toolStripGoods.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pricesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -840,5 +845,6 @@
         private System.Windows.Forms.ToolStripMenuItem podstawowaToolStripMenuItem;
         private Custom_ComboBox.CustomComboBox customComboBoxKindOfPrice;
         private System.Windows.Forms.Label labelKindOfPrice;
+        private System.Windows.Forms.BindingSource pricesBindingSource;
     }
 }

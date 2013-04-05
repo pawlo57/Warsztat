@@ -68,5 +68,14 @@ namespace Pawel.Workshop.Strings {
                 return ResourceManager.GetString("All", resourceCulture);
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Basic.
+        /// </summary>
+        internal static string BasicPrice {
+            get {
+                return ResourceManager.GetString("BasicPrice", resourceCulture);
+            }
+        }
     }
 }

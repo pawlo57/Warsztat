@@ -39,5 +39,6 @@ namespace Pawel.Workshop.Database.Database_model
         public DbSet<Uslugi> Uslugi { get; set; }
         public DbSet<Usterki> Usterki { get; set; }
         public DbSet<Workers> Workers { get; set; }
+        public DbSet<Prices> Prices { get; set; }
     }
 }

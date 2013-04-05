@@ -29,5 +29,9 @@ namespace Pawel.Workshop.Database.Database_model
         public Nullable<decimal> PRICE2 { get; set; }
         public Nullable<decimal> VATPRICE2 { get; set; }
         public Nullable<int> Vat { get; set; }
+        public Nullable<int> PriceId { get; set; }
+        public Nullable<bool> IsArchive { get; set; }
+    
+        public virtual Prices Prices { get; set; }
     }
 }

@@ -37,6 +37,8 @@ namespace Pawel.Workshop.Data_providers.Databse
         {
             var query = from good in dbContext.Programs
                         join category in dbContext.Categories on good.CATID equals category.ID
+                        join price in dbContext.Prices on good.PriceId equals price.Id into GoodsPrices
+                        from goodsPricesL in GoodsPrices.DefaultIfEmpty()
                         where good.NAZWA.Contains(findGood.name) || findGood.isGoodName
                         select new Good
                         {
@@ -48,9 +50,10 @@ namespace Pawel.Workshop.Data_providers.Databse
                             description = good.OPIS,
                             name = good.NAZWA,
                             vat = good.Vat == null ? 0 : (int)good.Vat,
-                            bruttoPriceSell = (decimal)good.VATPRICE,
-                            bruttoPriceBuy = (decimal)good.VATPRICE2,
+                            bruttoPriceSell = good.PriceId == null ? (decimal)good.VATPRICE : (decimal)goodsPricesL.BruttoPriceSell,
+                            bruttoPriceBuy = good.PriceId == null ? (decimal)good.VATPRICE2 : (decimal)goodsPricesL.BruttoPriceBuy,
                             unit = good.JEDNOSTKA,
+                            priceId = good.PriceId == null ? -1 : (int)good.PriceId,
                             kontrahent = (from customer in dbContext.Customers
                                           where customer.ID == good.CID
                                           select new Kontrahent

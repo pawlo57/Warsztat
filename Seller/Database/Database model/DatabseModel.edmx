@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+    <Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityContainer Name="DatabaseModelStoreContainer">
           <EntitySet Name="Cars" EntityType="DatabaseModel.Store.Cars" store:Type="Tables" />
           <EntitySet Name="Categories" EntityType="DatabaseModel.Store.Categories" store:Type="Tables" />
@@ -12,6 +12,7 @@
           <EntitySet Name="ItemsPzWz" EntityType="DatabaseModel.Store.ItemsPzWz" store:Type="Tables" />
           <EntitySet Name="Magazyn" EntityType="DatabaseModel.Store.Magazyn" store:Type="Tables" />
           <EntitySet Name="MagType" EntityType="DatabaseModel.Store.MagType" store:Type="Tables" />
+          <EntitySet Name="Prices" EntityType="DatabaseModel.Store.Prices" store:Type="Tables" />
           <EntitySet Name="Programs" EntityType="DatabaseModel.Store.Programs" store:Type="Tables" />
           <EntitySet Name="PZWZ" EntityType="DatabaseModel.Store.PZWZ" store:Type="Tables" />
           <EntitySet Name="Transakcje" EntityType="DatabaseModel.Store.Transakcje" store:Type="Tables" />
@@ -20,6 +21,10 @@
           <EntitySet Name="Uslugi" EntityType="DatabaseModel.Store.Uslugi" store:Type="Tables" />
           <EntitySet Name="Usterki" EntityType="DatabaseModel.Store.Usterki" store:Type="Tables" />
           <EntitySet Name="Workers" EntityType="DatabaseModel.Store.Workers" store:Type="Tables" />
+          <AssociationSet Name="GoodsPrices" Association="DatabaseModel.Store.GoodsPrices">
+            <End Role="Prices" EntitySet="Prices" />
+            <End Role="Programs" EntitySet="Programs" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Cars">
           <Key>
@@ -91,6 +96,16 @@
           <Property Name="MAGAZYN" Type="nvarchar" MaxLength="100" />
           <Property Name="ADRES" Type="nvarchar" MaxLength="100" />
         </EntityType>
+        <EntityType Name="Prices">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="BruttoPriceBuy" Type="money" />
+          <Property Name="BruttoPriceSell" Type="money" />
+          <Property Name="IsArchive" Type="bit" />
+        </EntityType>
         <EntityType Name="Programs">
           <Key>
             <PropertyRef Name="ID" />
@@ -110,6 +125,8 @@
           <Property Name="PRICE2" Type="money" />
           <Property Name="VATPRICE2" Type="money" />
           <Property Name="Vat" Type="int" />
+          <Property Name="PriceId" Type="int" />
+          <Property Name="IsArchive" Type="bit" />
         </EntityType>
         <EntityType Name="PZWZ">
           <Key>
@@ -201,8 +218,21 @@
           <Property Name="NIP" Type="nvarchar" MaxLength="100" />
           <Property Name="BANK" Type="nvarchar" MaxLength="100" />
         </EntityType>
-      </Schema>
-    </edmx:StorageModels>
+        <Association Name="GoodsPrices">
+          <End Role="Prices" Type="DatabaseModel.Store.Prices" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Programs" Type="DatabaseModel.Store.Programs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Prices">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Programs">
+              <PropertyRef Name="PriceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -221,6 +251,11 @@
           <EntitySet Name="Uslugi" EntityType="DatabaseModel.Uslugi" />
           <EntitySet Name="Usterki" EntityType="DatabaseModel.Usterki" />
           <EntitySet Name="Workers" EntityType="DatabaseModel.Workers" />
+          <EntitySet Name="Prices" EntityType="DatabaseModel.Prices" />
+          <AssociationSet Name="GoodsPrices" Association="DatabaseModel.GoodsPrices">
+            <End Role="Prices" EntitySet="Prices" />
+            <End Role="Programs" EntitySet="Programs" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Cars">
           <Key>
@@ -311,6 +346,9 @@
           <Property Name="PRICE2" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="VATPRICE2" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Vat" Type="Int32" />
+          <Property Type="Int32" Name="PriceId" />
+          <Property Type="Boolean" Name="IsArchive" />
+          <NavigationProperty Name="Prices" Relationship="DatabaseModel.GoodsPrices" FromRole="Programs" ToRole="Prices" />
         </EntityType>
         <EntityType Name="PZWZ">
           <Key>
@@ -402,6 +440,31 @@
           <Property Name="NIP" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="BANK" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
         </EntityType>
+        <EntityType Name="Prices">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BruttoPriceBuy" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="BruttoPriceSell" Precision="19" Scale="4" />
+          <Property Type="Boolean" Name="IsArchive" />
+          <NavigationProperty Name="Programs" Relationship="DatabaseModel.GoodsPrices" FromRole="Prices" ToRole="Programs" />
+        </EntityType>
+        <Association Name="GoodsPrices">
+          <End Type="DatabaseModel.Prices" Role="Prices" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DatabaseModel.Programs" Role="Programs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Prices">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Programs">
+              <PropertyRef Name="PriceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -487,6 +550,8 @@
           <EntitySetMapping Name="Programs">
             <EntityTypeMapping TypeName="DatabaseModel.Programs">
               <MappingFragment StoreEntitySet="Programs">
+                <ScalarProperty Name="IsArchive" ColumnName="IsArchive" />
+                <ScalarProperty Name="PriceId" ColumnName="PriceId" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CATID" ColumnName="CATID" />
                 <ScalarProperty Name="CID" ColumnName="CID" />
@@ -599,6 +664,17 @@
                 <ScalarProperty Name="PESEL" ColumnName="PESEL" />
                 <ScalarProperty Name="NIP" ColumnName="NIP" />
                 <ScalarProperty Name="BANK" ColumnName="BANK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Prices">
+            <EntityTypeMapping TypeName="DatabaseModel.Prices">
+              <MappingFragment StoreEntitySet="Prices">
+                <ScalarProperty Name="IsArchive" ColumnName="IsArchive" />
+                <ScalarProperty Name="BruttoPriceSell" ColumnName="BruttoPriceSell" />
+                <ScalarProperty Name="BruttoPriceBuy" ColumnName="BruttoPriceBuy" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
